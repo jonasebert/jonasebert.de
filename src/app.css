@@ -1,0 +1,171 @@
+/* Import der Schriftart */
+@import url(./font/font.css);
+
+/* Tailwind CSS Direktiven */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Farbvariablen */
+:root {
+    --color-background-primary: #161618;
+    --color-background-accent: #293731;
+    --color-text-primary: #abb2bf;
+    --color-text-accent: #EFE9CE;
+    --color-header-background: #293731;
+    --color-header-text: #ffffff;
+}
+
+/* Grundlegende Stile */
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    font-family: 'Poppins';
+}
+
+/* Akzent-Hintergrund */
+.accent-background {
+    background-color: var(--color-background-accent);
+}
+
+/* Akzent-Text */
+.accent-text {
+    color: var(--color-text-accent);
+}
+
+/* Akzent-Text kursiv */
+.accent-text-italic {
+    font-style: italic;
+}
+
+/* Button-Stile */
+button {
+    background-color: var(--color-background-accent);
+    color: var(--color-text-accent);
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover-Effekt */
+button:hover {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+}
+
+/* Header-Stile */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-header-background);
+    color: var(--color-header-text);
+    padding: 20px 10px;
+}
+
+/* Link-Stile im Header */
+.header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Logo-Stile */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Logo-Bild-Stile */
+.header .logo img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Header-Link Hover- und Aktiv-Stile */
+.header a:hover, .header a.active {
+    color: var(--color-text-accent);
+    font-weight: bold;
+}
+
+/* Blendet Icon für mobile Ansicht aus */
+.header .icon {
+    display: none;
+}
+
+/* Rechte Seite des Headers */
+.header-right {
+    float: right;
+}
+
+/* Responsive Design für den Header */
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .logo img {
+        content: url('/logo/logo_500x500.png');
+        width: 15%;
+    }
+
+    .header a:not(:first-child), .header a.active {
+        display: none;
+    }
+
+    .header a.icon {
+        display: block;
+        position: fixed;
+        right: 1%;
+        top: 1%;
+        font-size: 150%;
+    }
+
+    .header .icon {
+        align-self: center;
+        margin: 6% 0;
+        order: -1;
+        padding: 10px;
+        font-size: 1.5em;
+        display: block;
+        position: relative;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .header .header-right {
+        width: 100%;
+        display: none;
+    }
+
+    .header.responsive {
+        position: relative;
+    }
+
+    .header.responsive .icon {
+        position: fixed;
+        font-weight: bold;
+    }
+
+    .header.responsive .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header.responsive .header-right a {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
