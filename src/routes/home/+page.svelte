@@ -1,6 +1,6 @@
 <body class="font-primary">
-    <div>
-        <h1>Jonas Ebert</h1>
-        <h2>The future is now!</h2>
-    </div>
+	<div class="container">
+		<h1>Jonas Ebert</h1>
+		<h2>The future is now!</h2>
+	</div>
 </body>
