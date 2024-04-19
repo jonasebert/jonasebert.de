@@ -1,9 +1,12 @@
 <script>
+	// Importe
 	import { page } from '$app/stores';
 	import { Icon } from 'svelte-icons-pack';
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import '../app.css';
+	
+	// Initialisierung Variabeln
 	let name = 'Jonas Ebert';
 	let pronouns = 'xier/xies';
 	let logo = '/logo/logo_500x100.png';
@@ -11,9 +14,15 @@
 	let logo_small = '/logo/logo_500x500.png';
 	let logo_small_clear = '/logo/logo_500x500_clear.png';
 	let isResponsive = false;
-	let isHovered = false;
-	let socialcolor = '';
 	let currentYear = new Date().getFullYear();
+
+	// Icons für Soziale Netzwerke
+	let icons = [
+		{ id: 'instagram', component: AiOutlineInstagram, href: 'https://www.instagram.com/jonas_ebert/', size: '32' },
+		{ id: 'threads', component: BsThreads, href: 'https://www.threads.net/@jonas_ebert/', size: '25' },
+		{ id: 'youtube', component: AiOutlineYoutube, href: 'https://www.youtube.com/@jonas_ebert/', size: '32' }
+  	];
+	let hoveredIconId = '';
 
 	//Funktion zum Umschalten des responsiven Headers
 	function toggleMenu() {
@@ -24,8 +33,8 @@
 		isResponsive = false;
 	}
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
-	$: activeRoute = $page.url.pathname;
-	$: pageTitle =
+	let activeRoute = $page.url.pathname;
+	let pageTitle =
 		activeRoute === '/home' ? 'Home - ' + name
 		: activeRoute === '/blog' ? 'Aktuelles - ' + name
 		: activeRoute === '/about' ? 'Über mich - ' + name
@@ -33,12 +42,6 @@
 		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
 		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
 			: 'Willkommen';
-	
-	// Ändert die Farbe von Social Media Icons beim Mouseover ab
-	$: socialcolor =
-		isHovered === true ? '#efe9ce'
-		: isHovered === false ? '#abb2bf'
-			: '#abb2bf';
 </script>
 
 <svelte:head>
@@ -98,33 +101,13 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="social-media">
-				<a
-					on:mouseover={() => isHovered = true}
-					on:focus={() => isHovered = true}
-					on:mouseout={() => isHovered = false}
-					on:blur={() => isHovered = false}
-					href="https://www.instagram.com/jonas_ebert/"
-					target="_blank">
-					<Icon src={AiOutlineInstagram} size="32" color={socialcolor} viewBox="0 0 1024 1024" title="Instagram"></Icon>
-				</a>
-				<a
-					on:mouseover={() => isHovered = true}
-					on:focus={() => isHovered = true}
-					on:mouseout={() => isHovered = false}
-					on:blur={() => isHovered = false}	
-					href="https://www.threads.net/@jonas_ebert/"
-					target="_blank">
-					<Icon src={BsThreads} size="25" color={socialcolor} viewBox="0 0 1024 1024" title="Threads"></Icon>
-				</a>
-				<a
-					on:mouseover={() => isHovered = true}
-					on:focus={() => isHovered = true}
-					on:mouseout={() => isHovered = false}
-					on:blur={() => isHovered = false}	
-					href="https://www.youtube.com/@jonas_ebert/"
-					target="_blank">
-					<Icon src={AiOutlineYoutube} size="32" color={socialcolor} viewBox="0 0 1024 1024" title="YouTube"></Icon>
-				</a>
+				{#each icons as icon}
+					<a
+						href={icon.href}
+						target="_blank">
+					<Icon src={icon.component} size={icon.size} color={hoveredIconId === icon.id ? '#efe9ce' : '#abb2bf'} viewBox="0 0 1024 1024" title={icon.id}></Icon>
+					</a>
+				{/each}
 			</div>
 			<div>
 				<p>&copy; 2023 - {currentYear} {name}</p>

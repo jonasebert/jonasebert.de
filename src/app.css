@@ -138,7 +138,7 @@ button:hover {
 	justify-content: space-between;
 	float: left;
 	text-align: center;
-	padding: 12px;
+	padding: 0.5rem;
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 25px;
@@ -174,14 +174,15 @@ button:hover {
 	float: right;
 }
 
-/* Responsive Design für den Header */
+/* Responsive Design für den kleinere Ansichten */
 @media screen and (max-width: 600px) {
+	/* Header */
 	.header {
 		flex-direction: column;
 	}
 
 	.header .logo img {
-		content: url('/logo/logo_500x500.png');
+		content: url('/logo/logo_500x500_clear.png');
 		width: 15%;
 	}
 
@@ -235,14 +236,28 @@ button:hover {
 		width: 100%;
 		text-align: left;
 	}
+
+	/* Footer */
+	.footer-top .logo img {
+		content: url('/logo/logo_500x500_clear.png');
+		width: 40%;
+	}
 }
 
 /* Footer-Stile */
+.footer-top, .footer-bottom {
+	display: flex;
+	padding: 1.25% 0;
+	justify-container: center;
+	align-items: center;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
 .footer-top {
 	background-color: var(--color-footer-top-background);
-	display: flex;
 	flex-direction: row;
-	padding: 1.25% 0;
 }
 .footer-top div {
 	flex: 1;
@@ -259,12 +274,7 @@ button:hover {
 
 .footer-bottom {
 	background-color: var(--color-footer-down-background);
-	display: flex;
 	flex-direction: column;
-	justify-container: center;
-	align-items: center;
-	text-align: center;
-	padding: 1.25% 0;
 }
 .footer-bottom .social-media {
 	flex: 1;
