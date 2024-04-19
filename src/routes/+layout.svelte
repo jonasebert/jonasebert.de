@@ -59,22 +59,10 @@
 				<!-- Ändert das Icon basierend auf dem Zustand -->
 			</a>
 			<div class="header-right">
-				<a class={activeRoute === '/home' ? 'active' : 'inactive'} href="/home" on:click={closeMenu}
-					>Home</a
-				>
-				<a class={activeRoute === '/blog' ? 'active' : 'inactive'} href="/blog" on:click={closeMenu}
-					>Aktuelles</a
-				>
-				<a
-					class={activeRoute === '/about' ? 'active' : 'inactive'}
-					href="/about"
-					on:click={closeMenu}>Über mich</a
-				>
-				<a
-					class={activeRoute === '/contact' ? 'active' : 'inactive'}
-					href="/contact"
-					on:click={closeMenu}>Kontakt</a
-				>
+				<a class={activeRoute === '/home' ? 'active' : 'inactive'} href="/home" on:click={closeMenu}> Home </a>
+				<a class={activeRoute === '/blog' ? 'active' : 'inactive'} href="/blog" on:click={closeMenu}> Aktuelles </a>
+				<a class={activeRoute === '/about' ? 'active' : 'inactive'} href="/about" on:click={closeMenu}> Über mich </a>
+				<a class={activeRoute === '/contact' ? 'active' : 'inactive'} href="/contact" on:click={closeMenu}> Kontakt </a>
 			</div>
 		</div>
 	</header>
@@ -91,12 +79,20 @@
 				</a>
 			</div>
 			<div>
+				<h5>Jonas Ebert</h5>
+				<a href="/home"> Home </a>
+				<a href="/blog"> Aktuelles </a>
+				<a href="/about"> Über mich </a>
+				<a href="/contact"> Kontakt </a>
+			</div>
+			<div>
 				<h5>Rechtliches</h5>
 				<div class="legal"><a href="/legal/imprint">Impressum</a></div>
 				<div class="legal"><a href="/legal/privacy">Datenschutzerklärung</a></div>
 			</div>
 			<div>
-				<p>Spalte 3 Inhalt</p>
+				<h5>Links</h5>
+				<a href="https://gruene-braunschweig.de/" target="_blank"> B'90/Die Grünen Braunschweig </a>
 			</div>
 		</div>
 		<div class="footer-bottom">

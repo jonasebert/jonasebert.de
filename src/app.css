@@ -138,8 +138,8 @@ button:hover {
 	justify-content: space-between;
 	float: left;
 	text-align: center;
-	padding: 0.5rem;
 	text-decoration: none;
+	padding: 0.5rem;
 	font-size: 18px;
 	line-height: 25px;
 	border-radius: 4px;
@@ -248,7 +248,7 @@ button:hover {
 .footer-top, .footer-bottom {
 	display: flex;
 	padding: 1.25% 0;
-	justify-container: center;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	padding-left: 5%;
@@ -263,13 +263,14 @@ button:hover {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 /* Logo-Bild-Stile */
 .footer-top .logo img {
 	max-width: 60%;
 	height: auto;
+}
+.footer-top h5 {
+	text-transform: uppercase;
 }
 
 .footer-bottom {
