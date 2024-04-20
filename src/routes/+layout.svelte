@@ -4,15 +4,11 @@
 	import { Icon } from 'svelte-icons-pack';
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
+	import { RiLogosBlueskyLine } from "svelte-icons-pack/ri";
 	import '../app.css';
 
 	// Initialisierung Variabeln
-	let name = 'Jonas Ebert';
-	let pronouns = 'xier/xies';
-	let logo = '/logo/logo_500x100.png';
-	let logo_clear = '/logo/logo_500x100_clear.png';
-	let logo_small = '/logo/logo_500x500.png';
-	let logo_small_clear = '/logo/logo_500x500_clear.png';
+	import { name, logo_clear} from './store';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
 
@@ -20,7 +16,8 @@
 	let icons = [
 		{ id: 'instagram', component: AiOutlineInstagram, href: 'https://www.instagram.com/jonas_ebert/', size: '32' },
 		{ id: 'threads', component: BsThreads, href: 'https://www.threads.net/@jonas_ebert/', size: '25' },
-		{ id: 'youtube', component: AiOutlineYoutube, href: 'https://www.youtube.com/@jonas_ebert/', size: '32' }
+		{ id: 'bluesky', component: RiLogosBlueskyLine, href: 'https://bsky.app/profile/jonasebert.bsky.social', size: '32' },
+		{ id: 'youtube', component: AiOutlineYoutube, href: 'https://www.youtube.com/@jonas_ebert/', size: '32' },
   	];
 	let hoveredIconId = '';
 
@@ -93,7 +90,7 @@
 				</a>
 			</div>
 			<div>
-				<h5>Jonas Ebert</h5>
+				<h5>{name}</h5>
 				{#each menuLinks as link}
 					<a href={link.href}> {link.title} </a>
 				{/each}

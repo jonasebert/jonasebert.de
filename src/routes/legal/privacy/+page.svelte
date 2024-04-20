@@ -1,30 +1,32 @@
+<script>
+	import { name, address, contact } from "../../store";
+</script>
+
 <div class="container">
-	<div class="ce_text privacy_item general_part1 block">
-		<h1>Datenschutzerklärung</h1>
-		<div class="text">
+	<h1>Datenschutzerklärung</h1>
+	<div class="text-justify">
+		<p>
+			Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung
+			von personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären.
+			Personenbezogene Daten sind alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z.
+			B. Name, Adresse, E-Mail-Adresse oder Ihr Nutzerverhalten. Die Datenschutzerklärung gilt für
+			alle von uns vorgenommene Daten-Verarbeitungsvorgänge sowohl im Rahmen unserer Kerntätigkeit
+			als auch für die von uns vorgehaltenen Online-Medien.
+		</p>
+	</div>
+	<div>
+		<h2>Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
+		<div>
+			<p>Verantwortlich für die Datenverarbeitung ist:</p>
 			<p>
-				Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung
-				von personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären.
-				Personenbezogene Daten sind alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z.
-				B. Name, Adresse, E-Mail-Adresse oder Ihr Nutzerverhalten. Die Datenschutzerklärung gilt für
-				alle von uns vorgenommene Daten-Verarbeitungsvorgänge sowohl im Rahmen unserer Kerntätigkeit
-				als auch für die von uns vorgehaltenen Online-Medien.
+				{name} <br /> {address.street} <br /> {address.zipcode} {address.city} <br /> {address.country} <br /> <a href="tel:{contact.tel}"> {contact.tel} </a> 
+				<br /> <a href="mailto:{contact.mail}"> {contact.mail} </a> <br /> <a href="/legal/imprint"> https://jonasebert.de/legal/imprint </a>
 			</p>
 		</div>
 	</div>
-	<div class="ce_text privacy_item contact_responsible block">
-		<div class="text">
-			<h2>Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
-			<p>Verantwortlich für die Datenverarbeitung ist:</p>
-		</div>
-	</div>
-	<p>
-		Jonas Ebert <br /> Postfach 5835 <br /> 38049 Braunschweig <br /> Deutschland <br /> <a href="tel:+4953079402831"> +49 5307 9402 831 </a> 
-		<br /> <a href="mailto:contact@jonasebert.de"> contact@jonasebert.de </a> <br /> <a href="/legal/imprint"> https://jonasebert.de/legal/imprint </a>
-	</p>
-	<div class="ce_text privacy_item general_part3 block">
-		<div class="text">
-			<h2>Ihre Rechte nach der DSGVO</h2>
+	<div>
+		<h2>Ihre Rechte nach der DSGVO</h2>		
+		<div class="text-justify">
 			<p>
 				Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu, die Sie jederzeit bei
 				dem in Ziffer 1. dieser Datenschutzerklärung genannten Verantwortlichen geltend machen
@@ -57,12 +59,16 @@
 					Arbeitsplatzes oder unseres Firmensitzes.
 				</li>
 			</ul>
-			<h3>Widerrufsrecht</h3>
+		</div>
+		<h3>Widerrufsrecht</h3>
+		<div class="text-justify">
 			<p>
 				Sie haben das Recht, die von Ihnen erteilte Einwilligung zur Datenverarbeitung jederzeit zu
 				widerrufen.
 			</p>
-			<h3>Widerspruchsrecht</h3>
+		</div>
+		<h3>Widerspruchsrecht</h3>
+		<div class="text-justify">
 			<p>
 				Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die wir auf unser
 				berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO stützen, Widerspruch einzulegen.
@@ -76,14 +82,18 @@
 					<strong>
 						Unabhängig vom vorstehend Gesagten, haben Sie das jederzeitige Recht, der Verarbeitung
 						Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse zu widersprechen.
-					</strong></span
-				>
+					</strong>
+				</span>
 			</p>
 			<p>
 				Ihren Widerspruch richten Sie bitte an die oben angegebene Kontaktadresse des
 				Verantwortlichen.
 			</p>
-			<h2>Wann löschen wir Ihre Daten?</h2>
+		</div>
+	</div>
+	<div>
+		<h2>Wann löschen wir Ihre Daten?</h2>
+		<div class="text-justify">
 			<p>
 				Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder Sie uns dies vorgeben.
 				Das bedeutet, dass - sofern sich aus den einzelnen Datenschutzhinweisen dieser
@@ -125,9 +135,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="ce_text privacy_item external_hosting block">
-		<div class="text">
-			<h2>Webhosting</h2>
+	<div >
+		<h2>Webhosting</h2>
+		<div class="text-justify">
 			<p>
 				Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters, auf dessen Server
 				unsere Internetseiten gespeichert und für den Abruf im Internet verfügbar gemacht werden
@@ -156,7 +166,7 @@
 				gespeichert. Dies ist erforderlich, um die Stabilität und Sicherheit des Betriebs unserer
 				Internetseite zu gewährleisten.
 			</p>
-			<p class="invisible">&nbsp;</p>
+			<br />
 			<p><strong>Betroffene Daten:</strong></p>
 			<ul>
 				<li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
@@ -170,10 +180,6 @@
 			</p>
 			<p><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</p>
 			<p><strong>Von uns beauftragte(r) Webhoster:</strong></p>
-		</div>
-	</div>
-	<div class="ce_text block">
-		<div class="text">
 			<p><strong>IONOS SE</strong></p>
 			<p>
 				Dienstanbieter: IONOS SE<br />Internetseite: Elgendorfer Str. 57, 56410 Montabaur,
@@ -184,9 +190,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="ce_text block">
-		<div class="text">
-			<h2>Content-Delivery-Network</h2>
+	<div>
+		<h2>Content-Delivery-Network</h2>
+		<div class="text-justify">
 			<p>
 				Wir benutzen zum Ausspielen unserer Internetseiten ein Content-Delivery-Network (CDN). Ein
 				CDN ist ein Netz regional verteilter und über das Internet verbundener Server. Über das CDN
@@ -205,6 +211,7 @@
 				vorgeschriebene Datenschutzniveau nicht eingehalten und die Durchsetzung Ihrer Rechte nicht
 				oder nur erschwert erfolgen kann.
 			</p>
+			<br />
 			<p><strong>Betroffene Daten:</strong></p>
 			<ul>
 				<li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
@@ -217,10 +224,6 @@
 			</p>
 			<p><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</p>
 			<p><strong>Eingesetze CDN-Dienstleister:</strong></p>
-		</div>
-	</div>
-	<div class="ce_text block">
-		<div class="text">
 			<p><strong>Cloudflare</strong></p>
 			<p>
 				Diensteanbieter: Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA<br
@@ -237,9 +240,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="ce_text block">
-		<div class="text">
-			<h2>Kontaktaufnahme</h2>
+	<div>
+		<h2>Kontaktaufnahme</h2>
+		<div class="text-justify">
 			<p>
 				Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser Kontaktformular oder
 				sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren Namen, Ihre
@@ -248,6 +251,7 @@
 				Anfrage im Rahmen des zwischen uns bestehenden vorvertraglichen oder vertraglichen
 				Beziehungen.
 			</p>
+			<br />
 			<p><strong>Betroffene Daten:</strong></p>
 			<ul>
 				<li>Bestandsdaten (bspw. Namen, Adressen)</li>
@@ -268,9 +272,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="ce_text block">
-		<div class="text">
-			<h2>Zahlungsdienstleister</h2>
+	<div>
+		<h2>Zahlungsdienstleister</h2>
+		<div class="text-justify">
 			<p>
 				Gemäß unserer gesetzlichen Pflichten beziehungsweise wegen unserer berechtigten Interessen
 				an einer effizienten, sicheren und Kunden orientierten Zahlungsabwicklung können Personen,
@@ -299,6 +303,7 @@
 				Rechte bezüglich Widerruf und Auskunft verweisen wir insoweit auf die Bestimmungen des
 				jeweiligen Dienstleisters.
 			</p>
+			<br />
 			<p><strong>Betroffene Daten:</strong></p>
 			<ul>
 				<li>Bestandsdaten (bspw. Name, Adresse),</li>
@@ -331,10 +336,6 @@
 				Datenschutzbestimmungen des Zahlungsdienstleisters.
 			</p>
 			<p><strong>Wir nutzen folgende Zahlungsdienstleister:</strong></p>
-		</div>
-	</div>
-	<div class="ce_text block">
-		<div class="text">
 			<p><strong>Stripe</strong></p>
 			<p>
 				Dienstanbieter: Stripe Inc., 510 Townsend Street, San Francisco, CA 94103, USA <br />
@@ -347,9 +348,9 @@
 			</p>
 		</div>
 	</div>
-	<div class="ce_text block">
-		<div class="text">
-			<h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
+	<div>
+		<h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
+		<div class="text-justify">
 			<p>
 				Wir betreiben Onlinepräsenzen innerhalb der nachfolgend aufgelisteten sozialen Netzwerke.
 				Besuchen Sie eine dieser Präsenzen, werden durch den jeweiligen Anbieter die unten näher
@@ -380,6 +381,7 @@
 				vorgeschriebene Datenschutzniveau nicht eingehalten und die Durchsetzung Ihrer Rechte nicht
 				oder nur erschwert erfolgen kann.
 			</p>
+			<br />
 			<p><strong>Betroffene Daten:</strong></p>
 			<ul>
 				<li>Bestands- und Kontaktdaten (bspw. Name, Adresse, Telefonnummer, E-Mail-Adresse)</li>
@@ -400,49 +402,68 @@
 				(Opt-Out) verweisen wir auf die nachfolgend verlinkten Angaben der Anbieter.
 			</p>
 			<p><strong>Wir unterhalten Onlinepräsenzen auf folgenden sozialen Netzwerken:</strong></p>
-		</div>
-	</div>
-	<div class="ce_text privacy_item sp_facebook block">
-		<div class="text">
+			<p><strong>BlueSky</strong></p>
+			<p>
+				Dienstanbieter: Bluesky, PBLLC, Seattle, Washington, United States, USA <br />
+				Internetseite:
+				<a href="https://bsky.social/"> https://bsky.social/ </a><br />
+				Datenschutzerklärung:
+				<a href="https://bsky.social/about/support/privacy-policy"> https://bsky.social/about/support/privacy-policy </a>
+			</p>
 			<p><strong>Facebook</strong></p>
 			<p>
-				Dienstanbieter: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA<br />Sitz in der EU:
-				Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland
-				<br />Internetseite:
-				<a href="https://www.facebook.com/" class="externalLink">https://www.facebook.com/ </a>
-				<br />
+				Dienstanbieter: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
+				Sitz in der EU: Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland <br />
+				Internetseite:
+				<a href="https://www.facebook.com/"> https://www.facebook.com/ </a><br />
 				Datenschutzerklärung:
-				<a href="https://www.facebook.com/about/privacy/" class="externalLink">
-					https://www.facebook.com/about/privacy/
-				</a><br /> Datenschutzerklärung für Facebook-Seiten:
-				<a
-					href="https://www.facebook.com/legal/terms/information_about_page_insights_data"
-					class="externalLink"
-				>
-					https://www.facebook.com/legal/terms/information_about_page_insights_data
-				</a>
+				<a href="https://www.facebook.com/about/privacy/"> https://www.facebook.com/about/privacy/ </a><br />
+				Datenschutzerklärung für Facebook-Seiten:
+				<a href="https://www.facebook.com/legal/terms/information_about_page_insights_data"> https://www.facebook.com/legal/terms/information_about_page_insights_data </a>
 			</p>
-		</div>
-	</div>
-	<div class="ce_text privacy_item sp_instagram block">
-		<div class="text">
 			<p><strong>Instagram</strong></p>
 			<p>
-				Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025, USA<br />
-				Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br /> Sitz in der
-				EU: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland <br /> Internetseite:
-				<a href="https://www.instagram.com/" class="externalLink">
-					https://www.instagram.com/
-				</a><br /> Datenschutzerklärung:
-				<a href="http://instagram.com/about/legal/privacy" class="externalLink">
-					http://instagram.com/about/legal/privacy
-				</a>
+				Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025, USA <br />
+				Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
+				Sitz in der EU: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland <br />
+				Internetseite:
+				<a href="https://www.instagram.com/"> https://www.instagram.com/ </a><br />
+				Datenschutzerklärung:
+				<a href="https://instagram.com/about/legal/privacy"> https://instagram.com/about/legal/privacy </a>
+			</p>
+			<p><strong>Threads</strong></p>
+			<p>
+				Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025, USA <br />
+				Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
+				Sitz in der EU: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland <br />
+				Internetseite:
+				<a href="https://www.threads.net/"> https://www.threads.net/ </a><br />
+				Datenschutzerklärung:
+				<a href="https://instagram.com/about/legal/privacy"> https://instagram.com/about/legal/privacy </a>
+			</p>
+			<p><strong>X (Twitter)</strong></p>
+			<p>
+				Dienstanbieter: Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA <br />
+				Internetseite:
+				<a href="https://twitter.com/"> https://twitter.com/ </a><br />
+				Datenschutzerklärung:
+				<a href="https://twitter.com/de/privacy"> https://twitter.com/de/privacy </a>
+			</p>
+			<p><strong>YouTube</strong></p>
+			<p>
+				Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA <br />
+				Mutterunternehmen: Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA <br />
+				Sitz in der EU: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland <br />
+				Internetseite:
+				<a href="https://www.youtube.com/"> https://www.youtube.com/ </a><br />
+				Datenschutzerklärung:
+				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a>
 			</p>
 		</div>
 	</div>
-	<div class="ce_text block">
-		<div class="text">
-			<h2>Content-Dienste</h2>
+	<div>
+		<h2>Content-Dienste</h2>
+		<div class="text-justify">
 			<p>
 				Wir nutzen bestimmte Dienste, um über unsere Internetpräsenz bestimmte Inhalte oder Grafiken
 				(Videos, Bilder, Musik, Schriftarten, Kartenmaterial) ausspielen zu können. Dabei
@@ -464,6 +485,7 @@
 				der DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die Durchsetzung Ihrer
 				Rechte nicht oder nur erschwert erfolgen kann.
 			</p>
+			<br />
 			<p><strong> Betroffene Daten: </strong></p>
 			<ul>
 				<li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
@@ -479,10 +501,6 @@
 				a DSGVO, berechtigte Interessen, Art. 6 Abs. 1 lit. f DSGVO
 			</p>
 			<p><strong> Wir nutzen folgende Content-Dienste: </strong></p>
-		</div>
-	</div>
-	<div class="ce_text privacy_item googlemaps block">
-		<div class="text">
 			<p><strong> Google Maps </strong></p>
 			<p>
 				Wir nutzen auf unserer Internetpräsenz Google Maps. Hierbei wird durch Google die IP-Adresse
@@ -497,25 +515,12 @@
 				Dienstanbieter: Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA <br />
 				Sitz in der EU: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland <br />
 				Internetseite:
-				<a href="https://www.google.de/maps" class="externalLink">
-					https://www.google.de/maps
-				</a><br /> Datenschutzerklärung:
-				<a href="https://policies.google.com/privacy" class="externalLink">
-					https://policies.google.com/privacy
-				</a><br /><strong> Opt-Out-Möglichkeit: </strong>
-				<a
-					href="https://tools.google.com/dlpage/gaoptout?hl=de"
-					target="_blank"
-					rel="noopener"
-					class="externalLink"
-				>
-					https://tools.google.com/dlpage/gaoptout?hl=de
-				</a>
+				<a href="https://www.google.de/maps"> https://www.google.de/maps </a><br />
+				Datenschutzerklärung:
+				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a><br />
+				<strong> Opt-Out-Möglichkeit: </strong>
+				<a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener"> https://tools.google.com/dlpage/gaoptout?hl=de </a>
 			</p>
-		</div>
-	</div>
-	<div class="ce_text privacy_item gettyimages block">
-		<div class="text">
 			<p><strong> YouTube </strong></p>
 			<p>
 				Wir nutzen auf dieser Webseite Komponenten von YouTube, um hierüber Videos auf unseren
@@ -530,28 +535,30 @@
 				aufrufen.
 			</p>
 			<p>
-				Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA<br />Internetseite:
-				<a href="https://www.youtube.com/" class="externalLink"> https://www.youtube.com/ </a><br />
+				Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA <br />
+				Internetseite:
+				<a href="https://www.youtube.com/"> https://www.youtube.com/ </a><br />
 				Datenschutzerklärung:
-				<a href="https://policies.google.com/privacy" class="externalLink">
-					https://policies.google.com/privacy
-				</a> <br /> <strong> Opt-Out-Möglichkeit: </strong>
-				<a href="https://tools.google.com/dlpage/gaoptout?hl=de" class="externalLink">
-					https://tools.google.com/dlpage/gaoptout?hl=de
-				</a>
+				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a><br />
+				<strong> Opt-Out-Möglichkeit: </strong>
+				<a href="https://tools.google.com/dlpage/gaoptout?hl=de"> https://tools.google.com/dlpage/gaoptout?hl=de </a>
 			</p>
 		</div>
 	</div>
-	<div class="ce_text privacy_item general_part4 block">
-		<div class="text">
-			<h2>Sicherheitsmaßnahmen</h2>
+	<div>
+		<h2>Sicherheitsmaßnahmen</h2>
+		<div class="text-justify">
 			<p>
 				Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand
 				der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen
 				zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust,
 				Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.
 			</p>
-			<h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
+		</div>
+	</div>
+	<div>
+		<h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
+		<div>
 			<p>
 				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2024. Aufgrund
 				geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese
