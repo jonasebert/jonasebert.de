@@ -36,8 +36,8 @@
 		isResponsive = false;
 	}
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
-	let activeRoute = $page.url.pathname;
-	let pageTitle =
+	$: activeRoute = $page.url.pathname;
+	$: pageTitle =
 		activeRoute === '/home' ? 'Home - ' + name
 		: activeRoute === '/blog' ? 'Aktuelles - ' + name
 		: activeRoute === '/about' ? 'Über mich - ' + name
