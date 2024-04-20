@@ -5,7 +5,6 @@
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import '../app.css';
-	import { link } from 'svelte-routing';
 
 	// This can be false if you're using a fallback (i.e. SPA mode)
 	export const prerender = true;
