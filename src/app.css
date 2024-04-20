@@ -82,6 +82,11 @@ h6 {
 	margin-bottom: 0.1em;
 }
 
+/* Text-Stile */
+.text-justify {
+	text-align: justify;
+}
+
 /* Link-Stile */
 a:hover {
 	text-decoration: underline;
