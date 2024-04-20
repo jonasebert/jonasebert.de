@@ -5,7 +5,10 @@
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import '../app.css';
-	
+
+	// This can be false if you're using a fallback (i.e. SPA mode)
+	export const prerender = true;
+
 	// Initialisierung Variabeln
 	let name = 'Jonas Ebert';
 	let pronouns = 'xier/xies';
