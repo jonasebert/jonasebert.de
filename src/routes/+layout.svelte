@@ -5,6 +5,7 @@
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import '../app.css';
+	import { link } from 'svelte-routing';
 
 	// This can be false if you're using a fallback (i.e. SPA mode)
 	export const prerender = true;
@@ -26,6 +27,21 @@
 		{ id: 'youtube', component: AiOutlineYoutube, href: 'https://www.youtube.com/@jonas_ebert/', size: '32' }
   	];
 	let hoveredIconId = '';
+
+	// Links
+	let menuLinks = [
+		{ title: 'Home', href: '/home'},
+		//{ title: 'Aktuelles', href: '/blog'},
+		{ title: 'Über mich', href: '/about'},
+		//{ title: 'Kontakt', href: '/contact'}
+	];
+	let legalLinks = [
+		{ title: 'Impressum', href: '/legal/imprint'},
+		{ title: 'Datenschutzerklärung', href: '/legal/privacy'}
+	];
+	let footerLinks = [
+		{ title: 'B\'90/Die Grünen Braunschweig', href: 'https://gruene-braunschweig.de/'}
+	];
 
 	//Funktion zum Umschalten des responsiven Headers
 	function toggleMenu() {
@@ -62,10 +78,9 @@
 				<!-- Ändert das Icon basierend auf dem Zustand -->
 			</a>
 			<div class="header-right">
-				<a class={activeRoute === '/home' ? 'active' : 'inactive'} href="/home" on:click={closeMenu}> Home </a>
-				<a class={activeRoute === '/blog' ? 'active' : 'inactive'} href="/blog" on:click={closeMenu}> Aktuelles </a>
-				<a class={activeRoute === '/about' ? 'active' : 'inactive'} href="/about" on:click={closeMenu}> Über mich </a>
-				<a class={activeRoute === '/contact' ? 'active' : 'inactive'} href="/contact" on:click={closeMenu}> Kontakt </a>
+				{#each menuLinks as link }
+					<a class={activeRoute === link.href ? 'active' : 'inactive'} href={link.href} on:click={closeMenu}> {link.title} </a>
+				{/each}
 			</div>
 		</div>
 	</header>
@@ -83,19 +98,21 @@
 			</div>
 			<div>
 				<h5>Jonas Ebert</h5>
-				<a href="/home"> Home </a>
-				<a href="/blog"> Aktuelles </a>
-				<a href="/about"> Über mich </a>
-				<a href="/contact"> Kontakt </a>
+				{#each menuLinks as link}
+					<a href={link.href}> {link.title} </a>
+				{/each}
 			</div>
 			<div>
 				<h5>Rechtliches</h5>
-				<div class="legal"><a href="/legal/imprint">Impressum</a></div>
-				<div class="legal"><a href="/legal/privacy">Datenschutzerklärung</a></div>
+				{#each legalLinks as link}
+					<a class="legal" href={link.href}> {link.title} </a>
+				{/each}
 			</div>
 			<div>
 				<h5>Links</h5>
-				<a href="https://gruene-braunschweig.de/" target="_blank"> B'90/Die Grünen Braunschweig </a>
+				{#each footerLinks as link}
+					<a href={link.href} target="_blank"> {link.title} </a>
+				{/each}
 			</div>
 		</div>
 		<div class="footer-bottom">
