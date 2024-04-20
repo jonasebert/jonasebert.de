@@ -242,6 +242,9 @@ button:hover {
 		content: url('/logo/logo_500x500_clear.png');
 		width: 40%;
 	}
+	.footer-top div:first-child {
+		display: none;
+	}
 }
 
 /* Footer-Stile */
