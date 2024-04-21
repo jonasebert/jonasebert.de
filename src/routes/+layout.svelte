@@ -1,6 +1,5 @@
 <script>
 	// Importe
-	import { page } from '$app/stores';
 	import { Icon } from 'svelte-icons-pack';
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
@@ -8,7 +7,7 @@
 	import '../app.css';
 
 	// Initialisierung Variabeln
-	import { name, logo_clear} from './store';
+	import { name, logo_clear, uri} from './store';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
 
@@ -45,7 +44,7 @@
 		isResponsive = false;
 	}
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
-	$: activeRoute = $page.url.pathname;
+	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
 		activeRoute === '/home' ? 'Home - ' + name
 		: activeRoute === '/blog' ? 'Aktuelles - ' + name
