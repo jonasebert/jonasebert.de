@@ -1,5 +1,6 @@
 <script>
-    import { name, address, contact } from "../../store";
+    import { base } from "$app/paths";
+    import { name, address, contact, uri } from "../../store";
 </script>
 
 <style>
@@ -40,7 +41,7 @@
             </tr>
             <tr>
               <td>Web</td>
-              <td><a href={contact.web}> {contact.web} </a></td>
+              <td><a href={contact.web}> {$uri.url.protocol}//{$uri.url.host}{contact.web} </a></td>
             </tr>
             <tr>
               <td>Mail</td>

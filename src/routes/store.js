@@ -1,5 +1,5 @@
 // store.js
-import { writable } from "svelte/store";
+import { page } from "$app/stores"; // Values: https://developer.mozilla.org/en-US/docs/Web/API/URL
 
 // Personal
 export const name = "Jonas Ebert";
@@ -16,6 +16,10 @@ export const contact = {
     mail: 'contact@jonasebert.de',
     web: '/contact'
 }
+
+// URI
+export const uri = page;
+
 
 // Pictures
 // Logo

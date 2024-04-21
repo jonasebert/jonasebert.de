@@ -1,5 +1,5 @@
 <script>
-	import { name, address, contact } from "../../store";
+	import { name, address, contact, uri } from "../../store";
 </script>
 
 <div class="container">
@@ -20,7 +20,7 @@
 			<p>Verantwortlich für die Datenverarbeitung ist:</p>
 			<p>
 				{name} <br /> {address.street} <br /> {address.zipcode} {address.city} <br /> {address.country} <br /> <a href="tel:{contact.tel}"> {contact.tel} </a> 
-				<br /> <a href="mailto:{contact.mail}"> {contact.mail} </a> <br /> <a href="/legal/imprint"> https://jonasebert.de/legal/imprint </a>
+				<br /> <a href="mailto:{contact.mail}"> {contact.mail} </a> <br /> <a href="/legal/imprint"> {$uri.url.protocol}//{$uri.url.host}/legal/imprint </a>
 			</p>
 		</div>
 	</div>
