@@ -33,7 +33,7 @@
 		{ title: 'Datenschutzerklärung', href: '/legal/privacy'}
 	];
 	let footerLinks = [
-		{ title: 'B\'90/Die Grünen Braunschweig', href: 'https://gruene-braunschweig.de/'}
+		{ title: 'B\'90/DIE GRÜNEN Braunschweig', href: 'https://gruene-braunschweig.de/'}
 	];
 
 	//Funktion zum Umschalten des responsiven Headers
