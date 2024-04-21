@@ -8,7 +8,7 @@
 			<h1>Lebenslauf</h1>
 			<h2>Berufserfahrung</h2>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #00dcfe;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gingco">
 					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
@@ -25,18 +25,18 @@
 						</ul>
 					</div>
 					<div class="flex flex-row flex-wrap">
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">PHP</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Linux</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Docker</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">ISO 27001</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Datenbankverwaltung</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Docker</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">ISO 27001</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenbankverwaltung</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
 					</div>
 				</div>
 			</div>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #fff;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
 					<img src="/logo_lba.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
@@ -50,15 +50,15 @@
 						</ul>
 					</div>
 					<div class="flex flex-row flex-wrap">
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Linux</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Windows</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
 					</div>
 				</div>
 			</div>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #fff;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
 					<img src="/logo_steinel.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
@@ -77,17 +77,17 @@
 						</ul>
 					</div>
 					<div class="flex flex-row flex-wrap">
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">PHP</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Scripting</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">HTML</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Datenmanagement</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Scripting</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">HTML</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenmanagement</div>
 					</div>
 				</div>
 			</div>
 
 			<h2>Ausbildung</h2>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #00dcfe;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gingco">
 					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
@@ -105,15 +105,15 @@
 						</ul>
 					</div>
 					<div class="flex flex-row flex-wrap">
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Windows</div>
-						<div class="text-sm rounded-lg bg-gray-400 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
+						<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
 					</div>
 				</div>
 			</div>
 
 			<h2>Ehrenamt</h2>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #005538;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
 					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #005538;">
+				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
 					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">

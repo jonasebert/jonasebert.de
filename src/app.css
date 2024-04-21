@@ -6,22 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Farbvariablen */
-:root {
-	--color-background-primary: #161618;
-	--color-background-accent: #293731;
-	--color-text-primary: #abb2bf;
-	--color-text-accent: #efe9ce;
-	--color-header-background: #293731;
-	--color-header-text: #ffffff;
-	--color-footer-top-background: #1e1e1e;
-	--color-footer-down-background: #0e0e0e;
-}
-
 /* Grundlegende Stile */
 body {
-	background-color: var(--color-background-primary);
-	color: var(--color-text-primary);
+	@apply bg-je-gray-500;
+	@apply text-je-gray-100;
 	font-family: 'Poppins';
 	margin: 0;
 }
@@ -42,7 +30,7 @@ body {
 h1 {
 	font-size: 2.5em;
 	font-weight: bold;
-	color: var(--color-text-accent);
+	@apply text-je-sand;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
@@ -50,7 +38,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-weight: bold;
-	color: var(--color-text-accent);
+	@apply text-je-sand;
 	margin-top: 0.4em;
 	margin-bottom: 0.4em;
 }
@@ -58,7 +46,7 @@ h2 {
 h3 {
 	font-size: 1.75em;
 	font-weight: bold;
-	color: var(--color-text-accent);
+	@apply text-je-sand;
 	margin-top: 0.3em;
 	margin-bottom: 0.3em;
 }
@@ -66,7 +54,7 @@ h3 {
 h4 {
 	font-size: 1.5em;
 	font-weight: bold;
-	color: var(--color-text-primary);
+	@apply text-je-gray-100;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 }
@@ -74,7 +62,7 @@ h4 {
 h5 {
 	font-size: 1.25em;
 	font-weight: bold;
-	color: var(--color-text-primary);
+	@apply text-je-gray-100;
 	margin-top: 0.15em;
 	margin-bottom: 0.15em;
 }
@@ -82,7 +70,7 @@ h5 {
 h6 {
 	font-size: 1em;
 	font-weight: bold;
-	color: var(--color-text-primary);
+	@apply text-je-gray-100;
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
 }
@@ -98,25 +86,10 @@ a:hover {
 	font-weight: bold;
 }
 
-/* Akzent-Hintergrund */
-.accent-background {
-	background-color: var(--color-background-accent);
-}
-
-/* Akzent-Text */
-.accent-text {
-	color: var(--color-text-accent);
-}
-
-/* Akzent-Text kursiv */
-.accent-text-italic {
-	font-style: italic;
-}
-
 /* Button-Stile */
 button {
-	background-color: var(--color-background-accent);
-	color: var(--color-text-accent);
+	@apply bg-je-green-500;
+	@apply text-je-sand;
 	border: none;
 	padding: 10px 20px;
 	text-transform: uppercase;
@@ -126,8 +99,8 @@ button {
 
 /* Button Hover-Effekt */
 button:hover {
-	background-color: var(--color-background-primary);
-	color: var(--color-text-primary);
+	@apply bg-je-gray-500;
+	@apply text-je-gray-100;
 }
 
 /* Header-Stile */
@@ -136,8 +109,8 @@ button:hover {
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
-	background-color: var(--color-header-background);
-	color: var(--color-header-text);
+	@apply bg-je-green-500;
+	@apply text-je-sand;
 	padding: 20px 10px;
 }
 
@@ -170,7 +143,6 @@ button:hover {
 /* Header-Link Hover- und Aktiv-Stile */
 .header a:hover,
 .header a.active {
-	color: var(--color-text-accent);
 	font-weight: bold;
 }
 
@@ -269,7 +241,7 @@ button:hover {
 }
 
 .footer-top {
-	background-color: var(--color-footer-top-background);
+	@apply bg-je-gray-700;
 	flex-direction: row;
 }
 .footer-top div {
@@ -287,7 +259,7 @@ button:hover {
 }
 
 .footer-bottom {
-	background-color: var(--color-footer-down-background);
+	@apply bg-je-gray-900;
 	flex-direction: column;
 }
 .footer-bottom .social-media {
