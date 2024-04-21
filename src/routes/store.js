@@ -28,7 +28,16 @@ export const logo_clear = '/logo/logo_500x100_clear.png';
 export const logo_small = '/logo/logo_500x500.png';
 export const logo_small_clear = '/logo/logo_500x500_clear.png';
 
-// Image Context Menu
-export function handleContextMenu(event) {
-    event.preventDefault();
+// Block image copy and context menu
+export function contextMenuAction(node) {
+    node.oncontextmenu = event => {
+        event.preventDefault();
+    };
+    node.draggable = false;
+
+    return {
+        destroy() {
+            node.oncontextmenu = null;
+        }
+    };
 }

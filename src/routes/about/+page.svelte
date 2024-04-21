@@ -1,6 +1,6 @@
 <script>
 
-	import { handleContextMenu } from "../store";
+	import { contextMenuAction } from "../store";
 
 </script>
 
@@ -11,7 +11,7 @@
 			<h2>Berufserfahrung</h2>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #00dcfe;">
-					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Systemadministrator</h3>
@@ -39,7 +39,7 @@
 			</div>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #fff;">
-					<img src="/logo_lba.png" alt="Logo Gingco Systems" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_lba.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Fachinformatiker Anwendungsbetreuung</h3>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #fff;">
-					<img src="/logo_steinel.png" alt="Logo Gingco Systems" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_steinel.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Junior Data Manager PIM</h3>
@@ -90,7 +90,7 @@
 			<h2>Ausbildung</h2>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #00dcfe;">
-					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Fachinformatiker in der Fachrichtung Systemintegration</h3>
@@ -116,7 +116,7 @@
 			<h2>Ehrenamt</h2>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #005538;">
-					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Koordination AG Digitales</h3>
@@ -126,7 +126,7 @@
 			</div>
 			<div class="my-6 flex items-start">
 				<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0" style="background-color: #005538;">
-					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" on:contextmenu={handleContextMenu} draggable="false">
+					<img src="/logo_gruene.svg" alt="Logo B'90/Die Grünen" class="w-12 h-12" use:contextMenuAction>
 				</div>
 				<div class="ml-10 flex flex-col justify-between">
 					<h3>Koordination Aktionsgruppe</h3>
