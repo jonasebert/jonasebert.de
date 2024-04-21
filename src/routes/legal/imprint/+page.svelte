@@ -1,5 +1,4 @@
 <script>
-    import { base } from "$app/paths";
     import { name, address, contact, uri } from "../../store";
 </script>
 

@@ -4,6 +4,7 @@
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import { RiLogosBlueskyLine } from "svelte-icons-pack/ri";
+	import { contextMenuAction } from './store';
 	import '../app.css';
 
 	// Initialisierung Variabeln
@@ -63,7 +64,7 @@
 	<header>
 		<div class={isResponsive ? 'header responsive' : 'header'} id="respHeader">
 			<a href="/home" class="logo">
-				<img src={logo_clear} alt="Logo von {name}" />
+				<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction />
 			</a>
 			<a href="#none" class="icon" on:click={toggleMenu}>
 				{isResponsive ? '✕' : '☰'}
@@ -85,7 +86,7 @@
 		<div class="footer-top">
 			<div>
 				<a href="/home" class="logo">
-					<img src={logo_clear} alt="Logo von {name}" />
+					<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction/>
 				</a>
 			</div>
 			<div>
