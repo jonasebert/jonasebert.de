@@ -1,7 +1,5 @@
 <script>
-
 	import { contextMenuAction } from "../store";
-
 </script>
 
 <body class="font-primary">
