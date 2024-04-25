@@ -15,7 +15,7 @@
 	let hoveredIconId = '';
 </script>
 
-<div class="social-media">
+<div class="flex flex-row space-x-4 items-center">
     {#each icons as icon}
       <a href={icon.href} target="_blank">
         <Icon

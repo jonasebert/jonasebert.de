@@ -23,7 +23,7 @@
 				<div class="mb-4">
 					Ich bin fest davon überzeugt, dass jeder Einzelne die Kraft hat, die Welt zu verändern. Durch mein Engagement hoffe ich, andere zu inspirieren, sich ebenfalls für den Umweltschutz stark zu machen und gemeinsam einen Weg in eine nachhaltige Zukunft zu ebnen.
 				</div>
-				<div class="flex flex-row">
+				<div>
 					<Socialmediaicons/>
 				</div>
 			</div>
