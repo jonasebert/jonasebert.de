@@ -93,7 +93,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="footer-bottom">
+	<div class="bg-je-gray-900 flex flex-col md:flex-row justify-center items-center gap-5 p-1.5 pl-5 pr-5">
 		<SocialMediaIcons />
 		<div>
 			<p>&copy; 2023 - {currentYear} {name}</p>
