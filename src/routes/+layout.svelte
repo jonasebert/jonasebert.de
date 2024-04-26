@@ -48,7 +48,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header>
+<header class="pb-10">
 	<div class={isResponsive ? 'header responsive' : 'header'} id="respHeader">
 		<a href="/home" class="logo">
 			<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction />
