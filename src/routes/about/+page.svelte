@@ -27,7 +27,7 @@
 					<Socialmediaicons/>
 				</div>
 			</div>
-			<div class="flex justify-center md:justify-start max-w-85 max-h-85">
+			<div class="flex justify-center md:justify-start max-w-80 max-h-80">
 				<img src="/portrait/lg_square.jpg" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
 			</div>
 		</div>
