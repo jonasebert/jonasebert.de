@@ -1,14 +1,25 @@
-<div class="container">
-	<div class="flex flex-row">
-		<div>
-			<h2>The future is now!</h2>
-			<h1>Jonas Ebert</h1>
-		</div>
-		<div class="pr-0 ">
-			<img src="/portrait/lg.jpg" alt="Portrait von {name}">
+<script>
+	import Socialmediaicons from "../socialmediaicons.svelte";
+	import { contextMenuAction, name, pronouns } from "../store";
+</script>
+
+<div class="flex flex-row items-center justify-center p-5">
+	<div class="container mx-auto">
+		<div class="bg-je-gray-700 rounded-lg overflow-hidden">
+			<div class="p-8">
+				<h2 class="text-3xl font-bold text-je-gray-100">The future is now!</h2>
+				<h1 class="text-6xl font-bold text-je-sand">{ name }</h1>
+			</div>
+			<div class="p-8">
+				<Socialmediaicons />
+			</div>
 		</div>
 	</div>
+	<div class="hidden lg:block">
+		<img class="rounded-full w-80 h-80 object-cover object-top" src="/portrait/lg.jpg" alt="Portrait von Jonas Ebert" use:contextMenuAction>
+	</div>
 </div>
+
 <div class="container relative bg-[url('/home/teaser.jpeg')] bg-fixed bg-no-repeat bg-center bg-cover">
 	<div class="absolute inset-0 bg-black opacity-50"></div>
 	<div class="relative z-10 pt-5 pb-5 text-center">
@@ -27,6 +38,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="container">
 	<h1>Jonas Ebert</h1>
 	<h1>Jonas Ebert</h1>
