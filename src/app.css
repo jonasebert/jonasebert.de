@@ -21,7 +21,8 @@ body {
 
 /* Container für den Inhalt mit Abstand */
 .container {
-	padding: 0 5% 5%; /* Abstand oben, links/rechts, unten */
+	padding-left: 5%;
+	padding-right: 5%;
 	max-width: 100%;
 	margin: 0 auto;
 }
