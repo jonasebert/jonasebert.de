@@ -67,7 +67,7 @@
 
 <slot />
 
-<footer>
+<footer class="pt-10">
 	<div class="footer-top">
 		<div>
 			<a href="/home" class="logo">
