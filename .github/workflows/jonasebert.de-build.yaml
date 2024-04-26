@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./.svelte-kit/output/server/
+  DEPLOYMENT_FOLDER: ./.svelte-kit/output/
 
 jobs:
 # Please do not rename this job
