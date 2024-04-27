@@ -1,18 +1,18 @@
 <script>
 	// Importe
-	import SocialMediaIcons from './socialmediaicons.svelte';
-	import { contextMenuAction } from './store';
+	import SocialMediaIcons from '$lib/socialmediaicons.svelte';
+	import { contextMenuAction } from '$lib/store';
 	import '../app.css';
 
 	// Initialisierung Variabeln
-	import { name, logo_clear, uri} from './store';
+	import { name, logo_clear, uri} from '$lib/store';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
 
 	// Links
 	let menuLinks = [
-		{ title: 'Home', href: '/home'},
-		//{ title: 'Aktuelles', href: '/blog'},
+		{ title: 'Home', href: '/'},
+		{ title: 'Aktuelles', href: '/blog'},
 		{ title: 'Über mich', href: '/about'},
 		//{ title: 'Kontakt', href: '/contact'}
 	];
@@ -35,13 +35,13 @@
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
-		activeRoute === '/home' ? 'Home - ' + name
+		activeRoute === '/' ? 'Home - ' + name
 		: activeRoute === '/blog' ? 'Aktuelles - ' + name
 		: activeRoute === '/about' ? 'Über mich - ' + name
 		: activeRoute === '/contact' ? 'Kontakt - ' + name
 		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
 		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
-			: 'Willkommen';
+			: name;
 </script>
 
 <svelte:head>
@@ -50,7 +50,7 @@
 
 <header class="pb-10">
 	<div class={isResponsive ? 'header responsive' : 'header'} id="respHeader">
-		<a href="/home" class="logo">
+		<a href="/" class="logo">
 			<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction />
 		</a>
 		<a href="#none" class="icon" on:click={toggleMenu}>
@@ -65,12 +65,14 @@
 	</div>
 </header>
 
-<slot />
+<main>
+	<slot />
+</main>
 
 <footer class="pt-10">
 	<div class="footer-top">
 		<div>
-			<a href="/home" class="logo">
+			<a href="/" class="logo">
 				<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction/>
 			</a>
 		</div>
