@@ -1,7 +1,7 @@
 <script>
 	// Importe
 	import SocialMediaIcons from '$lib/socialmediaicons.svelte';
-	import { contextMenuAction } from '$lib/store';
+	import { contextMenuAction, logo_small_clear } from '$lib/store';
 	import '../app.css';
 
 	// Initialisierung Variabeln
@@ -48,20 +48,19 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="pb-10">
-	<div class={isResponsive ? 'header responsive' : 'header'} id="respHeader">
-		<a href="/" class="logo">
-			<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction />
-		</a>
-		<a href="#none" class="icon" on:click={toggleMenu}>
-			{isResponsive ? '✕' : '☰'}
-			<!-- Ändert das Icon basierend auf dem Zustand -->
-		</a>
-		<div class="header-right">
-			{#each menuLinks as link }
-				<a class={activeRoute === link.href ? 'active' : 'inactive'} href={link.href} on:click={closeMenu}> {link.title} </a>
-			{/each}
-		</div>
+<header class="bg-je-green-500 text-je-sand p-5">
+	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
+	  <a href="/" class={isResponsive ? 'flex items-center justify-start w-full flex-shrink-0' : 'flex items-center justify-center w-1/6'}>
+		<img src={logo_clear} alt="Logo von {name}" class="h-auto w-auto" use:contextMenuAction />
+	  </a>
+	  <a href="#none" class="md:hidden fixed right-1 top-1 p-2.5 text-3x1 cursor-pointer z-50" on:click={toggleMenu}>
+		{isResponsive ? '✕' : '☰'}
+	  </a>
+	  <div class={isResponsive ? 'flex flex-col items-left w-full' : 'hidden md:flex md:items-center md:justify-end md:w-1/2'}>
+		{#each menuLinks as link}
+		  <a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:font-bold' : 'p-2 rounded-md text-lg hover:font-bold'} href={link.href} on:click={closeMenu}> {link.title} </a>
+		{/each}
+	  </div>
 	</div>
 </header>
 
