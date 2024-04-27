@@ -6,8 +6,6 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                transparent: 'transparent',
-                current: 'currentColor',
                 'je-gray': {
                     100: '#abb2bf',
                     200: '#949ca9',

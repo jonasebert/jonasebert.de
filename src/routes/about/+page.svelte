@@ -1,6 +1,6 @@
 <script>
-	import Socialmediaicons from "../socialmediaicons.svelte";
-	import { contextMenuAction, name, pronouns } from "../store";
+	import Socialmediaicons from "$lib/socialmediaicons.svelte";
+	import { contextMenuAction, name, pronouns } from "$lib/store";
 </script>
 
 
