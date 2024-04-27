@@ -70,33 +70,35 @@
 </main>
 
 <footer class="pt-10">
-	<div class="footer-top">
-		<div>
+	<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center pt-6 pb-6 pl-5 pr-5">
+		<div class="w-full sm:w-auto flex justify-center p-2">
 			<a href="/" class="logo">
-				<img src={logo_clear} alt="Logo von {name}" use:contextMenuAction/>
+				<img src={logo_clear} alt="Logo von {name}" class="max-w-xs h-auto" use:contextMenuAction />
 			</a>
 		</div>
-		<div>
-			<h5>{name}</h5>
+		<div class="flex-1 p-2">
+			<h5 class="uppercase">{name}</h5>
 			{#each menuLinks as link}
-				<a href={link.href}> {link.title} </a>
+				<a href={link.href} class="block mt-1"> {link.title} </a>
 			{/each}
 		</div>
-		<div>
-			<h5>Rechtliches</h5>
+		<div class="flex-1 p-2">
+			<h5 class="uppercase">Rechtliches</h5>
 			{#each legalLinks as link}
-				<a class="legal" href={link.href}> {link.title} </a>
+				<a class="legal block mt-1" href={link.href}> {link.title} </a>
 			{/each}
 		</div>
-		<div>
-			<h5>Links</h5>
+		<div class="flex-1 p-2">
+			<h5 class="uppercase">Links</h5>
 			{#each footerLinks as link}
-				<a href={link.href} target="_blank"> {link.title} </a>
+				<a href={link.href} target="_blank" class="block mt-1"> {link.title} </a>
 			{/each}
 		</div>
 	</div>
-	<div class="bg-je-gray-900 flex flex-col md:flex-row justify-center items-center gap-5 p-1.5 pl-5 pr-5">
-		<SocialMediaIcons />
+	<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 pt-6 pb-6 pl-5 pr-5">
+		<div>
+			<SocialMediaIcons />
+		</div>
 		<div>
 			<p>&copy; 2023 - {currentYear} {name}</p>
 			<p>
