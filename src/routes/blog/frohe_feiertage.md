@@ -1,8 +1,8 @@
 ---
 title: 'Schöne Feiertage'
 date: '2023-12-23'
+teaserimage: 'lg_leipzig_202312.webp'
 categories:
-- "Feiertage"
 ---
 
 Hello, I am _Post Three._
