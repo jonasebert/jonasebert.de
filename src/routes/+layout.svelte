@@ -103,7 +103,7 @@
 			<p>
 				Made with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>,
 				<a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
-				hosted on <a href="https://ionos.de/" target="_blank">IONOS</a>
+				hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
 			</p>
 		</div>
 	</div>
