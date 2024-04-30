@@ -1,8 +1,6 @@
 # jonasebert.de
 This repository contains the code for my personal website https://jonasebert.de
 
-[![Deploy to IONOS](https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg)](https://ionos.space/setup?repo=https://github.com/jonasebert/jonasebert.de)
-
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
