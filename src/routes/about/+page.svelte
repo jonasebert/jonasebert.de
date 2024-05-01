@@ -36,7 +36,7 @@
 		<h1>Lebenslauf</h1>
 		<h2>Berufserfahrung</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gingco">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-je-gingco transition-transform duration-500 hover:scale-110">
 				<a href="https://gingco.systems/" target="_blank">
 					<img src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</a>
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://lba.de/" target="_blank">
 					<img src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" class="w-12 h-12" use:contextMenuAction>
 				</a>
@@ -90,7 +90,7 @@
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
 					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
 				</a>
@@ -121,7 +121,7 @@
 
 		<h2>Ausbildung</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
 					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
 				</a>
@@ -149,7 +149,7 @@
 
 		<h2>Ehrenamt</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
 					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
 				</a>
@@ -161,7 +161,7 @@
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
+			<div class="flex justify-center items-center rounded-xl w-16 h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
 					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
 				</a>
