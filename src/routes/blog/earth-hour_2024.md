@@ -1,7 +1,7 @@
 ---
 title: 'Earth Hour 2024 in Deutschland: Ein Zeichen für den Schutz unseres Planeten'
 date: '2024-03-23'
-teaserimage: 'gogreen.jpeg'
+teaserimage: 'gogreen.webp'
 categories:
 - "Braunschweig"
 - "Earth Hour"

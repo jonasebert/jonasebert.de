@@ -17,11 +17,11 @@
 		</div>
 	</div>
 	<div class="hidden lg:block">
-		<img class="rounded-full w-80 h-80 object-cover object-top" src="/portrait/lg.jpg" alt="Portrait von Jonas Ebert" use:contextMenuAction>
+		<img class="rounded-full w-80 h-80 object-cover object-top" src="/portrait/lg_square.webp" alt="Portrait von Jonas Ebert" use:contextMenuAction>
 	</div>
 </div>
 
-<div class="container relative bg-[url('/home/teaser.jpeg')] bg-fixed bg-no-repeat bg-center bg-cover">
+<div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
 	<div class="absolute inset-0 bg-black opacity-50"></div>
 	<div class="relative z-10 pt-5 pb-5 text-center">
 		<h1>POLITIK FÜR EINE LEBENSWERTE WELT</h1>

@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="flex justify-center md:justify-start max-w-80 max-h-80">
-				<img src="/portrait/lg_square.jpg" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
+				<img src="/portrait/lg_square.webp" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gingco">
 				<a href="https://gingco.systems/" target="_blank">
-					<img src="/about_logos/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -68,7 +68,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
 				<a href="https://lba.de/" target="_blank">
-					<img src="/about_logos/logo_lba.png" alt="Logo Luftfahrt-Bundesamt" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" class="w-12 h-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -92,7 +92,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.png" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -123,7 +123,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.png" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
