@@ -2,6 +2,10 @@
 export const load = async ({ fetch, params }) => {
     const { category } = params;
     const response = await fetch(`/api/posts`);
+    if (!response.ok) {
+        throw new Error(`Fehler beim Laden der Posts: ${response.statusText}`);
+    }
+    
     const allPosts = await response.json();
     const posts = allPosts.filter((post) =>
         Array.isArray(post.meta.categories) && 

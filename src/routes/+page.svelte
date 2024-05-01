@@ -65,10 +65,10 @@
               <p class="text-gray-300 text-sm mb-4">
                 Veröffentlicht am {post.meta.date}
               </p>
-              <div class="flex flex-row flex-wrap">
+              <div class="flex flex-row flex-wrap gap-2">
                 {#if post.meta.categories}
                   {#each post.meta.categories as postcategory}
-                    <div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 mr-2 mb-2">
+                    <div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 mr-2">
                       <a href="/blog/category/{postcategory}">
                         {postcategory}
                       </a>

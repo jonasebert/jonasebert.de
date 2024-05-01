@@ -54,14 +54,14 @@
 						<li>Kommunikation mit Kunden, externen Dienstleistern und Lieferanten</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Docker</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">ISO 27001</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenbankverwaltung</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linux</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Docker</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">ISO 27001</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Microsoft Intune</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 ">Datenbankverwaltung</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Kunden-Support</div>
 				</div>
 			</div>
 		</div>
@@ -81,11 +81,11 @@
 						<li>IT-Usersupport (Vor Ort und Remote)</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikation</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikationssysteme</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linux</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windows</div>
 				</div>
 			</div>
 		</div>
@@ -110,11 +110,11 @@
 						<li>Umsetzung neuer gesetzlicher Vorgaben und Verordnungen</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Scripting</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">HTML</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenmanagement</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Scripting</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">HTML</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Datenmanagement</div>
 				</div>
 			</div>
 		</div>
@@ -140,9 +140,9 @@
 						<li>Erstellen einer Dokumentation der WLAN Umgebung am Standort Herzebrock</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windows</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Kunden-Support</div>
 				</div>
 			</div>
 		</div>
@@ -178,46 +178,46 @@
 			<h3>Informationstechnik</h3>
 			<div>
 				<h4>Infrastruktur</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windowsclient</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windowsserver</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linuxserver</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Docker</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PostgreSQL</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">MS SQL</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windowsclient</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windowsserver</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linuxserver</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Microsoft Intune</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Docker</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikation</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikationssysteme</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PostgreSQL</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">MS SQL</div>
 				</div>
 			</div>
 			<div>
 				<h4>Programmierung/Frameworks</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">CSS</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">HTML</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">TypeScript/JavaScript</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">SvelteKit</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">CSS</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">HTML</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">TypeScript/JavaScript</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">SvelteKit</div>
 				</div>
 			</div>
 			<div>
 				<h4>Software</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Word</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Excel</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PowerPoint</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Outlook</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">VS Code</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Word</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Excel</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PowerPoint</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Outlook</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">VS Code</div>
 				</div>
 			</div>
 			<h3>Sprachen</h3>
-			<div class="flex flex-wrap flex-row">
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Deutsch (Muttersprache)</div>
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Englisch (B1)</div>
+			<div class="flex flex-wrap flex-row gap-1">
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Deutsch (Muttersprache)</div>
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Englisch (B1)</div>
 			</div>
 			<h3>Mitgliedschaften</h3>
-			<div class="flex flex-wrap flex-row">
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
+			<div class="flex flex-wrap flex-row gap-1">
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
 			</div>
 		</div>
 	</div>
