@@ -23,6 +23,9 @@
 
 <div class="container mx-auto p-5 text-pretty text-justify bg-je-gray-800">
 	<div class="flex flex-wrap justify-center items-center gap-2">
+		{#if data.meta.meta.teaserimagecop}
+			<p class="text-lg md:mr-40">📸 {data.meta.meta.teaserimagecop}</p>
+		{/if}
 		<p class="text-lg md:mr-40">Veröffentlicht am: {data.meta.meta.date}</p>
 		{#if data.meta.meta.categories}
 			{#each data.meta.meta.categories as postcategory}

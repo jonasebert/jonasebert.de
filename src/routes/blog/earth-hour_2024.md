@@ -12,7 +12,7 @@ categories:
 - "Klimawandel"
 ---
 
-Wenn an einem Samstagabend im März die Lichter in Deutschland erlöschen, so geschieht dies mit einer tiefen und weitreichenden Botschaft. Die Earth Hour 2024, eine Initiative für den globalen Klimaschutz, vereint Menschen, Städte und Unternehmen in einem einzigartigen Akt der Solidarität mit unserer Umwelt.
+Wenn an einem Samstagabend im März die Lichter in Deutschland erlöschen, so geschieht dies mit einer tiefen und weitreichenden Botschaft. Die [Earth Hour 2024](https://www.wwf.de/earth-hour), eine Initiative für den globalen Klimaschutz, vereint Menschen, Städte und Unternehmen in einem einzigartigen Akt der Solidarität mit unserer Umwelt.
 
 ## EINE STUNDE DUNKELHEIT FÜR EINE HELLERE ZUKUNFT
 
