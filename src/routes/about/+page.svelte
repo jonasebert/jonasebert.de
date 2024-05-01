@@ -38,7 +38,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gingco transition-transform duration-500 hover:scale-110">
 				<a href="https://gingco.systems/" target="_blank">
-					<img src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -68,7 +68,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://lba.de/" target="_blank">
-					<img src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -92,7 +92,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -123,7 +123,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -151,7 +151,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -163,7 +163,7 @@
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
