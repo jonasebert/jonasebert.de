@@ -27,15 +27,18 @@
 			<p class="text-lg md:mr-40">📸 {data.meta.meta.teaserimagecop}</p>
 		{/if}
 		<p class="text-lg md:mr-40">Veröffentlicht am: {data.meta.meta.date}</p>
-		{#if data.meta.meta.categories}
-			{#each data.meta.meta.categories as postcategory}
-				<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2">
-					<a href="/blog/category/{postcategory}">
-						{postcategory}
-					</a>
-				</div>
-			{/each}
-		{/if}
+		<div class="flex flex-wrap gap-2">
+			{#if data.meta.meta.categories}
+				{#each data.meta.meta.categories as postcategory}
+					<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2">
+						<a href="/blog/category/{postcategory}">
+							{postcategory}
+						</a>
+					</div>
+				{/each}
+			{/if}
+		</div>
+		
 	</div>
 </div>
 
