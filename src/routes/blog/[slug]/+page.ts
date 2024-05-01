@@ -27,5 +27,7 @@ export async function load({ params, fetch }) {
         throw new Error(`Blogbeitrag mit dem Slug '${params.slug}' nicht gefunden.`);
     }
 
+    // console.log(meta);
+
     return { meta, content };
 }
