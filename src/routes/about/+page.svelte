@@ -4,7 +4,7 @@
 </script>
 
 
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="container">
 	<div>
 		<h1 class="text-2x1 font-bold">{name} ({pronouns})</h1>
 		<div class="italic">Geboren 337 ppm</div>
