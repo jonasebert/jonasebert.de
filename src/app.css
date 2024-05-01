@@ -14,11 +14,6 @@ body {
 	margin: 0;
 }
 
-/* Rounded */
-.rounded-x1 {
-	border-radius: .75rem;
-}
-
 /* Container für den Inhalt mit Abstand */
 .container {
 	padding-left: 5%;
@@ -80,23 +75,6 @@ h6 {
 a:hover {
 	text-decoration: underline;
 	font-weight: bold;
-}
-
-/* Button-Stile */
-button {
-	@apply bg-je-green-500;
-	@apply text-je-sand;
-	border: none;
-	padding: 10px 20px;
-	text-transform: uppercase;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
-/* Button Hover-Effekt */
-button:hover {
-	@apply bg-je-gray-500;
-	@apply text-je-gray-100;
 }
 
 /* Styles for Privacy */

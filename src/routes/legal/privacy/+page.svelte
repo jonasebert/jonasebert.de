@@ -3,7 +3,7 @@
 </script>
 
 <div class="container">
-	<h1>Datenschutzerklärung</h1>
+	<h1>Datenschutz</h1>
 	<div class="text-justify">
 		<p>
 			Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung
@@ -180,13 +180,11 @@
 			</p>
 			<p><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</p>
 			<p><strong>Von uns beauftragte(r) Webhoster:</strong></p>
-			<p><strong>IONOS SE</strong></p>
+			<p><strong>Vercel Inc.</strong></p>
 			<p>
-				Dienstanbieter: IONOS SE<br />Internetseite: Elgendorfer Str. 57, 56410 Montabaur,
-				Deutschland<br />Datenschutzerklärung:
-				<a href="https://www.ionos.de" target="_blank" class="externalLink">
-					https://www.ionos.de/
-				</a>
+				Dienstanbieter: Vercel Inc., 340 S Lemon Ave 4133 Walnut, CA 91789, USA<br />
+				<a href="https://vercel.com/" target="_blank" class="externalLink">Internetseite</a>
+				<a href="https://vercel.com/legal/privacy-policy" target="_blank" class="externalLink">Datenschutzerklärung</a>
 			</p>
 		</div>
 	</div>
@@ -226,17 +224,10 @@
 			<p><strong>Eingesetze CDN-Dienstleister:</strong></p>
 			<p><strong>Cloudflare</strong></p>
 			<p>
-				Diensteanbieter: Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA<br
-				/>Internetseite:
-				<a href="https://www.cloudflare.com/" class="externalLink">
-					https://www.cloudflare.com/
-				</a><br /> Datenschutzerklärung:
-				<a href="https://www.cloudflare.com/privacypolicy/" class="externalLink">
-					https://www.cloudflare.com/privacypolicy/
-				</a><br /> Umfang der Datenerfassung:
-				<a href="https://blog.cloudflare.com/what-cloudflare-logs/" class="externalLink">
-					https://blog.cloudflare.com/what-cloudflare-logs/
-				</a>
+				Diensteanbieter: Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA<br />
+				<a href="https://www.cloudflare.com/" class="externalLink">Internetseite</a><br />
+				<a href="https://www.cloudflare.com/privacypolicy/" class="externalLink">Datenschutzerklärung</a><br />
+				<a href="https://blog.cloudflare.com/what-cloudflare-logs/" class="externalLink">Umfang der Datenerfassung</a>
 			</p>
 		</div>
 	</div>
@@ -339,12 +330,8 @@
 			<p><strong>Stripe</strong></p>
 			<p>
 				Dienstanbieter: Stripe Inc., 510 Townsend Street, San Francisco, CA 94103, USA <br />
-				Internetseite:
-				<a href="https://stripe.com/de" class="externalLink"> https://stripe.com/de</a><br />
-				Datenschutzerklärung:
-				<a href="https://stripe.com/de/privacy" class="externalLink">
-					https://stripe.com/de/privacy
-				</a>
+				<a href="https://stripe.com/de" class="externalLink">Internetseite</a><br />
+				<a href="https://stripe.com/de/privacy" class="externalLink">Datenschutzerklärung</a>
 			</p>
 		</div>
 	</div>
@@ -405,59 +392,46 @@
 			<p><strong>BlueSky</strong></p>
 			<p>
 				Dienstanbieter: Bluesky, PBLLC, Seattle, Washington, United States, USA <br />
-				Internetseite:
-				<a href="https://bsky.social/"> https://bsky.social/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://bsky.social/about/support/privacy-policy"> https://bsky.social/about/support/privacy-policy </a>
+				<a href="https://bsky.social/">Internetseite</a><br />
+				<a href="https://bsky.social/about/support/privacy-policy">Datenschutzerklärung</a>
 			</p>
 			<p><strong>Facebook</strong></p>
 			<p>
 				Dienstanbieter: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
 				Sitz in der EU: Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland <br />
-				Internetseite:
-				<a href="https://www.facebook.com/"> https://www.facebook.com/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://www.facebook.com/about/privacy/"> https://www.facebook.com/about/privacy/ </a><br />
-				Datenschutzerklärung für Facebook-Seiten:
-				<a href="https://www.facebook.com/legal/terms/information_about_page_insights_data"> https://www.facebook.com/legal/terms/information_about_page_insights_data </a>
+				<a href="https://www.facebook.com/">Internetseite</a><br />
+				<a href="https://www.facebook.com/about/privacy/">Datenschutzerklärung</a><br />
+				<a href="https://www.facebook.com/legal/terms/information_about_page_insights_data">Datenschutzerklärung für Facebook-Seiten</a>
 			</p>
 			<p><strong>Instagram</strong></p>
 			<p>
 				Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025, USA <br />
 				Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
 				Sitz in der EU: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland <br />
-				Internetseite:
-				<a href="https://www.instagram.com/"> https://www.instagram.com/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://instagram.com/about/legal/privacy"> https://instagram.com/about/legal/privacy </a>
+				<a href="https://www.instagram.com/">Internetseite</a><br />
+				<a href="https://instagram.com/about/legal/privacy">Datenschutzerklärung</a>
 			</p>
 			<p><strong>Threads</strong></p>
 			<p>
 				Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025, USA <br />
 				Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA <br />
 				Sitz in der EU: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland <br />
-				Internetseite:
-				<a href="https://www.threads.net/"> https://www.threads.net/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://instagram.com/about/legal/privacy"> https://instagram.com/about/legal/privacy </a>
+				<a href="https://www.threads.net/">Internetseite</a><br />
+				<a href="https://instagram.com/about/legal/privacy">Datenschutzerklärung</a>
 			</p>
 			<p><strong>X (Twitter)</strong></p>
 			<p>
 				Dienstanbieter: Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA <br />
-				Internetseite:
-				<a href="https://twitter.com/"> https://twitter.com/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://twitter.com/de/privacy"> https://twitter.com/de/privacy </a>
+				<a href="https://twitter.com/">Internetseite</a><br />
+				<a href="https://twitter.com/de/privacy">Datenschutzerklärung</a>
 			</p>
 			<p><strong>YouTube</strong></p>
 			<p>
 				Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA <br />
 				Mutterunternehmen: Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA <br />
 				Sitz in der EU: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland <br />
-				Internetseite:
-				<a href="https://www.youtube.com/"> https://www.youtube.com/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a>
+				<a href="https://www.youtube.com/">Internetseite</a><br />
+				<a href="https://policies.google.com/privacy">Datenschutzerklärung</a>
 			</p>
 		</div>
 	</div>
@@ -514,12 +488,9 @@
 			<p>
 				Dienstanbieter: Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA <br />
 				Sitz in der EU: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland <br />
-				Internetseite:
-				<a href="https://www.google.de/maps"> https://www.google.de/maps </a><br />
-				Datenschutzerklärung:
-				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a><br />
-				<strong> Opt-Out-Möglichkeit: </strong>
-				<a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener"> https://tools.google.com/dlpage/gaoptout?hl=de </a>
+				<a href="https://www.google.de/maps">Internetseite</a><br />
+				<a href="https://policies.google.com/privacy">Datenschutzerklärung</a><br />
+				<a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener" class="flex font-bold">Opt-Out-Möglichkeit</a>
 			</p>
 			<p><strong> YouTube </strong></p>
 			<p>
@@ -536,17 +507,14 @@
 			</p>
 			<p>
 				Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA <br />
-				Internetseite:
-				<a href="https://www.youtube.com/"> https://www.youtube.com/ </a><br />
-				Datenschutzerklärung:
-				<a href="https://policies.google.com/privacy"> https://policies.google.com/privacy </a><br />
-				<strong> Opt-Out-Möglichkeit: </strong>
-				<a href="https://tools.google.com/dlpage/gaoptout?hl=de"> https://tools.google.com/dlpage/gaoptout?hl=de </a>
+				<a href="https://www.youtube.com/">Internetseite</a><br />
+				<a href="https://policies.google.com/privacy">Datenschutzerklärung</a><br />
+				<a href="https://tools.google.com/dlpage/gaoptout?hl=de" class="font-bold">Opt-Out-Möglichkeit</a>
 			</p>
 		</div>
 	</div>
 	<div>
-		<h2>Sicherheitsmaßnahmen</h2>
+		<h2>Sicherheits Maßnahmen</h2>
 		<div class="text-justify">
 			<p>
 				Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand
@@ -558,18 +526,14 @@
 	</div>
 	<div>
 		<h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
-		<div>
+		<div class="text-justify">
 			<p>
 				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2024. Aufgrund
 				geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese
 				Datenschutzerklärung anzupassen.
 			</p>
-			<p>
-				<strong>
-					Diese Datenschutzerklärung wurde mit Hilfe des Datenschutz-Generators von SOS Recht
-					erstellt. SOS Recht ist ein Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz
-					in Berlin.
-				</strong>
+			<p class="font-bold">
+				Diese Datenschutzerklärung wurde mit Hilfe des Datenschutz-Generators von SOS Recht erstellt. SOS Recht ist ein Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz in Berlin.
 			</p>
 		</div>
 	</div>

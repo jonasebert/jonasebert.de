@@ -49,7 +49,7 @@
           </table>
     </div>
     <div>
-        <h2>Verantwortlich für den Inhalt nach §55 Abs. 2 Rundfunkstaatsvertrag</h2>
+        <h2>Verantwortlich für den Inhalt nach §55 Abs. 2 RStV</h2>
         <p>{name}</p>
         <p>{address.street}</p>
         <p>{address.zipcode} {address.city}</p>

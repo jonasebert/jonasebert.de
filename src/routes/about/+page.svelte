@@ -6,11 +6,11 @@
 
 <div class="container">
 	<div>
-		<h1>{name} ({pronouns})</h1>
+		<h1 class="text-2x1 font-bold">{name} ({pronouns})</h1>
 		<div class="italic">Geboren 337 ppm</div>
 		<div class="flex flex-col md:flex-row">
-			<div class="mb-4 md:mr-4">
-				<h2>Vordenker im Einklang von Technik und Natur</h2>
+			<div class="mb-4 md:mr-4 flex-1">
+				<h2 class="text-x1 font-semibold">Vordenker im Einklang von Technik und Natur</h2>
 				<div class="mb-4">
 					In einer Ära, in der digitale Innovationen das Zeitalter prägen, sehe ich mich als Verfechter einer Zukunft, in der technologischer Fortschritt und ökologische Nachhaltigkeit eine Symbiose eingehen. Mein Engagement für den Klimaschutz ist geprägt von der Überzeugung, dass wir alle eine Rolle in der Bewahrung unseres Planeten spielen.
 				</div>
@@ -27,8 +27,8 @@
 					<Socialmediaicons/>
 				</div>
 			</div>
-			<div class="flex justify-center md:justify-start max-w-80 max-h-80">
-				<img src="/portrait/lg_square.jpg" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
+			<div class="flex justify-center md:justify-start w-full md:max-w-xs lg:max-w-sm">
+				<img src="/portrait/lg_square.webp" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
 			</div>
 		</div>
 	</div>
@@ -36,13 +36,13 @@
 		<h1>Lebenslauf</h1>
 		<h2>Berufserfahrung</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gingco">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gingco transition-transform duration-500 hover:scale-110">
 				<a href="https://gingco.systems/" target="_blank">
-					<img src="/about_logos/logo_gingco.png" alt="Logo Gingco Systems" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
-				<h3>Systemadministrator</h3>
+				<h3>System Administrator</h3>
 				<p class="text-xl">Gingco Systems GmbH</p>
 				<p class="text-md">seit November 2022</p>
 				<div>
@@ -54,25 +54,25 @@
 						<li>Kommunikation mit Kunden, externen Dienstleistern und Lieferanten</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Docker</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">ISO 27001</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenbankverwaltung</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linux</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Docker</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">ISO 27001</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Microsoft Intune</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 ">Datenbankverwaltung</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Kunden-Support</div>
 				</div>
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://lba.de/" target="_blank">
-					<img src="/about_logos/logo_lba.png" alt="Logo Luftfahrt-Bundesamt" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
-				<h3>Fachinformatiker Anwendungsbetreuung</h3>
+				<h3>Fachinformatiker Anwendungs Betreuung</h3>
 				<p class="text-xl">Luftfahrt-Bundesamt</p>
 				<p class="text-md">Oktober 2021 - November 2022</p>
 				<div>
@@ -81,18 +81,18 @@
 						<li>IT-Usersupport (Vor Ort und Remote)</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linux</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikation</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikationssysteme</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linux</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windows</div>
 				</div>
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.png" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -110,20 +110,20 @@
 						<li>Umsetzung neuer gesetzlicher Vorgaben und Verordnungen</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Scripting</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">HTML</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Datenmanagement</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Scripting</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">HTML</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Datenmanagement</div>
 				</div>
 			</div>
 		</div>
 
 		<h2>Ausbildung</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-white">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 				<a href="https://steinel.de/" target="_blank">
-					<img src="/about_logos/logo_steinel.png" alt="Logo STEINEL GmbH" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -140,18 +140,18 @@
 						<li>Erstellen einer Dokumentation der WLAN Umgebung am Standort Herzebrock</li>
 					</ul>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windows</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Kunden-Support</div>
+				<div class="flex flex-row flex-wrap gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windows</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Kunden-Support</div>
 				</div>
 			</div>
 		</div>
 
 		<h2>Ehrenamt</h2>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -161,9 +161,9 @@
 			</div>
 		</div>
 		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-x1 w-16 h-16 shrink-0 bg-je-gruene-tanne">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
 				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="w-12 h-12" use:contextMenuAction>
+					<img src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" class="size-12" use:contextMenuAction>
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
@@ -178,46 +178,46 @@
 			<h3>Informationstechnik</h3>
 			<div>
 				<h4>Infrastruktur</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windowsclient</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Windowsserver</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Linuxserver</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Microsoft Intune</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Docker</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikation</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Telekommunikationssysteme</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PostgreSQL</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">MS SQL</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windowsclient</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Windowsserver</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Linuxserver</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Microsoft Intune</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Docker</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikation</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Telekommunikationssysteme</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PostgreSQL</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">MS SQL</div>
 				</div>
 			</div>
 			<div>
 				<h4>Programmierung/Frameworks</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PHP</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">CSS</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">HTML</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">TypeScript/JavaScript</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">SvelteKit</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PHP</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">CSS</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">HTML</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">TypeScript/JavaScript</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">SvelteKit</div>
 				</div>
 			</div>
 			<div>
 				<h4>Software</h4>
-				<div class="flex flex-wrap flex-row">
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Word</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Excel</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">PowerPoint</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Outlook</div>
-					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">VS Code</div>
+				<div class="flex flex-wrap flex-row gap-1">
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Word</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Excel</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">PowerPoint</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Outlook</div>
+					<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">VS Code</div>
 				</div>
 			</div>
 			<h3>Sprachen</h3>
-			<div class="flex flex-wrap flex-row">
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Deutsch (Muttersprache)</div>
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">Englisch (B1)</div>
+			<div class="flex flex-wrap flex-row gap-1">
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Deutsch (Muttersprache)</div>
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">Englisch (B1)</div>
 			</div>
 			<h3>Mitgliedschaften</h3>
-			<div class="flex flex-wrap flex-row">
-				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2 mb-1">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
+			<div class="flex flex-wrap flex-row gap-1">
+				<div class="text-sm rounded-lg bg-je-green-300 text-je-gray-500 py-1 px-1 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
 			</div>
 		</div>
 	</div>
