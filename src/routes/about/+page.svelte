@@ -4,13 +4,13 @@
 </script>
 
 
-<div class="container">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 	<div>
-		<h1>{name} ({pronouns})</h1>
+		<h1 class="text-2x1 font-bold">{name} ({pronouns})</h1>
 		<div class="italic">Geboren 337 ppm</div>
 		<div class="flex flex-col md:flex-row">
-			<div class="mb-4 md:mr-4">
-				<h2>Vordenker im Einklang von Technik und Natur</h2>
+			<div class="mb-4 md:mr-4 flex-1">
+				<h2 class="text-x1 font-semibold">Vordenker im Einklang von Technik und Natur</h2>
 				<div class="mb-4">
 					In einer Ära, in der digitale Innovationen das Zeitalter prägen, sehe ich mich als Verfechter einer Zukunft, in der technologischer Fortschritt und ökologische Nachhaltigkeit eine Symbiose eingehen. Mein Engagement für den Klimaschutz ist geprägt von der Überzeugung, dass wir alle eine Rolle in der Bewahrung unseres Planeten spielen.
 				</div>
@@ -27,7 +27,7 @@
 					<Socialmediaicons/>
 				</div>
 			</div>
-			<div class="flex justify-center md:justify-start max-w-80 max-h-80">
+			<div class="flex justify-center md:justify-start w-full md:max-w-xs lg:max-w-sm">
 				<img src="/portrait/lg_square.webp" alt="Portrait von {name}" use:contextMenuAction class="rounded-full w-full h-full object-cover">
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
-				<h3>Systemadministrator</h3>
+				<h3>System Administrator</h3>
 				<p class="text-xl">Gingco Systems GmbH</p>
 				<p class="text-md">seit November 2022</p>
 				<div>
@@ -72,7 +72,7 @@
 				</a>
 			</div>
 			<div class="ml-10 flex flex-col justify-between">
-				<h3>Fachinformatiker Anwendungsbetreuung</h3>
+				<h3>Fachinformatiker Anwendungs Betreuung</h3>
 				<p class="text-xl">Luftfahrt-Bundesamt</p>
 				<p class="text-md">Oktober 2021 - November 2022</p>
 				<div>
