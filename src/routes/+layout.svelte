@@ -51,17 +51,23 @@
 
 <header class="bg-je-green-500 text-je-sand p-5">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
-	  <a href="/" class={isResponsive ? 'flex items-center justify-start w-full flex-shrink-0' : 'flex items-center justify-center w-1/6'}>
-		<Image src={logo_clear} alt="Logo von {name}" classNames="h-auto w-auto"/>
-	  </a>
-	  <a href="#none" class="md:hidden fixed right-1 top-1 p-2.5 text-3x1 cursor-pointer z-50" on:click={toggleMenu}>
-		{isResponsive ? '✕' : '☰'}
-	  </a>
-	  <div class={isResponsive ? 'flex flex-col items-left w-full' : 'hidden md:flex md:items-center md:justify-end md:w-1/2'}>
-		{#each menuLinks as link}
-		  <a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:font-bold' : 'p-2 rounded-md text-lg hover:font-bold'} href={link.href} on:click={closeMenu}> {link.title} </a>
-		{/each}
-	  </div>
+		<div class="flex flex-row">
+			<div>
+				<a href="/" class={isResponsive ? 'flex items-center justify-start w-1/2 flex-shrink-0' : 'flex items-center justify-start w-1/2'}>
+					<Image src={logo_clear} alt="Logo von {name}" classNames="h-auto w-auto"/>
+				</a>
+			</div>
+			<div class="flex items-center">
+				<a href="#none" class="md:hidden text-3x1 cursor-pointer z-50" on:click={toggleMenu}>
+					{isResponsive ? '✕' : '☰'}
+				</a>
+			</div>
+		</div>
+		<div class={isResponsive ? 'flex flex-col items-left w-full pl-4 pt-4' : 'hidden md:flex md:items-center md:justify-end'}>
+			{#each menuLinks as link}
+		  		<a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:font-bold' : 'p-2 rounded-md text-lg hover:font-bold'} href={link.href} on:click={closeMenu}> {link.title} </a>
+			{/each}
+	  	</div>
 	</div>
 </header>
 
