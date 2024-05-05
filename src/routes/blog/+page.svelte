@@ -15,7 +15,7 @@
                 <img class="w-full transition-transform duration-500 hover:scale-105" src="/blog/{post.meta.teaserimage}" alt="Teaser Blog" use:contextMenuAction>
               </a>
             {:else}
-            <img class="w-full transition-transform duration-500 hover:scale-105" src="/home/teaser.jpeg" alt="Teaser Blog" use:contextMenuAction>
+            <img class="w-full transition-transform duration-500 hover:scale-105" src="/home/teaser.webp" alt="Teaser Blog" use:contextMenuAction>
             {/if}
             <div class="p-4">
               <h2 class="text-xl font-semibold mb-2">
