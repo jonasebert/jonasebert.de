@@ -23,6 +23,21 @@ Fast zeitgleich wurden in Essen die Grünen-Politiker Kai Gehring und Rolf Fliß
 
 Diese Angriffe sind Teil einer Welle der Gewalt gegen Politiker\*innen, die in ganz Deutschland zu beobachten ist. Sie sind ein unübersehbares Alarmzeichen und rufen uns dazu auf, wachsam zu sein und unsere demokratischen Werte zu verteidigen.
 
+## Die Politik der Parteien
+
+Die Gewalt ist eine Reaktion auf die allgemein aufgeheizte politische Stimmung. Wenn dann noch CDU, CSU & AfD gezielt Politik gegen andere Parteien - insbesondere die Grünen - machen, schürt das die Gewalt zusätzlich.
+
+Wir sehen das an der erschreckend hohen Zahl von Angriffen auf Parteivertreter\*innen im letzten Jahr:
+<br>
+
+* BÜNDNIS 90/DIE GRÜNEN: __1.219__
+* AfD: 478
+* SPD: 420
+* FDP: 299
+* CDU: 194
+* CSU: 101
+* Linke: 79
+
 ## Die Reaktion der Politik
 
 Die Reaktionen auf diese Angriffe sind von Entschlossenheit geprägt. Die betroffenen Politiker\*innen und ihre Parteien haben klar gemacht, dass sie sich durch solche feigen Taten nicht einschüchtern lassen werden. Sie betonen die Wichtigkeit des Engagements für das Gemeinwesen und die Notwendigkeit, für unsere demokratischen Prinzipien einzustehen.
@@ -34,6 +49,8 @@ Diese Vorfälle sollten uns alle alarmieren und zum Nachdenken anregen. Sie zeig
 ## Fazit
 
 Die Angriffe auf Politiker\*innen der Grünen und der SPD sind ein ernstes Warnsignal. Sie erinnern uns daran, dass die Freiheit der politischen Meinungsäußerung und das Engagement für demokratische Werte nicht selbstverständlich sind. Wir müssen gemeinsam handeln, um unsere Demokratie zu schützen und zu stärken.
+
+__Liebe CDU & CSU macht nicht den gleichen Populismus wie die AfD. Damit stärkt Ihr nur die Rechten und schürt Hass & Hetze gegen andere Parteien!__
 <br>
 
 ---
@@ -46,5 +63,6 @@ Dieser Blogbeitrag basiert auf aktuellen Ereignissen und Informationen, die bis 
 1 [SPD-Europapolitiker in Dresden angegriffen](https://orf.at/stories/3356357/) <br>
 2 [Matthias Ecke im Krankenhaus](https://www.infranken.de/deutschland/beim-plakatieren-in-dresden-spd-europapolitiker-matthias-ecke-bei-angriff-schwer-verletzt-staatsschutz-und-task-force-ermitteln-art-5865947) <br>
 3 [Grünen-Politiker in Essen attackiert](https://orf.at/stories/3356357/) <br>
-4 [Staatsschutz ermittelt nach Übergriffen](https://www.zdf.de/nachrichten/politik/deutschland/gruene-politiker-essen-angriff-staatsschutz-100.html)
+4 [Staatsschutz ermittelt nach Übergriffen](https://www.zdf.de/nachrichten/politik/deutschland/gruene-politiker-essen-angriff-staatsschutz-100.html) <br>
+5 [Angriffe auf Parteirepräsentanten im Jahr 2023](https://www.bundestag.de/presse/hib/kurzmeldungen-988578)
 
