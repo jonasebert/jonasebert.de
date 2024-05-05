@@ -6,6 +6,8 @@ export const load = async ({ fetch }) => {
     }
     const posts = await response.json();
 
+    // console.log(await posts);
+
     return {
         posts
     };

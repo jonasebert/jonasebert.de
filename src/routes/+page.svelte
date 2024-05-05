@@ -1,6 +1,7 @@
 <script>
 	import Socialmediaicons from "$lib/socialmediaicons.svelte";
-	import { contextMenuAction, name, pronouns } from "$lib/store";
+  import Image from "$lib/components/image.svelte";
+	import { name } from "$lib/store";
 	export let data;
 </script>
 
@@ -17,7 +18,7 @@
 		</div>
 	</div>
 	<div class="hidden lg:block">
-		<img class="rounded-full w-80 h-80 object-cover object-top" src="/portrait/lg_square.webp" alt="Portrait von Jonas Ebert" use:contextMenuAction>
+    <Image src="/portrait/lg_square.webp" alt="Portrait von {name}" classNames="rounded-full w-80 object-cover object-top"/>
 	</div>
 </div>
 
@@ -49,13 +50,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {#each data.posts as post}
           <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-            {#if post.meta.teaserimage}
+            <div class="transition-transform duration-500 hover:scale-105">
               <a href={post.path}>
-                <img class="w-full transition-transform duration-500 hover:scale-105" src="/blog/{post.meta.teaserimage}" alt="Teaser Blog" use:contextMenuAction>
-              </a>
+              {#if post.meta.teaserimage}
+                    <Image src="/blog/{post.meta.teaserimage}" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {:else}
-            <img class="w-full transition-transform duration-500 hover:scale-105" src="/home/teaser.jpeg" alt="Teaser Blog" use:contextMenuAction>
+                <Image src="/home/teaser.webp" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {/if}
+              </a>
+            </div>
             <div class="p-4">
               <h2 class="text-xl font-semibold mb-2">
                 <a href={post.path}>
