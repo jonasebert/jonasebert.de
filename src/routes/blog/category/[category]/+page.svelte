@@ -1,37 +1,31 @@
 <script>
-	import { name } from '$lib/store.js';
-    import { contextMenuAction } from '$lib/store';
-
-    export let data;
-
-    // Hilfsfunktion, um den ersten Buchstaben groß zu schreiben
-    const capitalizeFirstLetter = (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-    };
-    // Verwenden Sie die Funktion, um `data.category` zu bearbeiten
-    $: formattedCategory = capitalizeFirstLetter(data.category);
+  import Image from '$lib/components/image.svelte';
+  import { contextMenuAction, name } from '$lib/store';
+  export let data;
 </script>
 
 <svelte:head>
-	<title>{formattedCategory} - {name}</title>
-	<meta property="og:title" content={formattedCategory} />
+	<title>{data.category} - {name}</title>
+	<meta property="og:title" content={data.category} />
 </svelte:head>
 
 <div class="container mx-auto px-4">
     <h1>Blog</h1>
-    <h2>Kategorie: { formattedCategory }</h2>
+    <h2>Kategorie: { data.category }</h2>
   
     {#if data.posts}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {#each data.posts as post}
           <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-            {#if post.meta.teaserimage}
+            <div class="transition-transform duration-500 hover:scale-105">
               <a href={post.path}>
-                <img class="w-full transition-transform duration-500 hover:scale-105" src="/blog/{post.meta.teaserimage}" alt="Teaser Blog" use:contextMenuAction>
-              </a>
+              {#if post.meta.teaserimage}
+                    <Image src="/blog/{post.meta.teaserimage}" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {:else}
-            <img class="w-full transition-transform duration-500 hover:scale-105" src="/home/teaser.jpeg" alt="Teaser Blog" use:contextMenuAction>
+                <Image src="/home/teaser.webp" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {/if}
+              </a>
+            </div>
             <div class="p-4">
               <h2 class="text-xl font-semibold mb-2">
                 <a href={post.path}>
