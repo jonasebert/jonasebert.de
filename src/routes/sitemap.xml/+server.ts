@@ -4,6 +4,8 @@ const site = 'https://jonasebert.de';
 const pages = [
     'about',
     'blog',
+    'legal/imprint',
+    'legal/privacy'
 ];
 const posts = import.meta.glob('/src/routes/blog/*.md', {
     eager: true
@@ -15,8 +17,6 @@ for (const post in posts) {
     const published = postMeta.date;
     postArray.push({ slug, published })
 }
-
-console.log(postArray);
 
 // @type {import('./$types').RequestHandler}
 export async function GET({ url }) {
