@@ -3,23 +3,16 @@
     import { contextMenuAction } from '$lib/store';
 
     export let data;
-
-    // Hilfsfunktion, um den ersten Buchstaben groß zu schreiben
-    const capitalizeFirstLetter = (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-    };
-    // Verwenden Sie die Funktion, um `data.category` zu bearbeiten
-    $: formattedCategory = capitalizeFirstLetter(data.category);
 </script>
 
 <svelte:head>
-	<title>{formattedCategory} - {name}</title>
-	<meta property="og:title" content={formattedCategory} />
+	<title>{data.category} - {name}</title>
+	<meta property="og:title" content={data.category} />
 </svelte:head>
 
 <div class="container mx-auto px-4">
     <h1>Blog</h1>
-    <h2>Kategorie: { formattedCategory }</h2>
+    <h2>Kategorie: { data.category }</h2>
   
     {#if data.posts}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -5,7 +5,7 @@ teaserimage: 'green_demokratie.webp'
 teaserimagecop: 'BÜNDNIS 90/DIE GRÜNEN'
 categories:
 - 'Wahlkampf'
-- 'BUENDNIS 90 DIE GRUENEN'
+- 'BUENDNIS 90 - DIE GRUENEN'
 - 'SPD'
 ---
 
