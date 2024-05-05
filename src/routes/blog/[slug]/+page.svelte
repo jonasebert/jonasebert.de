@@ -3,15 +3,23 @@
 	import { name } from '$lib/store.js';
 
 	export let data;
+
+	function teaserImage() {
+		if (data.meta.meta.teaserimage) {
+			return '/blog/' + data.meta.meta.teaserimage;
+		} else {
+			return '/home/teaser.webp';
+		}
+	}
 </script>
 
 <svelte:head>
 	<title>{data.meta.meta.title} - {name}</title>
 	<meta property="og:title" content={data.meta.meta.title} />
-	<meta property="og:image" content='/blog/{data.meta.meta.teaserimage}' />
+	<meta property="og:image" content={teaserImage()} />
 </svelte:head>
 
-<div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url('/blog/{data.meta.meta.teaserimage}');">
+<div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage()});">
 	<div class="bg-black bg-opacity-50 p-5">
 		<article class="container mx-auto text-justify pt-10 pb-10">
 			<div class="text-white text-center">
