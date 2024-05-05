@@ -20,7 +20,6 @@ export const contact = {
 // URI
 export const uri = page;
 
-
 // Pictures
 // Logo
 export const logo = '/logo/logo_500x100.webp';
