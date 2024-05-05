@@ -42,7 +42,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto p-5 text-pretty md:text-justify">
+<div class="container mx-auto p-5 text-pretty md:text-pretty">
 	<div class="mt-8">
 		<svelte:component this={data.content} />
 	</div>
