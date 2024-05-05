@@ -3,6 +3,10 @@
 	import SocialMediaIcons from '$lib/socialmediaicons.svelte';
 	import '../app.css';
 
+	//Vercel Speed Insights
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	injectSpeedInsights();
+
 	// Initialisierung Variabeln
 	import { name, logo_clear, uri} from '$lib/store';
 	import Image from '$lib/components/image.svelte';
