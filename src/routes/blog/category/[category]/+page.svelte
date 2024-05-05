@@ -1,8 +1,8 @@
 <script>
-	import { name } from '$lib/store.js';
-    import { contextMenuAction } from '$lib/store';
-
-    export let data;
+  import Image from '$lib/components/image.svelte';
+  import { contextMenuAction } from '$lib/store';
+  import { name } from '$lib/store.js';
+  export let data;
 </script>
 
 <svelte:head>
@@ -18,13 +18,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {#each data.posts as post}
           <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-            {#if post.meta.teaserimage}
+            <div class="transition-transform duration-500 hover:scale-105">
               <a href={post.path}>
-                <img class="w-full transition-transform duration-500 hover:scale-105" src="/blog/{post.meta.teaserimage}" alt="Teaser Blog" use:contextMenuAction>
-              </a>
+              {#if post.meta.teaserimage}
+                    <Image src="/blog/{post.meta.teaserimage}" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {:else}
-            <img class="w-full transition-transform duration-500 hover:scale-105" src="/home/teaser.webp" alt="Teaser Blog" use:contextMenuAction>
+                <Image src="/home/teaser.webp" alt="Teaser Blog {post.meta.title}" className="w-full"/>
             {/if}
+              </a>
+            </div>
             <div class="p-4">
               <h2 class="text-xl font-semibold mb-2">
                 <a href={post.path}>

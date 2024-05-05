@@ -6,4 +6,4 @@
     export let classNames = '';
 </script>
   
-<img {src} {alt} class="w-full h-auto {classNames}" use:contextMenuAction />  
+<img {src} {alt} class="{classNames}" use:contextMenuAction />  
