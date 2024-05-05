@@ -1,6 +1,6 @@
 <script>
-    // Importe
-    import { Icon } from 'svelte-icons-pack';
+  // Importe
+  import { Icon } from 'svelte-icons-pack';
 	import { AiOutlineInstagram, AiOutlineYoutube } from 'svelte-icons-pack/ai'; /* New Icons from https://leshak.github.io/svelte-icons-pack/ */
 	import { BsThreads } from 'svelte-icons-pack/bs';
 	import { RiLogosBlueskyLine } from "svelte-icons-pack/ri";

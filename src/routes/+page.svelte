@@ -1,7 +1,7 @@
 <script>
 	import Socialmediaicons from "$lib/socialmediaicons.svelte";
   import Image from "$lib/components/image.svelte";
-	import { contextMenuAction, name, pronouns } from "$lib/store";
+	import { name } from "$lib/store";
 	export let data;
 </script>
 

@@ -1,7 +1,6 @@
 <script>
 	// Importe
 	import SocialMediaIcons from '$lib/socialmediaicons.svelte';
-	import { contextMenuAction } from '$lib/store';
 	import '../app.css';
 
 	// Initialisierung Variabeln

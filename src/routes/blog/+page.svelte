@@ -1,6 +1,5 @@
 <script>
   import Image from '$lib/components/image.svelte';
-  import { contextMenuAction } from '$lib/store';
   export let data;
 </script>
   
