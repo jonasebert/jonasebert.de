@@ -28,14 +28,6 @@
 		{ title: 'B\'90/DIE GRÜNEN Braunschweig', href: 'https://gruene-braunschweig.de/'}
 	];
 
-	//Funktion zum Umschalten des responsiven Headers
-	function toggleMenu() {
-		isResponsive = !isResponsive;
-	}
-	// Funktion zum Einklappen des Menüs nach der Navigation
-	function closeMenu() {
-		isResponsive = false;
-	}
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
@@ -46,6 +38,27 @@
 		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
 		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
 			: name;
+
+	// Funktion zum Umschalten des responsiven Headers
+	function toggleMenu() {
+		isResponsive = !isResponsive;
+	}
+	// Funktion zum Einklappen des Menüs nach der Navigation
+	function closeMenu() {
+		isResponsive = false;
+	}
+
+	// Funktion, um zum Seitenanfang zu scrollen
+	function scrollToTop() {
+    	window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+	import { onMount } from 'svelte';
+	let isVisible = false;
+	onMount(() => {
+		window.addEventListener('scroll', () => {
+			isVisible = window.scrollY > 100;
+		});
+	});
 </script>
 
 <svelte:head>
@@ -76,6 +89,13 @@
 
 <main>
 	<slot />
+	{#if isVisible}
+		<div>
+			<button class="fixed bottom-4 right-4 bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
+				<img src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" class="w-auto h-7">
+			</button>
+		</div>
+	{/if}
 </main>
 
 <footer class="pt-10">
