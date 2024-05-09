@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="container mx-auto px-4">
-    <h1>Blog</h1>
+    <h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">Blog</h1>
     <h2>Kategorie: { data.category }</h2>
   
     {#if data.posts}

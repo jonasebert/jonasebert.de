@@ -2,7 +2,7 @@
     import { name, address, contact, uri } from "$lib/store";
 </script>
 
-<style>
+<style class="postcss">
     /* Ihr CSS-Stil für die Tabelle */
     table {
       width: 100%;
@@ -15,12 +15,11 @@
         padding: 4px;
         text-align: left;
     }
-
-  </style>
+</style>
 
 <div class="container">
     <div>
-        <h1>Impressum</h1>
+        <h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">Impressum</h1>
         <h2>Angaben gemäß §5 Telemediengesetz</h2>
         <p>{name}</p>
         <p>{address.street}</p>

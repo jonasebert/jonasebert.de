@@ -3,7 +3,7 @@
 </script>
 
 <div class="container">
-	<h1>Datenschutz</h1>
+	<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">Datenschutz</h1>
 	<div class="text-justify">
 		<p>
 			Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung

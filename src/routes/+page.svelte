@@ -9,10 +9,10 @@
 	<div class="container mx-auto">
 		<div class="bg-je-gray-700 rounded-lg overflow-hidden">
 			<div class="p-8">
-				<h2 class="text-3xl font-bold text-je-gray-100">The future is now!</h2>
-				<h1 class="text-6xl font-bold text-je-sand">{ name }</h1>
+				<h2 class="text-2xl font-bold text-je-gray-100">The future is now!</h2>
+				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name }</h1>
 			</div>
-			<div class="p-8">
+			<div class="pl-8 pb-8">
 				<Socialmediaicons />
 			</div>
 		</div>
