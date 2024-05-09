@@ -8,7 +8,7 @@
 	injectSpeedInsights();
 
 	// Initialisierung Variabeln
-	import { name, logo_clear, uri} from '$lib/store';
+	import { name, logo_clear, uri, pronouns, job} from '$lib/store';
 	import Image from '$lib/components/image.svelte';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
@@ -31,13 +31,13 @@
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
-		activeRoute === '/' ? 'Home - ' + name
+		activeRoute === '/' ? name + ' (' + pronouns +') - ' + job
 		: activeRoute === '/blog' ? 'Aktuelles - ' + name
 		: activeRoute === '/about' ? 'Über mich - ' + name
 		: activeRoute === '/contact' ? 'Kontakt - ' + name
 		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
 		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
-			: name;
+			: name + ' (' + pronouns +') - ' + job;
 
 	// Funktion zum Umschalten des responsiven Headers
 	function toggleMenu() {

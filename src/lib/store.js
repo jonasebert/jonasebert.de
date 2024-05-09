@@ -2,8 +2,9 @@
 import { page } from "$app/stores"; // Values: https://developer.mozilla.org/en-US/docs/Web/API/URL
 
 // Personal
-export const name = "Jonas Ebert";
-export const pronouns = 'xier/xies';
+export const name       = 'Jonas Ebert';
+export const pronouns   = 'xier/xies';
+export const job        = 'Systemadministrator & Aktivist';
 export const address = {
     street: 'Postfach 5835',
     zipcode: '38049',
