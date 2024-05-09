@@ -8,7 +8,7 @@
 	injectSpeedInsights();
 
 	// Initialisierung Variabeln
-	import { name, logo_clear, uri} from '$lib/store';
+	import { name, logo_clear, uri, pronouns, job} from '$lib/store';
 	import Image from '$lib/components/image.svelte';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
@@ -28,7 +28,18 @@
 		{ title: 'B\'90/DIE GRÜNEN Braunschweig', href: 'https://gruene-braunschweig.de/'}
 	];
 
-	//Funktion zum Umschalten des responsiven Headers
+	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
+	$: activeRoute = $uri.url.pathname;
+	$: pageTitle =
+		activeRoute === '/' ? name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/blog' ? 'Aktuelles - ' + name
+		: activeRoute === '/about' ? 'Über mich - ' + name
+		: activeRoute === '/contact' ? 'Kontakt - ' + name
+		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
+		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
+			: name + ' (' + pronouns +') - ' + job;
+
+	// Funktion zum Umschalten des responsiven Headers
 	function toggleMenu() {
 		isResponsive = !isResponsive;
 	}
@@ -36,16 +47,18 @@
 	function closeMenu() {
 		isResponsive = false;
 	}
-	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
-	$: activeRoute = $uri.url.pathname;
-	$: pageTitle =
-		activeRoute === '/' ? 'Home - ' + name
-		: activeRoute === '/blog' ? 'Aktuelles - ' + name
-		: activeRoute === '/about' ? 'Über mich - ' + name
-		: activeRoute === '/contact' ? 'Kontakt - ' + name
-		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
-		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
-			: name;
+
+	// Funktion, um zum Seitenanfang zu scrollen
+	function scrollToTop() {
+    	window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+	import { onMount } from 'svelte';
+	let isVisible = false;
+	onMount(() => {
+		window.addEventListener('scroll', () => {
+			isVisible = window.scrollY > 100;
+		});
+	});
 </script>
 
 <svelte:head>
@@ -76,10 +89,17 @@
 
 <main>
 	<slot />
+	{#if isVisible}
+		<div>
+			<button class="fixed bottom-4 right-4 bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
+				<img src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" class="w-auto h-7">
+			</button>
+		</div>
+	{/if}
 </main>
 
 <footer class="pt-10">
-	<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center pt-6 pb-6 pl-5 pr-5">
+	<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center py-6 px-5">
 		<div class="w-full sm:w-auto flex justify-center p-2">
 			<a href="/" class="logo">
 				<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto"/>
@@ -104,7 +124,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 pt-6 pb-6 pl-5 pr-5">
+	<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
 		<div>
 			<SocialMediaIcons />
 		</div>
