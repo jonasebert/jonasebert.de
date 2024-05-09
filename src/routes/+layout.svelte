@@ -18,7 +18,7 @@
 		{ title: 'Home', href: '/'},
 		{ title: 'Aktuelles', href: '/blog'},
 		{ title: 'Über mich', href: '/about'},
-		//{ title: 'Kontakt', href: '/contact'}
+		{ title: 'Kontakt', href: '/contact'}
 	];
 	let legalLinks = [
 		{ title: 'Impressum', href: '/legal/imprint'},
