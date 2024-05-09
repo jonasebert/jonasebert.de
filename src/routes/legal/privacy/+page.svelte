@@ -533,7 +533,7 @@
 		<h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
 		<div class="text-justify">
 			<p>
-				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2024. Aufgrund
+				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024. Aufgrund
 				geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese
 				Datenschutzerklärung anzupassen.
 			</p>
