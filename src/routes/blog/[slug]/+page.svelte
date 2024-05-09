@@ -21,9 +21,9 @@
 
 <div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage()});">
 	<div class="bg-black bg-opacity-50 p-5">
-		<article class="container mx-auto text-justify pt-10 pb-10">
+		<article class="container mx-auto text-justify py-10">
 			<div class="text-white text-center">
-				<h1 class="text-4xl font-bold text-white mt-2 mb-2">{data.meta.meta.title}</h1>
+				<h1 class="text-4xl font-bold text-white my-2">{data.meta.meta.title}</h1>
 			</div>
 		</article>
 	</div>

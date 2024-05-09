@@ -7,7 +7,7 @@
 
 <div class="container">
 	<div>
-		<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{name} ({pronouns})</h1>
+		<h1 class="text-5xl font-bold text-je-sand my-2 pt-10">{name} ({pronouns})</h1>
 		<div class="italic">Geboren 337 ppm</div>
 		<div class="flex flex-col md:flex-row">
 			<div class="mb-4 md:mr-4 flex-1">

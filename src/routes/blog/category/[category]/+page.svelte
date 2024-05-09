@@ -10,8 +10,8 @@
 </svelte:head>
 
 <div class="container mx-auto px-4">
-    <h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">Blog</h1>
-    <h2>Kategorie: { data.category }</h2>
+    <h1 class="text-5xl font-bold text-je-sand my-2 pt-10">Blog</h1>
+    <h2 class="pb-10">Kategorie: { data.category }</h2>
   
     {#if data.posts}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

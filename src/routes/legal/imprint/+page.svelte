@@ -19,7 +19,7 @@
 
 <div class="container">
     <div>
-        <h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">Impressum</h1>
+        <h1 class="text-5xl font-bold text-je-sand my-2 pt-10">Impressum</h1>
         <h2>Angaben gemäß §5 Telemediengesetz</h2>
         <p>{name}</p>
         <p>{address.street}</p>
