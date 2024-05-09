@@ -261,6 +261,11 @@
 				<strong>Rechtsgrundlage:</strong> Vertragserfüllung und vorvertragliche Anfragen, Art. 6 Abs.
 				1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
 			</p>
+			<div>
+				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Angaben zu dem von uns genutzten Drittanbieter:</h3>
+				<p>Das Kontaktformular übermittelt Daten an Google Formulare (Google Forms). Die erhaltenen Nachrichten und Daten werden von unserer Seite umgehend nach der Bearbeitung gelöscht.</p>
+				<a href="https://policies.google.com/privacy" class="externalLink">Zur Datenschutzerklärung von Google</a>
+			</div>
 		</div>
 	</div>
 	<div>
