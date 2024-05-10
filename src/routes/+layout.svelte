@@ -65,7 +65,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="bg-je-green-500 text-je-sand p-5">
+<header class="bg-je-green-500 text-je-sand p-5 sticky top-0 w-full z-10 shadow-lg">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
@@ -106,19 +106,19 @@
 			</a>
 		</div>
 		<div class="flex-1 p-2">
-			<h5 class="uppercase">{name}</h5>
+			<h3 class="uppercase text-je-gray-100 text-xl font-semibold">{name}</h3>
 			{#each menuLinks as link}
 				<a href={link.href} class="block mt-1"> {link.title} </a>
 			{/each}
 		</div>
 		<div class="flex-1 p-2">
-			<h5 class="uppercase">Rechtliches</h5>
+			<h3 class="uppercase text-je-gray-100 text-xl font-semibold">Rechtliches</h3>
 			{#each legalLinks as link}
 				<a class="legal block mt-1" href={link.href}> {link.title} </a>
 			{/each}
 		</div>
 		<div class="flex-1 p-2">
-			<h5 class="uppercase">Links</h5>
+			<h3 class="uppercase text-je-gray-100 text-xl font-semibold">Links</h3>
 			{#each footerLinks as link}
 				<a href={link.href} target="_blank" class="block mt-1"> {link.title} </a>
 			{/each}
