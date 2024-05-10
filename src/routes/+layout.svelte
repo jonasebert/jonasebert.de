@@ -65,7 +65,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="bg-je-green-500 text-je-sand p-5">
+<header class="bg-je-green-500 text-je-sand p-5 sticky top-0 w-full z-10 shadow-lg">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
