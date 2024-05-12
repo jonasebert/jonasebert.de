@@ -1,5 +1,5 @@
 /* Import der Schriftart */
-@import url(./font/font.css);
+@import url(/fonts/fonts.css);
 
 /* Tailwind CSS Direktiven */
 @tailwind base;
