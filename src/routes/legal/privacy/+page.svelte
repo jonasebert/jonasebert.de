@@ -3,8 +3,8 @@
 </script>
 
 <div class="container">
-	<h1 class="text-5xl font-bold text-je-sand my-2 pt-10">Datenschutz</h1>
-	<div class="text-justify">
+	<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">Datenschutz</h1>
+	<div class="text-justify font-montserrat">
 		<p>
 			Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung
 			von personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären.
@@ -15,8 +15,8 @@
 		</p>
 	</div>
 	<div>
-		<h2>Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
-		<div>
+		<h2 class="font-poppins">Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
+		<div class="font-montserrat">
 			<p>Verantwortlich für die Datenverarbeitung ist:</p>
 			<p>
 				{name} <br /> {address.street} <br /> {address.zipcode} {address.city} <br /> {address.country} <br /> <a href="tel:{contact.tel}"> {contact.tel} </a> 
@@ -25,8 +25,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Ihre Rechte nach der DSGVO</h2>		
-		<div class="text-justify">
+		<h2 class="font-poppins">Ihre Rechte nach der DSGVO</h2>		
+		<div class="text-justify font-montserrat">
 			<p>
 				Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu, die Sie jederzeit bei
 				dem in Ziffer 1. dieser Datenschutzerklärung genannten Verantwortlichen geltend machen
@@ -60,15 +60,15 @@
 				</li>
 			</ul>
 		</div>
-		<h3>Widerrufsrecht</h3>
-		<div class="text-justify">
+		<h3 class="font-poppins">Widerrufsrecht</h3>
+		<div class="text-justify font-montserrat">
 			<p>
 				Sie haben das Recht, die von Ihnen erteilte Einwilligung zur Datenverarbeitung jederzeit zu
 				widerrufen.
 			</p>
 		</div>
-		<h3>Widerspruchsrecht</h3>
-		<div class="text-justify">
+		<h3 class="font-poppins">Widerspruchsrecht</h3>
+		<div class="text-justify font-montserrat">
 			<p>
 				Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die wir auf unser
 				berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO stützen, Widerspruch einzulegen.
@@ -92,8 +92,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Wann löschen wir Ihre Daten?</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Wann löschen wir Ihre Daten?</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder Sie uns dies vorgeben.
 				Das bedeutet, dass - sofern sich aus den einzelnen Datenschutzhinweisen dieser
@@ -136,8 +136,8 @@
 		</div>
 	</div>
 	<div >
-		<h2>Webhosting</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Webhosting</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters, auf dessen Server
 				unsere Internetseiten gespeichert und für den Abruf im Internet verfügbar gemacht werden
@@ -189,8 +189,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Content-Delivery-Network</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Content-Delivery-Network</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir benutzen zum Ausspielen unserer Internetseiten ein Content-Delivery-Network (CDN). Ein
 				CDN ist ein Netz regional verteilter und über das Internet verbundener Server. Über das CDN
@@ -232,8 +232,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Kontaktaufnahme</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Kontaktaufnahme</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser Kontaktformular oder
 				sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren Namen, Ihre
@@ -262,15 +262,15 @@
 				1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
 			</p>
 			<div>
-				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Angaben zu dem von uns genutzten Drittanbieter:</h3>
+				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10 font-poppins">Angaben zu dem von uns genutzten Drittanbieter:</h3>
 				<p>Das Kontaktformular übermittelt Daten an Google Formulare (Google Forms). Die erhaltenen Nachrichten und Daten werden von unserer Seite umgehend nach der Bearbeitung gelöscht.</p>
 				<a href="https://policies.google.com/privacy" class="externalLink">Zur Datenschutzerklärung von Google</a>
 			</div>
 		</div>
 	</div>
 	<div>
-		<h2>Zahlungsdienstleister</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Zahlungsdienstleister</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Gemäß unserer gesetzlichen Pflichten beziehungsweise wegen unserer berechtigten Interessen
 				an einer effizienten, sicheren und Kunden orientierten Zahlungsabwicklung können Personen,
@@ -341,8 +341,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir betreiben Onlinepräsenzen innerhalb der nachfolgend aufgelisteten sozialen Netzwerke.
 				Besuchen Sie eine dieser Präsenzen, werden durch den jeweiligen Anbieter die unten näher
@@ -441,8 +441,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Content-Dienste</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Content-Dienste</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir nutzen bestimmte Dienste, um über unsere Internetpräsenz bestimmte Inhalte oder Grafiken
 				(Videos, Bilder, Musik, Schriftarten, Kartenmaterial) ausspielen zu können. Dabei
@@ -519,8 +519,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Sicherheits Maßnahmen</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Sicherheits Maßnahmen</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand
 				der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen
@@ -530,8 +530,8 @@
 		</div>
 	</div>
 	<div>
-		<h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
-		<div class="text-justify">
+		<h2 class="font-poppins">Aktualität und Änderung dieser Datenschutzerklärung</h2>
+		<div class="text-justify font-montserrat">
 			<p>
 				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024. Aufgrund
 				geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese
