@@ -10,8 +10,7 @@
 body {
 	@apply bg-je-gray-500;
 	@apply text-je-gray-100;
-	font-family: 'Poppins';
-	margin: 0;
+	@apply font-poppins;
 }
 
 /* Container für den Inhalt mit Abstand */

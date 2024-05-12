@@ -5,6 +5,10 @@ module.exports = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     theme: {
         extend: {
+            fontFamily: {
+                poppins: "Poppins",
+                montserrat: "Montserrat",
+            },
             colors: {
                 'je-gray': {
                     100: '#abb2bf',
