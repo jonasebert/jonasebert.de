@@ -4,7 +4,7 @@
 </script>
   
   <div class="container mx-auto px-4">
-    <h1 class="text-5xl font-bold text-je-sand my-2 py-10">Blog</h1>
+    <h1 class="text-5xl font-bold text-je-sand my-2 py-10 font-poppins">Blog</h1>
     {#if data.posts}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {#each data.posts as post}
@@ -19,15 +19,15 @@
               </a>
             </div>
             <div class="p-4">
-              <h2 class="text-xl font-semibold mb-2">
+              <h2 class="text-xl font-semibold mb-2 font-poppins">
                 <a href={post.path}>
                   {post.meta.title}
                 </a>
               </h2>
-              <p class="text-gray-300 text-sm mb-4">
+              <p class="text-gray-300 text-sm mb-4 font-montserrat">
                 Veröffentlicht am {post.meta.date}
               </p>
-              <div class="flex flex-row flex-wrap gap-2">
+              <div class="flex flex-row flex-wrap gap-2 font-montserrat">
                 {#if post.meta.categories}
                   {#each post.meta.categories as postcategory}
                     <div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 mr-2">
@@ -43,7 +43,7 @@
         {/each}
       </div>
     {:else}
-      <div class="text-center py-8">
+      <div class="text-center py-8 font-montserrat">
         Es konnten keine Beiträge gefunden werden!
       </div>
     {/if}

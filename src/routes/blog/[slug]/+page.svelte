@@ -22,7 +22,7 @@
 <div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage()});">
 	<div class="bg-black bg-opacity-50 p-5">
 		<article class="container mx-auto text-justify py-10">
-			<div class="text-white text-center">
+			<div class="text-white text-center font-poppins">
 				<h1 class="text-4xl font-bold text-white my-2">{data.meta.meta.title}</h1>
 			</div>
 		</article>
@@ -30,7 +30,7 @@
 </div>
 
 <div class="container mx-auto p-5 text-pretty text-justify bg-je-gray-800">
-	<div class="flex flex-wrap justify-center items-center gap-2">
+	<div class="flex flex-wrap justify-center items-center gap-2 font-montserrat">
 		{#if data.meta.meta.teaserimagecop}
 			<p class="text-lg md:mr-40">📸 {data.meta.meta.teaserimagecop}</p>
 		{/if}
@@ -50,7 +50,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto p-5 text-pretty md:text-pretty">
+<div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">
 		<svelte:component this={data.content} />
 	</div>

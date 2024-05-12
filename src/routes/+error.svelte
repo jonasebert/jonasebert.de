@@ -3,6 +3,6 @@
 </script>
 
 <div>
-	<h1>{$page.status}</h1>
-	<h2>{$page.error.message}</h2>
+	<h1 class="font-poppins">{$page.status}</h1>
+	<h2 class="font-poppins">{$page.error.message}</h2>
 </div>
