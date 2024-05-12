@@ -224,6 +224,7 @@
 				<h4 class="text-2xl font-bold text-je-sand">Mitgliedschaften</h4>
 				<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500">
 					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
+					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Grüne Jugend - seit 2022</div>
 				</div>
 			</div>
 		</div>
