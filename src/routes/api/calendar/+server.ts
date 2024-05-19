@@ -5,7 +5,6 @@ import { json } from '@sveltejs/kit';
 export async function GET({ query }) {
     const calendarId = '9e2052781df09df47bf5e2cf2e7524f79b44641630b3aaf544cb9dee4fc23493@group.calendar.google.com';
     const apiKey = process.env.GOOGLE_CALENDAR_API_KEY;
-    console.log(apiKey);
 
     const calendar = google.calendar({ version: 'v3', auth: apiKey });
 
@@ -20,14 +19,16 @@ export async function GET({ query }) {
 
         const events = response.data.items.map(event => {
             const teaserImageFirst = event.attachments?.[0] || null;
+            const teaserImagefileId = teaserImageFirst?.fileId || null;
+            const teaserimagefileUrl = teaserImagefileId ? `https://drive.google.com/thumbnail?id=${teaserImagefileId}&sz=w10000` : null;
 
             return {
                 start: event.start.dateTime || event.start.date,
                 end: event.end.dateTime || event.end.date,
                 summary: event.summary,
                 location: event.location,
-                status: event.description,
-                teaserimage: teaserImageFirst,
+                description: event.description,
+                teaserimage: teaserimagefileUrl,
             }
         });
 
