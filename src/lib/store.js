@@ -4,7 +4,7 @@ import { page } from "$app/stores"; // Values: https://developer.mozilla.org/en-
 // Personal
 export const name       = 'Jonas Ebert';
 export const pronouns   = 'xier/xies';
-export const job        = 'Systemadministrator & Aktivist';
+export const job        = 'Aktivist & Systemadministrator';
 export const address = {
     street: 'Postfach 5835',
     zipcode: '38049',
