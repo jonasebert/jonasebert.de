@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@vercel/speed-insights": "^1.0.10"
+		"@vercel/speed-insights": "^1.0.10",
+		"googleapis": "^137.1.0"
 	}
 }
