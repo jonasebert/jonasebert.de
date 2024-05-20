@@ -26,12 +26,12 @@
                 {event.summary}
                 <!-- </a> -->
             </h2>
-            <div class="flex flex-row items-end gap-5 mb-2">
+            <div class="flex flex-row items-end gap-6 mb-2">
                 {#if event.startdate == event.enddate}
                     <p class="text-lg">
                         {event.startdate}
                     </p>
-                    <p class="text-md">
+                    <p class="text-lg">
                         {event.starttime}-{event.endtime} Uhr
                     </p>
                 {:else}
