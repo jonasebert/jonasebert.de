@@ -17,6 +17,7 @@
 	let menuLinks = [
 		{ title: 'Home', href: '/'},
 		{ title: 'Aktuelles', href: '/blog'},
+		{ title: 'Termine', href: '/calendar'},
 		{ title: 'Über mich', href: '/about'},
 		{ title: 'Kontakt', href: '/contact'}
 	];
@@ -32,11 +33,12 @@
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
 		activeRoute === '/' ? name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/blog' ? 'Aktuelles - ' + name
-		: activeRoute === '/about' ? 'Über mich - ' + name
-		: activeRoute === '/contact' ? 'Kontakt - ' + name
-		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name
-		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name
+		: activeRoute === '/blog' ? 'Aktuelles - ' + name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/about' ? 'Über mich - ' + name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/calendar' ? 'Termine - ' + name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/contact' ? 'Kontakt - ' + name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name + ' (' + pronouns +') - ' + job
+		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name + ' (' + pronouns +') - ' + job
 			: name + ' (' + pronouns +') - ' + job;
 
 	// Funktion zum Umschalten des responsiven Headers
