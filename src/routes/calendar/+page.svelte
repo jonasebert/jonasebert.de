@@ -7,7 +7,7 @@
     <h1 class="text-5xl font-bold text-je-sand mt-2 pt-10 font-poppins">Termine</h1>
     <h2 class="text-4xl font-semibold text-je-sand mb-2 pb-10">Hier kannst du mich treffen!</h2>
     {#if data.events}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {#each data.events as event}
         <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
             <!-- <div class="transition-transform duration-500 hover:scale-105"> -->
