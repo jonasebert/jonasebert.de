@@ -4,7 +4,7 @@
 </script>
 
 {#if items.posts}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {#each items.posts as post}
         <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
             <div class="transition-transform duration-500 hover:scale-105">
