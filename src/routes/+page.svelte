@@ -1,6 +1,6 @@
 <script>
 	import Socialmediaicons from "$lib/socialmediaicons.svelte";
-  import Image from "$lib/components/image.svelte";
+  	import Image from "$lib/components/image.svelte";
 	import { name } from "$lib/store";
 	import BlogTiles from "$lib/components/blog_tiles.svelte";
 	export let data;
