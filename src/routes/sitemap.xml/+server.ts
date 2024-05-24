@@ -4,6 +4,7 @@ const site = 'https://jonasebert.de';
 const pages = [
     'about',
     'blog',
+    'calendar',
     'contact',
     'legal/imprint',
     'legal/privacy'
