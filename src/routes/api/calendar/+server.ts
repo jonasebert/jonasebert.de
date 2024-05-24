@@ -8,11 +8,17 @@ export async function GET({ query }) {
 
     const calendar = google.calendar({ version: 'v3', auth: apiKey });
 
+    const maxTime = new Date();
+    maxTime.setMonth(maxTime.getMonth() + 2);
+    maxTime.toISOString();
+    console.log(maxTime);
+
     try {
         const response = await calendar.events.list({
             calendarId,
             timeMin: new Date().toISOString(), // Nur zukünftige Termine
-            maxResults: 10, // Die Anzahl der Termine, die Sie abrufen möchten
+            timeMax: maxTime,
+            maxResults: 15, // Die Anzahl der Termine, die Sie abrufen möchten
             singleEvents: true,
             orderBy: 'startTime',
         });
