@@ -6,7 +6,7 @@ import { json } from '@sveltejs/kit';
 const { RRule, RRuleSet, rrulestr } = pkg;
 
 export async function GET({ query }) {
-    const webCalUrl = process.env.JONAS_EBERT_WEBCAL;
+    const webCalUrl = process.env.JONAS_EBERT_WEBCAL_URL;
     const now = new Date();
     const twoMonthsLater = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate());
 
