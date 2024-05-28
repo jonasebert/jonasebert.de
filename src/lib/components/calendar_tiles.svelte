@@ -10,8 +10,8 @@
             <!-- <div class="transition-transform duration-500 hover:scale-105"> -->
             <div>
             <!-- <a href={event.summary}> -->
-            {#if event.teaserimage}
-                    <Image src={event.teaserimage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
+            {#if event.teaserImage}
+                    <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
             {:else}
                 <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
             {/if}

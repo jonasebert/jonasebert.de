@@ -43,14 +43,21 @@ export async function GET({ query }) {
 
         // Extrahieren der ersten 15 Events
         events = events.slice(0, 15).map(event => {
+            // Extrahieren der Teaserbild-ID aus der Beschreibung
+            const teaserImageMatch = event.description?.match(/^teaserimage:\s*(\S+)/);
+            const teaserImageId = teaserImageMatch ? teaserImageMatch[1] : null;
+            const teaserImageUrl = teaserImageId ? `https://cloud.jonasebert.de/index.php/apps/files_sharing/publicpreview/${teaserImageId}?x=3440&y=1440&a=true` : null;
+
+            // Return to client
             return {
-                start: event.start,
-                end: event.end,
-                datetype: event.datetype,
-                summary: event.summary,
-                location: event.location,
-                description: event.description,
-                status: event.status,
+                start: event.start ? event.start : null,
+                end: event.end ? event.end : null,
+                datetype: event.datetype ? event.datetype : null,
+                summary: event.summary ? event.summary : null,
+                location: event.location ? event.location : null,
+                description: event.description ? event.description.replace(/^teaserimage:\s*\S+\n?/, '') : null,
+                status: event.status ? event.status : null,
+                teaserImage: teaserImageUrl,
             }
         });
 
