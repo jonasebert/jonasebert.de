@@ -24,12 +24,19 @@
                 <!-- </a> -->
             </h2>
             <div class="flex flex-row items-end gap-6 mb-2">
-                {#if event.startdate == event.enddate}
+                {#if event.datetype === 'date'}
+                    <p class="text-lg">
+                        {event.startdate} - {event.enddate}
+                    </p>
+                    <p class="text-lg">
+                        Ganztägig
+                    </p>
+                {:else if event.startdate === event.enddate && event.datetype === 'date-time'}
                     <p class="text-lg">
                         {event.startdate}
                     </p>
                     <p class="text-lg">
-                        {event.starttime}-{event.endtime} Uhr
+                        {event.starttime} - {event.endtime}
                     </p>
                 {:else}
                     <p class="text-lg">
