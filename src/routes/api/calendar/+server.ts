@@ -10,10 +10,9 @@ export async function GET({ query }) {
     const now = new Date();
     const twoMonthsLater = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate());
 
-    console.log(webCalUrl);
-
     try {
         const response = await ical.async.fromURL(webCalUrl);
+        console.log(response);
 
         let events = [];
 
