@@ -56,7 +56,7 @@ export async function GET({ query }) {
                 summary: event.summary ? event.summary : null,
                 location: event.location ? event.location : null,
                 description: event.description ? event.description.replace(/^teaserimage:\s*\S+\n?/, '') : null,
-                status: event.status ? event.status : null,
+                state: event.status ? event.status : null,
                 teaserImage: teaserImageUrl,
             }
         });

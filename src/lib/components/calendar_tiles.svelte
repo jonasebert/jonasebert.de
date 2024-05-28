@@ -20,6 +20,9 @@
             <div class="p-4">
             <h2 class="text-xl font-semibold mb-2 font-poppins">
                 <!-- <a href={event.summary}> -->
+                {#if event.state === 'CANCELLED'}
+                    [ABGESAGT]
+                {/if}
                 {event.summary}
                 <!-- </a> -->
             </h2>
