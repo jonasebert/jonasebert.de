@@ -12,7 +12,7 @@ export async function GET({ query }) {
 
     try {
         const response = await ical.async.fromURL(webCalUrl);
-        console.log(response);
+        console.log("DEBUG");
 
         let events = [];
 
