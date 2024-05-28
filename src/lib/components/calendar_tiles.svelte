@@ -10,8 +10,8 @@
             <!-- <div class="transition-transform duration-500 hover:scale-105"> -->
             <div>
             <!-- <a href={event.summary}> -->
-            {#if event.teaserimage}
-                    <Image src={event.teaserimage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
+            {#if event.teaserImage}
+                    <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
             {:else}
                 <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
             {/if}
@@ -20,16 +20,26 @@
             <div class="p-4">
             <h2 class="text-xl font-semibold mb-2 font-poppins">
                 <!-- <a href={event.summary}> -->
+                {#if event.state === 'CANCELLED'}
+                    [ABGESAGT]
+                {/if}
                 {event.summary}
                 <!-- </a> -->
             </h2>
             <div class="flex flex-row items-end gap-6 mb-2">
-                {#if event.startdate == event.enddate}
+                {#if event.datetype === 'date'}
+                    <p class="text-lg">
+                        {event.startdate} - {event.enddate}
+                    </p>
+                    <p class="text-lg">
+                        Ganztägig
+                    </p>
+                {:else if event.startdate === event.enddate && event.datetype === 'date-time'}
                     <p class="text-lg">
                         {event.startdate}
                     </p>
                     <p class="text-lg">
-                        {event.starttime}-{event.endtime} Uhr
+                        {event.starttime} - {event.endtime}
                     </p>
                 {:else}
                     <p class="text-lg">
