@@ -89,54 +89,56 @@
 	</div>
 </header>
 
-<main>
-	<slot />
-	{#if isVisible}
-		<div>
-			<button class="fixed bottom-4 right-4 bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
-				<img src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" class="w-auto h-7">
-			</button>
-		</div>
-	{/if}
-</main>
+<div class="flex flex-col flex-grow min-h-screen">
+	<main class="flex-grow">
+		<slot />
+		{#if isVisible}
+			<div>
+				<button class="fixed bottom-4 right-4 bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
+					<img src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" class="w-auto h-7">
+				</button>
+			</div>
+		{/if}
+	</main>
 
-<footer class="pt-10">
-	<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center py-6 px-5">
-		<div class="w-full sm:w-auto flex justify-center p-2">
-			<a href="/" class="logo">
-				<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto"/>
-			</a>
+	<footer class="pt-10">
+		<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center py-6 px-5">
+			<div class="w-full sm:w-auto flex justify-center p-2">
+				<a href="/" class="logo">
+					<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto"/>
+				</a>
+			</div>
+			<div class="flex-1 p-2">
+				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">{name}</h3>
+				{#each menuLinks as link}
+					<a href={link.href} class="block mt-1 font-montserrat"> {link.title} </a>
+				{/each}
+			</div>
+			<div class="flex-1 p-2">
+				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Rechtliches</h3>
+				{#each legalLinks as link}
+					<a class="block mt-1 font-montserrat" href={link.href}> {link.title} </a>
+				{/each}
+			</div>
+			<div class="flex-1 p-2">
+				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Links</h3>
+				{#each footerLinks as link}
+					<a href={link.href} target="_blank" class="block mt-1 font-montserrat"> {link.title} </a>
+				{/each}
+			</div>
 		</div>
-		<div class="flex-1 p-2">
-			<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">{name}</h3>
-			{#each menuLinks as link}
-				<a href={link.href} class="block mt-1 font-montserrat"> {link.title} </a>
-			{/each}
+		<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
+			<div>
+				<SocialMediaIcons />
+			</div>
+			<div class="font-montserrat">
+				<p>&copy; 2023 - {currentYear} {name}</p>
+				<p>
+					Made with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>,
+					<a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
+					hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
+				</p>
+			</div>
 		</div>
-		<div class="flex-1 p-2">
-			<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Rechtliches</h3>
-			{#each legalLinks as link}
-				<a class="block mt-1 font-montserrat" href={link.href}> {link.title} </a>
-			{/each}
-		</div>
-		<div class="flex-1 p-2">
-			<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Links</h3>
-			{#each footerLinks as link}
-				<a href={link.href} target="_blank" class="block mt-1 font-montserrat"> {link.title} </a>
-			{/each}
-		</div>
-	</div>
-	<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
-		<div>
-			<SocialMediaIcons />
-		</div>
-		<div class="font-montserrat">
-			<p>&copy; 2023 - {currentYear} {name}</p>
-			<p>
-				Made with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>,
-				<a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
-				hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
-			</p>
-		</div>
-	</div>
-</footer>
+	</footer>
+</div>
