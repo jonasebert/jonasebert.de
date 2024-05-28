@@ -1,9 +1,11 @@
 // src/routes/calendar.js
-import ical from 'node-ical';
-import pkg from 'rrule';
+import pkg_ical from 'node-ical'; // Importieren Sie die Parse-Funktion von node-ical
+import pkg_rrule from 'rrule';
 import { json } from '@sveltejs/kit';
+import fetch from 'node-fetch'; // Stellen Sie sicher, dass node-fetch installiert ist
 
-const { RRule, RRuleSet, rrulestr } = pkg;
+const { RRule, RRuleSet, rrulestr } = pkg_rrule;
+const {parseICS} = pkg_ical;
 
 export async function GET({ query }) {
     const webCalUrl = process.env.JONAS_EBERT_WEBCAL_URL;
@@ -11,11 +13,19 @@ export async function GET({ query }) {
     const twoMonthsLater = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate());
 
     try {
-        const response = await ical.async.fromURL(webCalUrl);
+        // Verwenden Sie fetch, um die iCal-Daten mit einem benutzerdefinierten User-Agent abzurufen
+        const response = await fetch(webCalUrl, {
+            headers: {
+                'User-Agent': 'Jonas Ebert/1.0'
+            }
+        });
+        const text = await response.text();
 
+        // Verwenden Sie node-ical, um die iCal-Daten zu parsen
+        const data = parseICS(text);
         let events = [];
 
-        for (const event of Object.values(response)) {
+        for (const event of Object.values(data)) {
             if (event.type === 'VEVENT') {
                 let occurrences = [];
                 if (event.rrule) {
