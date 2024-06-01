@@ -2,13 +2,16 @@ import pkg_ical from 'node-ical';
 import pkg_rrule from 'rrule';
 import { json } from '@sveltejs/kit';
 import fetch from 'node-fetch';
+import moment from 'moment-timezone';
 
 const { RRule, RRuleSet, rrulestr } = pkg_rrule;
 const { parseICS } = pkg_ical;
 
 export async function GET({ query }) {
     const webCalUrl = process.env.JONAS_EBERT_WEBCAL_URL;
-    const now = new Date();
+
+    moment.tz.setDefault('Europe/Berlin');
+    const now = moment().toDate();
     const twoMonthsLater = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate());
 
     try {
@@ -25,7 +28,10 @@ export async function GET({ query }) {
             if (event.type === 'VEVENT') {
                 let occurrences = [];
                 if (event.rrule) {
-                    const rule = rrulestr(event.rrule.toString(), { dtstart: event.start });
+                    const rule = rrulestr(event.rrule.toString(), {
+                        dtstart: event.start,
+                        tzid: 'Europe/Berlin'
+                    });                    
                     occurrences = rule.between(now, twoMonthsLater, true).map(date => ({
                         ...event,
                         start: date,
