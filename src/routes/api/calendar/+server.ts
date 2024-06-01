@@ -2,13 +2,16 @@ import pkg_ical from 'node-ical';
 import pkg_rrule from 'rrule';
 import { json } from '@sveltejs/kit';
 import fetch from 'node-fetch';
+import moment from 'moment-timezone';
 
 const { RRule, RRuleSet, rrulestr } = pkg_rrule;
 const { parseICS } = pkg_ical;
 
 export async function GET({ query }) {
     const webCalUrl = process.env.JONAS_EBERT_WEBCAL_URL;
-    const now = new Date();
+
+    moment.tz.setDefault('Europe/Berlin');
+    const now = moment().toDate();
     const twoMonthsLater = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate());
 
     try {
