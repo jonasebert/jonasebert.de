@@ -28,7 +28,10 @@ export async function GET({ query }) {
             if (event.type === 'VEVENT') {
                 let occurrences = [];
                 if (event.rrule) {
-                    const rule = rrulestr(event.rrule.toString(), { dtstart: event.start });
+                    const rule = rrulestr(event.rrule.toString(), {
+                        dtstart: event.start,
+                        tzid: 'Europe/Berlin'
+                    });                    
                     occurrences = rule.between(now, twoMonthsLater, true).map(date => ({
                         ...event,
                         start: date,
