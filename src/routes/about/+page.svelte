@@ -2,6 +2,10 @@
 	import Image from "$lib/components/image.svelte";
 	import Socialmediaicons from "$lib/socialmediaicons.svelte";
 	import { name, pronouns } from "$lib/store";
+
+	// Get current month + year
+	const now = new Date();
+    const nowFormatted = now.getFullYear() + "-" + now.getMonth();
 </script>
 
 
@@ -37,6 +41,24 @@
 		<h2 class="text-4xl font-bold text-je-sand font-poppins">Lebenslauf</h2>
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
 		<div class="my-6 flex items-start">
+			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
+				<a href="https://www.itebo.de/" target="_blank">
+					<Image src="/about_logos/logo_itebo.webp" alt="Logo ITEBO" classNames="size-12"/>
+				</a>
+			</div>
+			<div class="ml-10 flex flex-col justify-between">
+				<h4 class="text-2xl text-je-sand font-poppins">IT-Systemadministrator (Kommunale Fachanwendungen)</h4>
+				<p class="text-2xl font-montserrat">ITEBO GmbH</p>
+				<p class="text-md font-montserrat">{nowFormatted < '2024-9' ? "ab" : "seit" } Oktober 2024</p>
+				<div class="font-montserrat">
+					<ul class="list-disc text-md">
+					</ul>
+				</div>
+				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+				</div>
+			</div>
+		</div>
+		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gingco transition-transform duration-500 hover:scale-110">
 				<a href="https://gingco.systems/" target="_blank">
 					<Image src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" classNames="size-12"/>
@@ -45,7 +67,7 @@
 			<div class="ml-10 flex flex-col justify-between">
 				<h4 class="text-2xl text-je-sand font-poppins">System Administrator</h4>
 				<p class="text-2xl font-montserrat">Gingco Systems GmbH</p>
-				<p class="text-md font-montserrat">seit November 2022</p>
+				<p class="text-md font-montserrat">November 2022 - September 2024</p>
 				<div class="font-montserrat">
 					<ul class="list-disc text-md">
 						<li>Betreuung und Entwicklung von Docker-basierten Netzwerk- und Serverinfrastruktur</li>
