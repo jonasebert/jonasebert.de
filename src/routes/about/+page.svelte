@@ -68,7 +68,7 @@
 		</div>
 		<div class="my-6 flex items-start">
 			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
-				<a href="https://lba.de/" target="_blank">
+				<a href="https://www.lba.de/DE/Home/home_node.html" target="_blank">
 					<Image src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" classNames="size-12"/>
 				</a>
 			</div>
