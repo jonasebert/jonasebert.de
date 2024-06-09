@@ -7,6 +7,11 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	injectSpeedInsights();
 
+	// Vercel Analytics
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+	inject({ mode: dev ? 'development' : 'production' });
+
 	// Initialisierung Variabeln
 	import { name, logo_clear, uri, pronouns, job} from '$lib/store';
 	import Image from '$lib/components/image.svelte';
