@@ -1,12 +1,4 @@
 // src/routes/blog/[slug]/+page.ts
-// export async function load({ params }) {
-//     const post = await import(`../${params.slug}.md`);
-//     const { title, date, teaserimage } = post.metadata;
-//     const content = post.default;
-
-//     return { content, title, date, teaserimage };
-// }
-
 export async function load({ params, fetch }) {
     const post = await import(`../${params.slug}.md`);
     // const { title, date, teaserimage } = post.metadata;
