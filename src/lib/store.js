@@ -23,8 +23,8 @@ export const uri = page;
 
 // Pictures
 // Logo
-export const logo = '/logo/logo_250x100.svg';
-export const logo_clear = '/logo/logo_250x100_clear.svg';
+export const logo = '/logo/logo_500x100.svg';
+export const logo_clear = '/logo/logo_500x100_clear.svg';
 export const logo_small = '/logo/logo_500x500.svg';
 export const logo_small_clear = '/logo/logo_500x500_clear.svg';
 
