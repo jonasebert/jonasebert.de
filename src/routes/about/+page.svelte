@@ -1,11 +1,35 @@
 <script>
 	import Social from "$lib/components/blocks/Social.svelte";
 	import Image from "$lib/components/image.svelte";
-	import { name, pronouns } from "$lib/store";
+	import { job, name, pronouns } from "$lib/store";
+	import { formatDate } from "$lib/utils/date";
+	export let data;
 
 	// Get current month + year
 	const now = new Date();
-    const nowFormatted = now.getFullYear() + "-" + now.getMonth();
+    const nowFormatted = now.getFullYear() + "-" + (now.getMonth()).toString().padStart(2, '0');
+
+	// Generate date
+	/**
+	 * @param {string} start
+	 * @param {string} end
+	 */
+	function genDate(start, end) {
+		let date = 'date not found';
+
+		if (start && end) {
+			date = formatDate(start,'month') + ' ' + formatDate(start,'year') + ' - ' + formatDate(end,'month') + ' ' + formatDate(end,'year');
+		} else if (start && !end) {
+			if (start <= nowFormatted) {
+				date = 'seit ';
+			} else if (start > nowFormatted) {
+				date = 'ab ';
+			}
+			date = date + formatDate(start,'month') + ' ' + formatDate(start,'year');
+		}
+
+		return date;
+	}
 </script>
 
 
@@ -40,161 +64,88 @@
 	<div>
 		<h2 class="text-4xl font-bold text-je-sand font-poppins">Lebenslauf</h2>
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
-				<a href="https://www.itebo.de/" target="_blank">
-					<Image src="/about_logos/logo_itebo.webp" alt="Logo ITEBO" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">IT-Systemadministrator (Kommunale Fachanwendungen)</h4>
-				<p class="text-2xl font-montserrat">ITEBO GmbH</p>
-				<p class="text-md font-montserrat">{nowFormatted < '2024-9' ? "ab" : "seit" } Oktober 2024</p>
-				<div class="font-montserrat">
-					<ul class="list-disc text-md">
-					</ul>
+		{#each data.jobs as job}
+			<div class="my-6 flex items-start">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{job.bgcolor} transition-transform duration-500 hover:scale-110">
+					<a href={job.link} target="_blank">
+						<Image src="/about_logos/{job.image}" alt="Logo {job.company}" classNames="size-12" />
+					</a>
 				</div>
-				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-				</div>
-			</div>
-		</div>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gingco transition-transform duration-500 hover:scale-110">
-				<a href="https://gingco.systems/" target="_blank">
-					<Image src="/about_logos/logo_gingco.webp" alt="Logo Gingco Systems" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">System Administrator</h4>
-				<p class="text-2xl font-montserrat">Gingco Systems GmbH</p>
-				<p class="text-md font-montserrat">November 2022 - September 2024</p>
-				<div class="font-montserrat">
-					<ul class="list-disc text-md">
-						<li>Betreuung und Entwicklung von Docker-basierten Netzwerk- und Serverinfrastruktur</li>
-						<li>Administrativer 2nd- und 3rd-Level Support (Remote)</li>
-						<li>Performance- und Securitymanagement sowie Analyse und Beseitigung von Störungen</li>
-						<li>Erstellung und Umsetzung von IT-Konzepten</li>
-						<li>Kommunikation mit Kunden, externen Dienstleistern und Lieferanten</li>
-					</ul>
-				</div>
-				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">PHP</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Linux</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Docker</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">ISO 27001</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Microsoft Intune</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Datenbankverwaltung</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Kunden-Support</div>
+				<div class="ml-10 flex flex-col justify-between">
+					<h4 class="text-2xl text-je-sand font-poppins">{job.titel}</h4>
+					<p class="text-2xl font-montserrat">{job.company}</p>
+					<p class="text-md font-montserrat">{genDate(job.start, job.end)}</p>
+					<div class="font-montserrat">
+						<ul class="list-disc text-md">
+							{#each job.description as item }
+								<li>{item}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+						{#each job.skills as skill }
+						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+						{/each}
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
-				<a href="https://www.lba.de/DE/Home/home_node.html" target="_blank">
-					<Image src="/about_logos/logo_lba.webp" alt="Logo Luftfahrt-Bundesamt" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">Fachinformatiker Anwendungs Betreuung</h4>
-				<p class="text-2xl font-montserrat">Luftfahrt-Bundesamt</p>
-				<p class="text-md font-montserrat">Oktober 2021 - November 2022</p>
-				<div class="font-montserrat">
-					<ul class="list-disc text-md">
-						<li>Administration des Telekommunikationssystem</li>
-						<li>IT-Usersupport (Vor Ort und Remote)</li>
-					</ul>
-				</div>
-				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Telekommunikation</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Telekommunikationssysteme</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Linux</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Windows</div>
-				</div>
-			</div>
-		</div>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
-				<a href="https://steinel.de/" target="_blank">
-					<Image src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">Junior Data Manager PIM</h4>
-				<p class="text-2xl font-montserrat">STEINEL GmbH</p>
-				<p class="text-md font-montserrat">Oktober 2021 - November 2022</p>
-				<div class="font-montserrat">
-					<ul class="list-disc text-md">
-						<li>Entwicklung von Automatisierung wie Vertriebsdatenblätter, Preislisten, Katalog, Printwerbemittel etc.</li>
-						<li>Entwicklung von Schnittstellen, wie z. B. die automatische Aktualisierung der Steinel Homepage durch das PIM-System</li>
-						<li>Dataquality weiter ausbauen</li>
-						<li>Enge Kooperation mit internen Abteilungen sowie externen Dienstleistern</li>
-						<li>Eruierung und Festlegung von Prozessen und Workflows</li>
-						<li>Koordination und Kontrolle der externen Dienstleister</li>
-						<li>Umsetzung neuer gesetzlicher Vorgaben und Verordnungen</li>
-					</ul>
-				</div>
-				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">PHP</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Scripting</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">HTML</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Datenmanagement</div>
-				</div>
-			</div>
-		</div>
+		{/each}
 
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ausbildung</h3>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
-				<a href="https://steinel.de/" target="_blank">
-					<Image src="/about_logos/logo_steinel.webp" alt="Logo STEINEL GmbH" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">Fachinformatiker in der Fachrichtung Systemintegration</h4>
-				<p class="text-2xl font-montserrat">STEINEL GmbH</p>
-				<p class="text-md font-montserrat">August 2018 - Juni 2021</p>
-				<div class="font-montserrat">
-					<ul class="list-disc text-md">
-						<li>IT-Usersupport (Vor Ort und Remote)</li>
-						<li>Support der Druckerumgebung (insbes. EU-Label Drucker)</li>
-						<li>Installation & Einrichtung von PCs/Mobilen Endgeräten</li>
-						<li>Erstellen & Aktualisieren der Windows 10 Images für die Installation der Geräte</li>
-						<li>Erstellen, koordinieren & halten von IT-Schulungen (Allgemeine IT Schulung & Informationssicherheitsschulung)</li>
-						<li>Erstellen einer Dokumentation der WLAN Umgebung am Standort Herzebrock</li>
-					</ul>
+		{#each data.education as edu}
+			<div class="my-6 flex items-start">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{edu.bgcolor} transition-transform duration-500 hover:scale-110">
+					<a href={edu.link} target="_blank">
+						<Image src="/about_logos/{edu.image}" alt="Logo {edu.company}" classNames="size-12" />
+					</a>
 				</div>
-				<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Windows</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Kunden-Support</div>
+				<div class="ml-10 flex flex-col justify-between">
+					<h4 class="text-2xl text-je-sand font-poppins">{edu.titel}</h4>
+					<p class="text-2xl font-montserrat">{edu.company}</p>
+					<p class="text-md font-montserrat">{genDate(edu.start, edu.end)}</p>
+					<div class="font-montserrat">
+						<ul class="list-disc text-md">
+							{#each edu.description as item }
+								<li>{item}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+						{#each edu.skills as skill }
+						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+						{/each}
+					</div>
 				</div>
 			</div>
-		</div>
+		{/each}
 
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ehrenamt</h3>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
-				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<Image src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" classNames="size-12"/>
-				</a>
+		{#each data.volunteer as vol}
+			<div class="my-6 flex items-start">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{vol.bgcolor} transition-transform duration-500 hover:scale-110">
+					<a href={vol.link} target="_blank">
+						<Image src="/about_logos/{vol.image}" alt="Logo {vol.company}" classNames="size-12" />
+					</a>
+				</div>
+				<div class="ml-10 flex flex-col justify-between">
+					<h4 class="text-2xl text-je-sand font-poppins">{vol.titel}</h4>
+					<p class="text-2xl font-montserrat">{vol.company}</p>
+					<p class="text-md font-montserrat">{genDate(vol.start, vol.end)}</p>
+					<div class="font-montserrat">
+						<ul class="list-disc text-md">
+							{#each vol.description as item }
+								<li>{item}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+						{#each vol.skills as skill }
+						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+						{/each}
+					</div>
+				</div>
 			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">Koordination AG Digitales</h4>
-				<p class="text-2xl font-montserrat">BÜNDNIS 90/DIE GRÜNEN Braunschweig</p>
-				<p class="text-md font-montserrat">seit November 2023</p>
-			</div>
-		</div>
-		<div class="my-6 flex items-start">
-			<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-je-gruene-tanne transition-transform duration-500 hover:scale-110">
-				<a href="https://gruene-braunschweig.de/" target="_blank">
-					<Image src="/about_logos/logo_gruene.svg" alt="Logo B'90/DIE GRÜNEN" classNames="size-12"/>
-				</a>
-			</div>
-			<div class="ml-10 flex flex-col justify-between">
-				<h4 class="text-2xl text-je-sand font-poppins">Koordination Aktionsgruppe</h4>
-				<p class="text-2xl font-montserrat">BÜNDNIS 90/DIE GRÜNEN Braunschweig</p>
-				<p class="text-md font-montserrat">seit November 2023</p>
-			</div>
-		</div>
+		{/each}
 
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Kompetenzen</h3>
 		<div>
