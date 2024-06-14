@@ -1,6 +1,6 @@
 <script>
+	import Social from "$lib/components/blocks/Social.svelte";
 	import Image from "$lib/components/image.svelte";
-	import Socialmediaicons from "$lib/socialmediaicons.svelte";
 	import { name, pronouns } from "$lib/store";
 
 	// Get current month + year
@@ -29,7 +29,7 @@
 					Ich bin fest davon überzeugt, dass jeder Einzelne die Kraft hat, die Welt zu verändern. Durch mein Engagement hoffe ich, andere zu inspirieren, sich ebenfalls für den Umweltschutz stark zu machen und gemeinsam einen Weg in eine nachhaltige Zukunft zu ebnen.
 				</div>
 				<div>
-					<Socialmediaicons/>
+					<Social />
 				</div>
 			</div>
 			<div class="flex justify-center md:justify-start w-full md:max-w-xs lg:max-w-sm">

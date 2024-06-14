@@ -1,8 +1,8 @@
 <script>
-	import Socialmediaicons from "$lib/socialmediaicons.svelte";
   	import Image from "$lib/components/image.svelte";
 	import { name } from "$lib/store";
 	import BlogTiles from "$lib/components/blog_tiles.svelte";
+	import Social from "$lib/components/blocks/Social.svelte";
 	export let data;
 </script>
 
@@ -14,7 +14,7 @@
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name }</h1>
 			</div>
 			<div class="pl-8 pb-8">
-				<Socialmediaicons />
+				<Social hoverBGColor="je-green-700" />
 			</div>
 		</div>
 	</div>
