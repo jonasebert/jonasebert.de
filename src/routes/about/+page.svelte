@@ -65,7 +65,7 @@
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
 		{#each data.jobs as job}
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {job.bgcolor} transition-transform duration-500 hover:scale-110">
 					<a href={job.link} target="_blank">
 						<Image src="/about_logos/{job.image}" alt="Logo {job.company}" classNames="size-12" />
 					</a>
@@ -93,7 +93,7 @@
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ausbildung</h3>
 		{#each data.education as edu}
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{edu.bgcolor} transition-transform duration-500 hover:scale-110">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {edu.bgcolor} transition-transform duration-500 hover:scale-110">
 					<a href={edu.link} target="_blank">
 						<Image src="/about_logos/{edu.image}" alt="Logo {edu.company}" classNames="size-12" />
 					</a>
@@ -121,7 +121,7 @@
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ehrenamt</h3>
 		{#each data.volunteer as vol}
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{vol.bgcolor} transition-transform duration-500 hover:scale-110">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {vol.bgcolor} transition-transform duration-500 hover:scale-110">
 					<a href={vol.link} target="_blank">
 						<Image src="/about_logos/{vol.image}" alt="Logo {vol.company}" classNames="size-12" />
 					</a>

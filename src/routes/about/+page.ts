@@ -8,7 +8,7 @@ export async function load() {
             description: [],
             skills: [],
             image: 'logo_itebo.webp',
-            bgcolor: 'white',
+            bgcolor: 'bg-white',
             link: 'https://www.itebo.de',
         },
         {
@@ -25,7 +25,7 @@ export async function load() {
             ],
             skills: [ 'PHP', 'Linux', 'Docker', 'ISO 27001', 'Microsoft Intune', 'Datenbankverwaltung', 'Kunden-Support', ],
             image: 'logo_gingco.webp',
-            bgcolor: 'je-gingco',
+            bgcolor: 'bg-je-gingco',
             link: 'https://gingco.systems',
         },
         {
@@ -39,7 +39,7 @@ export async function load() {
             ],
             skills: [ 'Telekommunikation', 'Telekommunikationssysteme', 'Linux', 'Windows', ],
             image: 'logo_lba.webp',
-            bgcolor: 'white',
+            bgcolor: 'bg-white',
             link: 'https://www.lba.de/DE/Home/home_node.html',
         },
         {
@@ -58,7 +58,7 @@ export async function load() {
             ],
             skills: [ 'PHP', 'Scripting', 'HTML', 'Datenmanagement', ],
             image: 'logo_steinel.webp',
-            bgcolor: 'white',
+            bgcolor: 'bg-white',
             link: 'https://steinel.de'
         },
     ];
@@ -79,7 +79,7 @@ export async function load() {
             ],
             skills: [ 'Windows', 'Kunden-Support', 'Drucker', ],
             image: 'logo_steinel.webp',
-            bgcolor: 'white',
+            bgcolor: 'bg-white',
             link: 'https://steinel.de',
         },
         {
@@ -90,7 +90,7 @@ export async function load() {
             description: [],
             skills: [],
             image: 'logo_vzg.webp',
-            bgcolor: 'white',
+            bgcolor: 'bg-white',
             link: 'https://von-zumbusch-gesamtschule.de',
         },
     ];
@@ -104,7 +104,7 @@ export async function load() {
             description: [],
             skills: [],
             image: 'logo_gruene.svg',
-            bgcolor: 'je-gruene-tanne',
+            bgcolor: 'bg-je-gruene-tanne',
             link: 'https://gruene-braunschweig.de',
         },
         {
@@ -115,7 +115,7 @@ export async function load() {
             description: [],
             skills: [],
             image: 'logo_gruene.svg',
-            bgcolor: 'je-gruene-tanne',
+            bgcolor: 'bg-je-gruene-tanne',
             link: 'https://gruene-braunschweig.de',
         },
     ];
