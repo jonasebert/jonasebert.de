@@ -82,6 +82,18 @@ export async function load() {
             bgcolor: 'white',
             link: 'https://steinel.de',
         },
+        {
+            titel: 'Gesamtschule - Fachoberschulreife',
+            company: 'Von-Zumbusch-Gesamtschule',
+            start: '2012-08',
+            end: '2018-07',
+            description: [],
+            skills: [],
+            image: 'logo_vzg.webp',
+            bgcolor: 'white',
+            link: 'https://von-zumbusch-gesamtschule.de',
+        },
+    ];
 
     const volunteer: { titel: string; company: string; start: string; end: string; description: string[]; skills: string[]; image: string; bgcolor: string; link: string; }[] = [
         {
