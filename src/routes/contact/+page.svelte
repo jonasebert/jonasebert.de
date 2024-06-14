@@ -67,7 +67,7 @@
             <div>
                 <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Soziale Medien</h2>
-                    <Social />
+                    <Social hoverBGColor="je-green-700" />
                 </div>
                 <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">E-Mail</h2>
