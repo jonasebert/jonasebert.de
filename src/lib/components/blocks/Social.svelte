@@ -1,6 +1,6 @@
 <script>
     import RoundedIcon from "$lib/components/button/RoundedIcon.svelte"
-    import { faInstagram, faThreads, faBluesky, faYoutube, faTiktok } from "@fortawesome/free-brands-svg-icons";
+    import { faInstagram, faThreads, faBluesky, faYoutube, faTiktok } from "@fortawesome/free-brands-svg-icons"; // For new Icons: https://fontawesome.com/search
 
     export let hoverBGColor = "";
 </script>
