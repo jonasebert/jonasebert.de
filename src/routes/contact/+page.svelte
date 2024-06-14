@@ -1,9 +1,9 @@
 <script>
     import { name } from "$lib/store";
-    import SocialMediaIcons from '$lib/socialmediaicons.svelte';
     import Image from '$lib/components/image.svelte';
 	import { Input } from "postcss";
 	import { isRedirect } from "@sveltejs/kit";
+	import Social from "$lib/components/blocks/Social.svelte";
 
     let response;
     let status;
@@ -67,7 +67,7 @@
             <div>
                 <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Soziale Medien</h2>
-                    <SocialMediaIcons />
+                    <Social hoverBGColor="je-green-700" />
                 </div>
                 <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">E-Mail</h2>

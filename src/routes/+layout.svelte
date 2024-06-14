@@ -1,6 +1,6 @@
 <script>
 	// Importe
-	import SocialMediaIcons from '$lib/socialmediaicons.svelte';
+	import Social from '$lib/components/blocks/Social.svelte';
 	import '../app.css';
 
 	//Vercel Speed Insights
@@ -134,7 +134,7 @@
 		</div>
 		<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
 			<div>
-				<SocialMediaIcons />
+				<Social hoverBGColor="je-green-700" />
 			</div>
 			<div class="font-montserrat">
 				<p>&copy; 2023 - {currentYear} {name}</p>
