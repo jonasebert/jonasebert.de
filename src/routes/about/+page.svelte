@@ -1,7 +1,7 @@
 <script>
 	import Social from "$lib/components/blocks/Social.svelte";
 	import Image from "$lib/components/image.svelte";
-	import { job, name, pronouns } from "$lib/store";
+	import { name, pronouns } from "$lib/store";
 	import { formatDate } from "$lib/utils/date";
 	export let data;
 
@@ -31,7 +31,6 @@
 		return date;
 	}
 </script>
-
 
 <div class="container">
 	<div>
@@ -66,7 +65,7 @@
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
 		{#each data.jobs as job}
 			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-{job.bgcolor} transition-transform duration-500 hover:scale-110">
+				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 bg-white transition-transform duration-500 hover:scale-110">
 					<a href={job.link} target="_blank">
 						<Image src="/about_logos/{job.image}" alt="Logo {job.company}" classNames="size-12" />
 					</a>
