@@ -35,6 +35,7 @@
 	<div class="flex flex-wrap justify-center items-center gap-2 font-montserrat">
 		{#if post.data.teaser_image[0].copyright}
 			<p class="text-lg md:mr-40">📸 {post.data.teaser_image[0].copyright}</p>
+            <!-- Move Copyright direct to image -->
 		{/if}
 		<!-- <p class="text-lg md:mr-40">
             {#if post.data.overwrite_publish_date}
