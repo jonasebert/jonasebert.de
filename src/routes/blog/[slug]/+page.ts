@@ -1,25 +1,19 @@
-// src/routes/blog/[slug]/+page.ts
-export async function load({ params, fetch }) {
-    const post = await import(`../${params.slug}.md`);
-    // const { title, date, teaserimage } = post.metadata;
-    const content = post.default;
+import { base } from "$app/paths";
+import * as ph from '@prismicio/helpers';
+import { getDesc } from "$lib/util/TextHelpers.js";
 
-    // return { content, title, date, teaserimage };
-
-    // API Call
-    const response = await fetch(`/api/posts`);
-    if (!response.ok) {
-        throw new Error(`Fehler beim Laden der Posts: ${response.statusText}`);
-    }
-    const posts = await response.json();
-
-    // Filtern, um den spezifischen Post zu finden
-    const meta = posts.find(p => p.path === `/blog/${params.slug}`);
-    if (!post) {
-        throw new Error(`Blogbeitrag mit dem Slug '${params.slug}' nicht gefunden.`);
-    }
-
-    // console.log(meta);
-
-    return { meta, content };
+// @type {import('./$types').PageLoad}
+export async function load({ params, fetch, data }) {
+  const res = await fetch(`${base}/blog/${params.slug}.json`);
+  const post = await res.json();
+  return {
+    post: post.post,
+    title: ph.asText(post.post.data.title),
+    // description: getDesc(
+    //   ph.asText(post.post.data.body[0].primary.content),
+    //   250
+    // ),
+    keywords: post.post.tags.join(", "),
+    image: ph.asImageSrc(post.post.data.teaser_image),
+  };
 }

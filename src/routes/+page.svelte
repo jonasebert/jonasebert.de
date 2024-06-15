@@ -1,9 +1,9 @@
 <script>
   	import Image from "$lib/components/image.svelte";
 	import { name } from "$lib/store";
-	import BlogTiles from "$lib/components/blog_tiles.svelte";
+	import BlogTiles from "$lib/components/tiles/Blog.svelte";
 	import Social from "$lib/components/blocks/Social.svelte";
-	export let data;
+	// export let data;
 </script>
 
 <div class="flex flex-row items-center justify-center p-5">
@@ -46,6 +46,6 @@
     <div class="text-center font-poppins">
 		  <h2 class="text-5xl text-je-sand">Aktuelles</h2>
 	  </div>
-    <BlogTiles items={data}></BlogTiles>
+    <!-- <BlogTiles items={data}></BlogTiles> -->
 </div>
   
