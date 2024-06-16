@@ -1,7 +1,8 @@
 <script>
-	import { name } from '$lib/store.js';
+	import Image from '$lib/components/image.svelte';
+import { name } from '$lib/store';
+	import { FormatDate } from '$lib/util/date';
     import * as ph from '@prismicio/helpers';
-    import { FormatDate } from '$lib/util/date';
 
 	export let data;
     let { post } = data;
@@ -33,18 +34,25 @@
 
 <div class="container mx-auto p-5 text-pretty text-justify bg-je-gray-800">
 	<div class="flex flex-wrap justify-center items-center gap-2 font-montserrat">
-		{#if post.data.teaser_image[0].copyright}
-			<p class="text-lg md:mr-40">📸 {post.data.teaser_image[0].copyright}</p>
-            <!-- Move Copyright direct to image -->
+		{#if post.data.teaser_image[0].image.copyright}
+			<p class="text-lg md:mr-40">
+				{#if post.data.teaser_image[0].copyright_link}
+					📸 <a href={post.data.teaser_image[0].copyright_link.url} target={post.data.teaser_image[0].copyright_link.target}>
+						{post.data.teaser_image[0].image.copyright}
+					</a>
+				{:else}
+					📸 {post.data.teaser_image[0].image.copyright}
+				{/if}
+			</p>
 		{/if}
-		<!-- <p class="text-lg md:mr-40">
+		<p class="text-lg md:mr-40">
             {#if post.data.overwrite_publish_date}
                 Veröffentlicht am: {FormatDate(ph.asDate(post.data.overwrite_publish_date),'day')}. {FormatDate(ph.asDate(post.data.overwrite_publish_date),'monthshort')} {FormatDate(ph.asDate(post.data.overwrite_publish_date),'year')}
             {:else}
                 Veröffentlicht am: {FormatDate(ph.asDate(post.first_publication_date),'day')}. {FormatDate(ph.asDate(post.first_publication_date),'monthshort')} {FormatDate(ph.asDate(post.first_publication_date),'year')}
             {/if}
-        </p> -->
-		<!-- <div class="flex flex-wrap gap-2">
+        </p>
+		<div class="flex flex-wrap gap-2">
 			{#if post.tags[0]}
 				{#each post.tags as category}
 					<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2">
@@ -54,12 +62,40 @@
 					</div>
 				{/each}
 			{/if}
-		</div> -->
+		</div>
 	</div>
 </div>
 
-<!-- <div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
+<div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">
-		<svelte:component this={data.content} />
+		<article>
+			{#each post.data.body as contentBlock}
+				{#if contentBlock.type === 'paragraph'}
+					<p>{contentBlock.text}</p>
+				{:else if contentBlock.type === 'heading1'}
+					<h1 class="text-5xl font-bold text-je-sand my-2 py-10">{contentBlock.text}</h1>
+				{:else if contentBlock.type === 'heading2'}
+					<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">{contentBlock.text}</h2>
+				{:else if contentBlock.type === 'heading3'}
+					<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">{contentBlock.text}</h3>
+				{:else if contentBlock.type === 'heading4'}
+					<h4 class="text-2xl font-semibold my-2 py-10">{contentBlock.text}</h4>
+				{:else if contentBlock.type === 'heading5'}
+					<h5>{contentBlock.text}</h5>
+				{:else if contentBlock.type === 'heading6'}
+					<h6>{contentBlock.text}</h6>
+				{:else if contentBlock.type === 'hyperlink'}
+					<a href={contentBlock.url} target={contentBlock.target}>{contentBlock.text}</a>
+				{:else if contentBlock.type === 'image'}
+					<Image src={ph.asImageSrc(contentBlock)} alt={contentBlock.alt} classNames="h-auto w-80 rounded-lg" />
+				{:else if contentBlock.type === 'list-item'}
+					<ul class="list-disc"><li>{contentBlock.text}</li></ul>
+				{:else if contentBlock.type === 'o-list-item'}
+					<ol class="list-decimal"><li>{contentBlock.text}</li></ol>
+				{:else if contentBlock.type === 'preformatted'}
+					<code>{contentBlock.text}</code>
+				{/if}
+			{/each}
+		</article>
 	</div>
-</div> -->
+</div>

@@ -1,15 +1,22 @@
 <script>
     import BlogTiles from '$lib/components/tiles/Blog.svelte';
+    import { name } from '$lib/store';
 
     export let data;
     let { posts } = data;
 </script>
 
+<svelte:head>
+	<title>{data.category} - {name}</title>
+	<meta property="og:title" content={data.category} />
+</svelte:head>
+
 <div class="container mx-auto px-4">
     <h1 class="text-5xl font-poppins font-bold text-je-sand my-2 py-10">Blog</h1>
-        {#if posts.posts[0]}
+    <h2 class="pb-10 font-poppins">Kategorie: {data.category}</h2>
+        {#if posts[0]}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-                {#each posts.posts as post}
+                {#each posts as post}
                     <BlogTiles item={post} />
                 {/each}
             </div>

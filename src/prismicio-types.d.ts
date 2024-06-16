@@ -79,6 +79,17 @@ interface ArticleDocumentData {
 	teaser_image: prismic.GroupField<Simplify<ArticleDocumentDataTeaserImageItem>>;
 
 	/**
+	 * Body field in *article*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: article.body
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	body: prismic.RichTextField;
+
+	/**
 	 * Slice Zone field in *article*
 	 *
 	 * - **Field Type**: Slice Zone
