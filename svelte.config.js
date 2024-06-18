@@ -17,8 +17,6 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		prerender: {
-			default: true,
-			entries: ['*'],
 			handleMissingId(id, path) {
 				console.warn(`Missing ID: ${id} on path: ${path}`);
 				return true;
