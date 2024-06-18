@@ -1,16 +1,15 @@
 import { json } from '@sveltejs/kit';
 import createClient from "$lib/content/prismic";
 
-export const prerender = false;
-
-export async function GET({ url, fetch }) {
+export async function GET({ fetch, request }) {
     const client = createClient(fetch);
-    const type = url.searchParams.get('type');
+    const type = request.headers.get('X-Blog-Type');
 
     try {
         let posts;
         
-        let maxItems = url.searchParams.get('maxItems');
+        // let maxItems = url.searchParams.get('maxItems');
+        let maxItems;
         if (!maxItems) {
             maxItems = 30;
         }
@@ -22,7 +21,8 @@ export async function GET({ url, fetch }) {
                 break;
             case 'category':
                 // Get all posts from one category
-                const category = url.searchParams.get('category');
+                // const category = url.searchParams.get('category');
+                const category = 'Braunschweig';
                 posts = await client.getByTag(category, { orderings: { field: 'document.first_publication_date', direction: 'desc' }});
                 break;
             default:
