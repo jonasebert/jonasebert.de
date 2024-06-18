@@ -1,6 +1,8 @@
 import { json } from '@sveltejs/kit';
 import createClient from "$lib/content/prismic";
 
+export const prerender = false;
+
 export async function GET({ url, fetch }) {
     const client = createClient(fetch);
     const type = url.searchParams.get('type');
