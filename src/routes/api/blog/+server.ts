@@ -7,9 +7,8 @@ export async function GET({ fetch, request }) {
 
     try {
         let posts;
-        
-        // let maxItems = url.searchParams.get('maxItems');
-        let maxItems;
+
+        let maxItems = request.headers.get('X-Blog-MaxItems');
         if (!maxItems) {
             maxItems = 30;
         }
@@ -21,8 +20,7 @@ export async function GET({ fetch, request }) {
                 break;
             case 'category':
                 // Get all posts from one category
-                // const category = url.searchParams.get('category');
-                const category = 'Braunschweig';
+                const category = request.headers.get('X-Blog-Category');
                 posts = await client.getByTag(category, { orderings: { field: 'document.first_publication_date', direction: 'desc' }});
                 break;
             default:
