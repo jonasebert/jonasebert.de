@@ -1,7 +1,5 @@
-import { base } from "$app/paths";
-
 export async function load({ params, fetch }) {
-  const res = await fetch(`${base}/api/blog`, {
+  const res = await fetch(`/api/blog`, {
     headers: {
       'X-Blog-Type': 'category',
       'X-Blog-Category': params.slug
