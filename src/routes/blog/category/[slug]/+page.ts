@@ -1,21 +1,16 @@
 export async function load({ params, fetch }) {
-  const res = await fetch(`/api/blog`, {
-    headers: {
-      'X-Blog-Type': 'category',
-      'X-Blog-Category': params.slug
-    }
-  });
+  const res = await fetch(`https://api.jonasebert.de/api?type=blog&itemtype=category&category=${params.slug}`);
   if (res.ok) {
-    const data = await res.json();
+    const posts = await res.json();
     return {
-      posts: data.posts,
-      category: params.slug,
+      posts: posts.data,
+      category: params.slug
     };
   } else {
-    // Return empty posts
+    // Error handling
     return {
       posts: [],
-      category: params.slug,
+      category: params.slug
     };
   }
 }

@@ -1,19 +1,12 @@
-import { base } from "$app/paths";
-
 export async function load({ params, fetch }) {
-  const res = await fetch(`${base}/api/blog`, {
-    headers: {
-      'X-Blog-Type': 'all',
-      'X-Blog-MaxItems': '5'
-    }
-  });
+  const res = await fetch(`https://api.jonasebert.de/api?type=blog&itemtype=all&maxitems=5`);
   if (res.ok) {
-    const data = await res.json();
+    const posts = await res.json();
     return {
-      posts: data.posts,
+      posts: posts.data,
     };
   } else {
-    // Fehlerbehandlung
+    // Error handling
     return {
       posts: [],
     };
