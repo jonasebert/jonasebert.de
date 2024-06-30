@@ -95,7 +95,11 @@
 				{:else if contentBlock.type === 'preformatted'}
 					<code>{contentBlock.text}</code>
 				{:else if contentBlock.type === 'embed'}
-					{@html contentBlock.oembed.html}
+					<div class="iframe-wrapper rounded-xl overflow-hidden h-52 w-52">
+						<div class="iframe-container">
+							{@html contentBlock.oembed.html}
+						</div>
+					</div>
 				{/if}
 			{/each}
 		</article>
