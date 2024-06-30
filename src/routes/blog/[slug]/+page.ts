@@ -2,8 +2,8 @@ import * as ph from '@prismicio/helpers';
 import { getDesc } from "$lib/util/TextHelpers.js";
 
 export async function load({ params, fetch }) {
-  const api = process.env.JONAS_EBERT_API_URL;
-  const res = await fetch(`${api}/api?type=blog&itemtype=post&postid=${params.slug}`);
+  const apiUrl = 'https://api.jonasebert.de/api';
+  const res = await fetch(`${apiUrl}?type=blog&itemtype=post&postid=${params.slug}`);
   
   if (res.ok) {
     const post = await res.json();
@@ -19,6 +19,7 @@ export async function load({ params, fetch }) {
     };
   } else {
     // Error handling
+    console.error('Fehler beim Abrufen des Posts:', res.status, res.statusText);
     return {
       posts: []
     };

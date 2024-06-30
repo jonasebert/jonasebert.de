@@ -1,5 +1,6 @@
 export async function load({ params, fetch }) {
-  const res = await fetch(`https://api.jonasebert.de/api?type=blog&itemtype=all`);
+  const apiUrl = 'https://api.jonasebert.de/api';
+  const res = await fetch(`${apiUrl}?type=blog&itemtype=all`);
   if (res.ok) {
     const posts = await res.json();
     return {
@@ -7,6 +8,7 @@ export async function load({ params, fetch }) {
     };
   } else {
     // Error handling
+    console.error('Fehler beim Abrufen der Posts:', res.status, res.statusText);
     return {
       posts: [],
     };
