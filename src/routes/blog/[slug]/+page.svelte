@@ -1,6 +1,6 @@
 <script>
 	import Image from '$lib/components/image.svelte';
-import { name } from '$lib/store';
+	import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
     import * as ph from '@prismicio/helpers';
 
@@ -94,6 +94,8 @@ import { name } from '$lib/store';
 					<ol class="list-decimal"><li>{contentBlock.text}</li></ol>
 				{:else if contentBlock.type === 'preformatted'}
 					<code>{contentBlock.text}</code>
+				{:else if contentBlock.type === 'embed'}
+					{@html contentBlock.oembed.html}
 				{/if}
 			{/each}
 		</article>
