@@ -1,11 +1,32 @@
 <script>
-	import Image from '$lib/components/image.svelte';
+	// import Image from '$lib/components/image.svelte';
 	import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
     import * as ph from '@prismicio/helpers';
+	import { SliceZone } from '@prismicio/svelte';
 
+	import Paragraph from '$lib/components/prismic/paragraph.svelte';
+	import Image from '$lib/components/prismic/image.svelte';
+	import Heading from '$lib/components/prismic/heading.svelte';
+	import Lists from '$lib/components/prismic/lists.svelte';
+	import Embed from '$lib/components/prismic/embed.svelte';
+	
 	export let data;
     let { posts } = data;
+
+	const components = {
+		paragraph: Paragraph,
+		image: Image,
+		heading1: Heading,
+		heading2: Heading,
+		heading3: Heading,
+		heading4: Heading,
+		heading5: Heading,
+		heading6: Heading,
+		'list-item': Lists,
+		'o-list-item': Lists,
+		embed: Embed
+	};
 
 	function teaserImage() {
 		if (ph.asImageSrc(posts.data.teaser_image[0].image)) {
@@ -69,6 +90,9 @@
 <div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">
 		<article>
+			<SliceZone slices={posts.data.body} {components}/>
+		</article>
+		<!-- <article>
 			{#each posts.data.body as contentBlock}
 				{#if contentBlock.type === 'paragraph'}
 					<p>{contentBlock.text}</p>
@@ -95,13 +119,13 @@
 				{:else if contentBlock.type === 'preformatted'}
 					<code>{contentBlock.text}</code>
 				{:else if contentBlock.type === 'embed'}
-					<div class="iframe-wrapper rounded-xl overflow-hidden h-52 w-52">
-						<div class="iframe-container">
+					<div class="iframe-wrapper rounded-xl overflow-hidden h-auto w-auto">
+						<div class="iframe-container h-full w-full">
 							{@html contentBlock.oembed.html}
 						</div>
 					</div>
 				{/if}
 			{/each}
-		</article>
+		</article> -->
 	</div>
 </div>
