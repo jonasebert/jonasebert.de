@@ -10,6 +10,7 @@
 	import Heading from '$lib/components/prismic/heading.svelte';
 	import Lists from '$lib/components/prismic/lists.svelte';
 	import Embed from '$lib/components/prismic/embed.svelte';
+	import Code from '$lib/components/prismic/code.svelte';
 	
 	export let data;
     let { posts } = data;
@@ -25,7 +26,8 @@
 		heading6: Heading,
 		'list-item': Lists,
 		'o-list-item': Lists,
-		embed: Embed
+		embed: Embed,
+		preformatted: Code
 	};
 
 	function teaserImage() {

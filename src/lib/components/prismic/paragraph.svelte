@@ -5,5 +5,5 @@
 </script>
 
 <div>
-    <p>{slice.text}</p>
+    <p class="py-1">{slice.text}</p>
 </div>
