@@ -2,7 +2,7 @@
 	import Social from "$lib/components/blocks/Social.svelte";
 	import Image from "$lib/components/image.svelte";
 	import { name, pronouns } from "$lib/store";
-	import { formatDate } from "$lib/utils/date";
+	import { FormatDate } from "$lib/util/date";
 	export let data;
 
 	// Get current month + year
@@ -18,14 +18,14 @@
 		let date = 'date not found';
 
 		if (start && end) {
-			date = formatDate(start,'month') + ' ' + formatDate(start,'year') + ' - ' + formatDate(end,'month') + ' ' + formatDate(end,'year');
+			date = FormatDate(start,'month') + ' ' + FormatDate(start,'year') + ' - ' + FormatDate(end,'month') + ' ' + FormatDate(end,'year');
 		} else if (start && !end) {
 			if (start <= nowFormatted) {
 				date = 'seit ';
 			} else if (start > nowFormatted) {
 				date = 'ab ';
 			}
-			date = date + formatDate(start,'month') + ' ' + formatDate(start,'year');
+			date = date + FormatDate(start,'month') + ' ' + FormatDate(start,'year');
 		}
 
 		return date;

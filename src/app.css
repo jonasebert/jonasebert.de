@@ -21,7 +21,7 @@ body {
 }
 
 /* Überschriften-Stile mit Abstand */
-h2 {
+/* h2 {
 	font-size: 2em;
 	font-weight: bold;
 	@apply text-je-sand;
@@ -59,7 +59,7 @@ h6 {
 	@apply text-je-gray-100;
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
-}
+} */
 
 /* Link-Stile */
 a:hover {

@@ -18,7 +18,7 @@
             <!-- </a> -->
             </div>
             <div class="p-4">
-            <h2 class="text-xl font-semibold mb-2 font-poppins">
+            <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand">
                 <!-- <a href={event.summary}> -->
                 {#if event.state === 'CANCELLED'}
                     [ABGESAGT]
