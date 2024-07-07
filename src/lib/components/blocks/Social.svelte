@@ -11,5 +11,5 @@
     <RoundedIcon href="https://bsky.app/profile/jonasebert.bsky.social" icon={faBluesky} target="_blank" hoverBGColor={hoverBGColor} />
     <RoundedIcon href="https://www.youtube.com/@jonas_ebert" icon={faYoutube} target="_blank" hoverBGColor={hoverBGColor} />
     <RoundedIcon href="https://www.tiktok.com/@jonas.ebert3" icon={faTiktok} target="_blank" hoverBGColor={hoverBGColor} />
-    <RoundedIcon href="www.linkedin.com/in/jonasebert" icon={faLinkedinIn} target="_blank" hoverBGColor={hoverBGColor} />
+    <RoundedIcon href="https://www.linkedin.com/in/jonasebert" icon={faLinkedinIn} target="_blank" hoverBGColor={hoverBGColor} />
 </div>
