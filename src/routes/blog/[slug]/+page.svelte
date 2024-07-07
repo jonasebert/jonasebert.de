@@ -11,6 +11,7 @@
 	import Lists from '$lib/components/prismic/lists.svelte';
 	import Embed from '$lib/components/prismic/embed.svelte';
 	import Code from '$lib/components/prismic/code.svelte';
+	import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
 	
 	export let data;
     let { posts } = data;
@@ -88,6 +89,8 @@
 		</div>
 	</div>
 </div>
+
+<InfoMessage message='Aktuell finden Umbauarbeiten am Blog statt.<br>Einige Funktionen stehen aktuell nicht zur Verfügung!'/>
 
 <div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">

@@ -3,6 +3,7 @@
 	import { name } from "$lib/store";
 	import BlogTiles from "$lib/components/tiles/Blog.svelte";
 	import Social from "$lib/components/blocks/Social.svelte";
+	import InfoMessage from "$lib/components/blocks/InfoMessage.svelte";
 	
 	// Blog data
 	export let data;
@@ -49,6 +50,7 @@
     <div class="text-center font-poppins">
 		  <h2 class="text-5xl font-semibold text-je-sand my-2 py-7">Aktuelles</h2>
 	</div>
+	<InfoMessage message='Aktuell finden Umbauarbeiten am Blog statt.<br>Einige Funktionen stehen aktuell nicht zur Verfügung!'/>
 	{#if posts[0]}
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 		{#each posts as post}
