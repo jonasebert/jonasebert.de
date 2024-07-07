@@ -1,5 +1,5 @@
-export function formatDate(isoString: string, type: string) {
-    const monthsshort = ['Jan', 'Feb', 'März', 'Apr', 'Mai', 'Juni', 'Juli', 'Aug', 'Sept', 'Okt', 'Nov', 'Dez'];
+export function FormatDate(isoString: string, type: string) {
+    const monthsshort = ['Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.'];
     const monthslong = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
     const date = new Date(isoString);
     const day = date.getDate().toString().padStart(2, '0');

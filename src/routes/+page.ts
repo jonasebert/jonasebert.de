@@ -1,11 +1,17 @@
-// src/routes/blog/+page.ts
-export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/posts`);
-    const posts = await response.json();
+export async function load({ params, fetch }) {
+  const apiUrl = 'https://api.jonasebert.de/api';
+  const res = await fetch(`${apiUrl}?type=blog&itemtype=all&maxitems=5`);
 
-    const limitedPosts = posts.slice(0, 6);
-
+  if (res.ok) {
+    const posts = await res.json();
     return {
-        posts: limitedPosts
+      posts: posts.data,
     };
-};
+  } else {
+    // Error handling
+    console.error('Fehler beim Abrufen der Posts:', res.status, res.statusText);
+    return {
+      posts: [],
+    };
+  }
+}
