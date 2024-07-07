@@ -94,40 +94,5 @@
 		<article>
 			<SliceZone slices={posts.data.body} {components}/>
 		</article>
-		<!-- <article>
-			{#each posts.data.body as contentBlock}
-				{#if contentBlock.type === 'paragraph'}
-					<p>{contentBlock.text}</p>
-				{:else if contentBlock.type === 'heading1'}
-					<h1 class="text-5xl font-bold text-je-sand my-2 py-10">{contentBlock.text}</h1>
-				{:else if contentBlock.type === 'heading2'}
-					<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">{contentBlock.text}</h2>
-				{:else if contentBlock.type === 'heading3'}
-					<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">{contentBlock.text}</h3>
-				{:else if contentBlock.type === 'heading4'}
-					<h4 class="text-2xl font-semibold my-2 py-10">{contentBlock.text}</h4>
-				{:else if contentBlock.type === 'heading5'}
-					<h5>{contentBlock.text}</h5>
-				{:else if contentBlock.type === 'heading6'}
-					<h6>{contentBlock.text}</h6>
-				{:else if contentBlock.type === 'hyperlink'}
-					<a href={contentBlock.url} target={contentBlock.target}>{contentBlock.text}</a>
-				{:else if contentBlock.type === 'image'}
-					<Image src={ph.asImageSrc(contentBlock)} alt={contentBlock.alt} classNames="h-auto w-80 rounded-lg" />
-				{:else if contentBlock.type === 'list-item'}
-					<ul class="list-disc"><li>{contentBlock.text}</li></ul>
-				{:else if contentBlock.type === 'o-list-item'}
-					<ol class="list-decimal"><li>{contentBlock.text}</li></ol>
-				{:else if contentBlock.type === 'preformatted'}
-					<code>{contentBlock.text}</code>
-				{:else if contentBlock.type === 'embed'}
-					<div class="iframe-wrapper rounded-xl overflow-hidden h-auto w-auto">
-						<div class="iframe-container h-full w-full">
-							{@html contentBlock.oembed.html}
-						</div>
-					</div>
-				{/if}
-			{/each}
-		</article> -->
 	</div>
 </div>
