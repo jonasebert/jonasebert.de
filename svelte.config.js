@@ -20,6 +20,10 @@ const config = {
 			handleMissingId(id, path) {
 				console.warn(`Missing ID: ${id} on path: ${path}`);
 				return true;
+			},
+			handleHttpError( path) {
+				console.warn(`HTTP-Error: ${path}`)
+				return true;
 			}
 		}
 	},
