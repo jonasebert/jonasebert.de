@@ -90,8 +90,6 @@
 	</div>
 </div>
 
-<InfoMessage message='Aktuell finden Umbauarbeiten am Blog statt.<br>Einige Funktionen stehen aktuell nicht zur Verfügung!'/>
-
 <div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">
 		<article>
