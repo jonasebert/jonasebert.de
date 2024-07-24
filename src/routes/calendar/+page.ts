@@ -1,13 +1,14 @@
 // src/routes/blog/+page.ts
 export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/calendar`);
-    if (!response.ok) {
-        throw new Error(`Fehler beim Laden der Termine: ${response.statusText}`);
+    const apiUrl = 'https://api.jonasebert.de/api';
+    const res = await fetch(`${apiUrl}?type=calendar`);
+    if (!res.ok) {
+        throw new Error(`Fehler beim Laden der Termine: ${res.statusText}`);
     }
-    const { events } = await response.json();
+    const { data } = await res.json();
 
     // Format Date
-    const foramttedEvents = events.map(event => {
+    const foramttedEvents = data.map(event => {
         return {
             ...event,
             start: formatDate(event.start),
