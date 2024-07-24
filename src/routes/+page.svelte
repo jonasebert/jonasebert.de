@@ -29,8 +29,8 @@
 
 <div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
 	<div class="absolute inset-0 bg-black opacity-50"></div>
-	<div class="relative pt-5 pb-5 text-center">
-		<h2 class="text-4xl font-bold uppercase text-je-sand font-poppins">Politik für eine lebenswerte Welt</h2>
+	<div class="relative py-7 text-center">
+		<h2 class="text-4xl font-bold pb-7 uppercase text-je-sand font-poppins">Politik für eine lebenswerte Welt</h2>
 		<div class="mb-4 text-je-sand text-lg font-montserrat">
 			Unser Klima verändert sich rasant und mit jedem Kilogramm CO₂ mehr wird dieser Planet zu einem lebensfeindlichen Ort. Wir steuern bereits auf eine Klimakatastrophe zu, die bald unvermeidlich sein wird. Wir stellen fest, dass unsere Sommer immer wärmer und unsere Winter immer milder werden. Wir feiern jedes Jahr einen neuen Temperaturrekord. Ein Umdenken in der Politik und Wirtschaft geht nur sehr langsam voran.
 		</div>
@@ -50,7 +50,6 @@
     <div class="text-center font-poppins">
 		  <h2 class="text-5xl font-semibold text-je-sand my-2 py-7">Aktuelles</h2>
 	</div>
-	<InfoMessage message='Aktuell finden Umbauarbeiten am Blog statt.<br>Einige Funktionen stehen aktuell nicht zur Verfügung!'/>
 	{#if posts[0]}
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 		{#each posts as post}
