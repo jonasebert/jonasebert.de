@@ -1,17 +1,28 @@
 export async function load({ params, fetch }) {
   const apiUrl = 'https://api.jonasebert.de/api';
-  const res = await fetch(`${apiUrl}?type=blog&itemtype=all&maxitems=5`);
 
-  if (res.ok) {
-    const posts = await res.json();
-    return {
-      posts: posts.data,
-    };
+  // Abrufen der Blog-Posts
+  const postsRes = await fetch(`${apiUrl}?type=blog&itemtype=all&maxitems=5`);
+  let posts = [];
+  if (postsRes.ok) {
+    const postsData = await postsRes.json();
+    posts = postsData.data;
   } else {
-    // Error handling
-    console.error('Fehler beim Abrufen der Posts:', res.status, res.statusText);
-    return {
-      posts: [],
-    };
+    console.error('Fehler beim Abrufen der Posts:', postsRes.status, postsRes.statusText);
   }
+
+  // Abrufen der Veranstaltungen
+  const eventsRes = await fetch(`${apiUrl}?type=calendar&maxitems=5`);
+  let events = [];
+  if (eventsRes.ok) {
+    const eventsData = await eventsRes.json();
+    events = eventsData.data;
+  } else {
+    console.error('Fehler beim Abrufen der Veranstaltungen:', eventsRes.status, eventsRes.statusText);
+  }
+
+  return {
+    posts,
+    events
+  };
 }

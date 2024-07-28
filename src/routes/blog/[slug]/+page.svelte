@@ -79,8 +79,8 @@
 		<div class="flex flex-wrap gap-2">
 			{#if posts.tags[0]}
 				{#each posts.tags as category}
-					<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2">
-						<a href="/blog/category/{category}">
+					<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 transition-transform duration-500 hover:scale-110">
+						<a href="/blog/category/{category}" target="_self" class="hover:text-je-gray-500">
 							{category}
 						</a>
 					</div>

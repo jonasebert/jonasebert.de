@@ -1,11 +1,30 @@
 <script>
     import Image from '$lib/components/image.svelte';
+    import { FormatDate } from '$lib/util/date';
     export let items;
+
+    const events = items.map(event => {
+        return {
+            ...event,
+            start: FormatDate(event.start, ''),
+            end: FormatDate(event.end, ''),
+            startday: FormatDate(event.start, 'day'),
+            endday: FormatDate(event.end, 'day'),
+            startmonth: FormatDate(event.start, 'month'),
+            endmonth: FormatDate(event.end, 'month'),
+            startyear: FormatDate(event.start, 'year'),
+            endyear: FormatDate(event.end, 'year'),
+            starttime: FormatDate(event.start, 'time'),
+            endtime: FormatDate(event.end, 'time'),
+            startdate: FormatDate(event.start, 'date'),
+            enddate: FormatDate(event.end, 'date'),
+        };
+    });
 </script>
 
-{#if items.events}
+{#if events}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-        {#each items.events as event}
+        {#each events as event}
         <div class={event.now == true ? 'bg-gray-700 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-gray-700 rounded-lg overflow-hidden shadow-lg'}>
             <!-- <div class="transition-transform duration-500 hover:scale-105"> -->
             <div>
