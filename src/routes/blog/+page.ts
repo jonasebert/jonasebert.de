@@ -1,16 +1,17 @@
 export async function load({ params, fetch }) {
   const apiUrl = 'https://api.jonasebert.de/api';
-  const res = await fetch(`${apiUrl}?type=blog&itemtype=all`);
-  if (res.ok) {
-    const posts = await res.json();
-    return {
-      posts: posts.data,
-    };
+
+  // Abrufen der Blog-Posts
+  const postsRes = await fetch(`${apiUrl}?type=blog&itemtype=all`);
+  let posts = [];
+  if (postsRes.ok) {
+    const postsData = await postsRes.json();
+    posts = postsData.data;
   } else {
-    // Error handling
-    console.error('Fehler beim Abrufen der Posts:', res.status, res.statusText);
-    return {
-      posts: [],
-    };
+    console.error('Fehler beim Abrufen der Posts:', postsRes.status, postsRes.statusText);
   }
+
+  return {
+    posts
+  };
 }
