@@ -70,6 +70,7 @@
 
 <svelte:head>
 	<title>{pageTitle}</title>
+	<script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=jonasebert"></script>
 </svelte:head>
 
 <header class="bg-je-green-500 font-poppins text-je-sand p-5 sticky top-0 w-full z-10 shadow-lg">
