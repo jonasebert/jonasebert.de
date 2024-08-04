@@ -2,7 +2,7 @@ export async function load({ params, fetch }) {
     const apiUrl = 'https://api.jonasebert.de/api';
 
     // Abrufen der Veranstaltungen
-    const eventsRes = await fetch(`${apiUrl}?type=calendar&maxitems=5`);
+    const eventsRes = await fetch(`${apiUrl}?type=calendar`);
     let events = [];
     if (eventsRes.ok) {
         const eventsData = await eventsRes.json();
