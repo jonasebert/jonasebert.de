@@ -84,7 +84,7 @@
                 </div>
                 <div class="flex flex-row flex-wrap gap-2 font-montserrat">
                     {#if event.location}
-                        <div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 mr-2">
+                        <div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">
                             {event.location}
                         </div>
                     {/if}
