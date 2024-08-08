@@ -33,7 +33,7 @@
 </script>
 
 <div class="container">
-	<div>
+	<div class="pb-10">
 		<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">{name} ({pronouns})</h1>
 		<div class="italic font-montserrat">Geboren 337 ppm</div>
 		<div class="flex flex-col md:flex-row">
