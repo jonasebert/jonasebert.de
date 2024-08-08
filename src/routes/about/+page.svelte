@@ -33,7 +33,7 @@
 </script>
 
 <div class="container">
-	<div>
+	<div class="pb-10">
 		<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">{name} ({pronouns})</h1>
 		<div class="italic font-montserrat">Geboren 337 ppm</div>
 		<div class="flex flex-col md:flex-row">
@@ -83,7 +83,7 @@
 					</div>
 					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
 						{#each job.skills as skill }
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
 						{/each}
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 					</div>
 					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
 						{#each edu.skills as skill }
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
 						{/each}
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 					</div>
 					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
 						{#each vol.skills as skill }
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">{skill}</div>
+							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
 						{/each}
 					</div>
 				</div>
@@ -153,50 +153,50 @@
 				<div>
 					<h5 class="text-2xl font-bold font-poppins">Infrastruktur</h5>
 					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Windowsclient</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Windowsserver</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Linuxserver</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Microsoft Intune</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Docker</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Telekommunikation</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Telekommunikationssysteme</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">PostgreSQL</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">MS SQL</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Windowsclient</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Windowsserver</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Linuxserver</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Microsoft Intune</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Docker</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikation</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikationssysteme</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PostgreSQL</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">MS SQL</div>
 					</div>
 				</div>
 				<div>
 					<h5 class="text-2xl font-bold font-poppins">Programmierung/Frameworks</h5>
 					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">PHP</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">CSS</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">HTML</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">TypeScript/JavaScript</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">SvelteKit</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PHP</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">CSS</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">HTML</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">TypeScript/JavaScript</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">SvelteKit</div>
 					</div>
 				</div>
 				<div>
 					<h5 class="text-2xl font-bold font-poppins">Software</h5>
 					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Word</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Excel</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">PowerPoint</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Outlook</div>
-						<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">VS Code</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Word</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Excel</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PowerPoint</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Outlook</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">VS Code</div>
 					</div>
 				</div>
 			</div>
 			<div class="pt-3">
 				<h4 class="text-2xl font-bold text-je-sand font-poppins">Sprachen</h4>
 				<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Deutsch (Muttersprache)</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Englisch (B1)</div>
+					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Deutsch (Muttersprache)</div>
+					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Englisch (B1)</div>
 				</div>
 			</div>
 			<div class="pt-3">
 				<h4 class="text-2xl font-bold text-je-sand font-poppins">Mitgliedschaften</h4>
 				<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
-					<div class="rounded-lg bg-je-green-300 py-1 px-1 mr-2">Grüne Jugend - seit 2022</div>
+					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
+					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Grüne Jugend - seit 2022</div>
 				</div>
 			</div>
 		</div>
