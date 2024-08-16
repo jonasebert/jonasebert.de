@@ -1,12 +1,12 @@
 <script>
     import Image from '$lib/components/image.svelte';
-	import { FormatDate } from '$lib/util/date';
+    import { FormatDate } from '$lib/util/date';
     import * as ph from "@prismicio/helpers";
     export let item;
 </script>
 
 <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-    <div class="transition-transform duration-500 hover:scale-105">
+    <div class="relative z-10 transition-transform duration-500 hover:scale-105">
         <a href={item.url}>
         {#if item.data.teaser_image[0]}
                 <Image src={ph.asImageSrc(item.data.teaser_image[0].image)} alt="Teaser Blog {ph.asText(item.title)}" classNames="w-full"/>
@@ -15,7 +15,7 @@
         {/if}
         </a>
     </div>
-    <div class="p-4">
+    <div class="p-4 relative z-20 bg-gray-700">
         <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand">
             <a href={item.url}>
                 {ph.asText(item.data.title)}
