@@ -27,7 +27,7 @@
         {#each events as event}
         <div class={event.now == true ? 'bg-gray-700 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-gray-700 rounded-lg overflow-hidden shadow-lg'}>
             {#if event.url}
-                <div class="transition-transform duration-500 hover:scale-105">
+                <div class="relative z-20 transition-transform duration-500 hover:scale-105">
                     <a href={event.url} target="_blank">
                         {#if event.teaserImage}
                             <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
@@ -45,7 +45,7 @@
                     {/if}
                 </div>
             {/if}   
-            <div class="p-4">
+            <div class="p-4 relative z-30 bg-gray-700">
                 <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand">
                     {#if event.url}
                         <a href={event.url} target="_blank">
