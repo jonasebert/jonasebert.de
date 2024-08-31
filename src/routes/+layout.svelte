@@ -98,8 +98,8 @@
 	<main class="flex-grow">
 		<slot />
 		{#if isVisible}
-			<div>
-				<button class="fixed bottom-4 right-4 bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
+			<div class="z-40 fixed bottom-4 right-4">
+				<button class="bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
 					<Image src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" classNames="w-auto h-7"/>
 				</button>
 			</div>
