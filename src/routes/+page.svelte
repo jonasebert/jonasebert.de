@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="flex-1 relative flex items-end">
-				<div class="absolute inset-0 bg-je-green-500 transform -skew-y-12 rounded-3xl"></div>
+				<div class="absolute inset-0 bg-je-green-900 transform -skew-y-12 rounded-3xl"></div>
 				<a href="/about">
 					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-full h-auto rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
