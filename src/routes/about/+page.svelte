@@ -32,34 +32,40 @@
 	}
 </script>
 
-<div class="container">
-	<div class="pb-10">
-		<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">{name} ({pronouns})</h1>
-		<div class="italic font-montserrat">Geboren 337 ppm</div>
-		<div class="flex flex-col md:flex-row">
-			<div class="mb-4 md:mr-4 flex-1">
-				<h2 class="text-3xl font-semibold font-poppins">Vordenker im Einklang von Technik und Natur</h2>
-				<div class="mb-4 font-montserrat">
-					In einer Ära, in der digitale Innovationen das Zeitalter prägen, sehe ich mich als Verfechter einer Zukunft, in der technologischer Fortschritt und ökologische Nachhaltigkeit eine Symbiose eingehen. Mein Engagement für den Klimaschutz ist geprägt von der Überzeugung, dass wir alle eine Rolle in der Bewahrung unseres Planeten spielen.
+<div class="flex flex-col items-center justify-center pt-5 pb-20">
+	<div class="container mx-auto">
+		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
+			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-center lg:text-left relative z-10">
+				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
+				<div class="italic font-montserrat">Geboren 337 ppm</div>
+				<div class="mb-4 md:mr-4 flex-1">
+					<h2 class="text-3xl font-semibold mb-4">Vordenker im Einklang von Technik und Natur</h2>
+					<div class="mb-4 font-montserrat">
+						In einer Ära, in der digitale Innovationen das Zeitalter prägen, sehe ich mich als Verfechter einer Zukunft, in der technologischer Fortschritt und ökologische Nachhaltigkeit eine Symbiose eingehen. Mein Engagement für den Klimaschutz ist geprägt von der Überzeugung, dass wir alle eine Rolle in der Bewahrung unseres Planeten spielen.
+					</div>
+					<div class="mb-4 font-montserrat">
+						Als IT-Experte mit einem breiten Spektrum an Fähigkeiten habe ich mich in verschiedenen Sektoren bewährt. Die Möglichkeit, meine Kenntnisse für den Umweltschutz einzusetzen, ist ein spannendes Feld, das ich erkunden möchte, um die Schnittstelle zwischen IT und Nachhaltigkeit zu stärken.
+					</div>
+					<div class="mb-4 font-montserrat">
+						Meine politische Tätigkeit bei BÜNDNIS 90/DIE GRÜNEN in Braunschweig ist Ausdruck meines Bestrebens, auf lokaler Ebene positive Veränderungen zu bewirken. Ich trete für eine Politik ein, die den Herausforderungen des Klimawandels mit Weitsicht begegnet, für eine Wirtschaft, die Ressourcen schont, und für ein Miteinander, das den Schutz unserer natürlichen Lebensgrundlagen ernst nimmt.
+					</div>
+					<div class="mb-4 font-montserrat">
+						Ich bin fest davon überzeugt, dass jeder Einzelne die Kraft hat, die Welt zu verändern. Durch mein Engagement hoffe ich, andere zu inspirieren, sich ebenfalls für den Umweltschutz stark zu machen und gemeinsam einen Weg in eine nachhaltige Zukunft zu ebnen.
+					</div>
 				</div>
-				<div class="mb-4 font-montserrat">
-					Als IT-Experte mit einem breiten Spektrum an Fähigkeiten habe ich mich in verschiedenen Sektoren bewährt. Die Möglichkeit, meine Kenntnisse für den Umweltschutz einzusetzen, ist ein spannendes Feld, das ich erkunden möchte, um die Schnittstelle zwischen IT und Nachhaltigkeit zu stärken.
-				</div>
-				<div class="mb-4 font-montserrat">
-					Meine politische Tätigkeit bei BÜNDNIS 90/DIE GRÜNEN in Braunschweig ist Ausdruck meines Bestrebens, auf lokaler Ebene positive Veränderungen zu bewirken. Ich trete für eine Politik ein, die den Herausforderungen des Klimawandels mit Weitsicht begegnet, für eine Wirtschaft, die Ressourcen schont, und für ein Miteinander, das den Schutz unserer natürlichen Lebensgrundlagen ernst nimmt.
-				</div>
-				<div class="mb-4 font-montserrat">
-					Ich bin fest davon überzeugt, dass jeder Einzelne die Kraft hat, die Welt zu verändern. Durch mein Engagement hoffe ich, andere zu inspirieren, sich ebenfalls für den Umweltschutz stark zu machen und gemeinsam einen Weg in eine nachhaltige Zukunft zu ebnen.
-				</div>
-				<div>
+				<div class="pb-8">
 					<Social hoverBGColor="je-green-700" />
 				</div>
 			</div>
-			<div class="flex justify-center md:justify-start w-full md:max-w-xs lg:max-w-sm">
-				<Image src="/portrait/lg_square.webp" alt="Portrait von {name}" classNames="rounded-full w-full h-full object-cover"/>
+			<div class="flex-1 relative flex items-end">
+				<div class="absolute inset-0 bg-je-green-900 transform -skew-y-12 rounded-3xl"></div>
+				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-full h-auto rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="container">
 	<div>
 		<h2 class="text-4xl font-bold text-je-sand font-poppins">Lebenslauf</h2>
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
