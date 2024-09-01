@@ -11,20 +11,23 @@
     const { posts, events } = data;
 </script>
 
-<div class="flex flex-row items-center justify-center p-5">
+<div class="flex flex-col items-center justify-center p-5 min-h-screen">
 	<div class="container mx-auto">
-		<div class="bg-je-gray-700 rounded-lg overflow-hidden">
-			<div class="p-8 font-poppins">
+		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
+			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-center lg:text-left relative z-10">
 				<h2 class="text-2xl font-semibold text-je-gray-100">The future is now!</h2>
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name }</h1>
+				<div class="pb-8">
+					<Social hoverBGColor="je-green-700" />
+				</div>
 			</div>
-			<div class="pl-8 pb-8">
-				<Social hoverBGColor="je-green-700" />
+			<div class="flex-1 relative">
+				<div class="absolute inset-0 bg-je-green-500 transform -skew-y-12 rounded-3xl"></div>
+				<a href="/about">
+					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-full h-auto rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+				</a>
 			</div>
 		</div>
-	</div>
-	<div class="hidden lg:block">
-    <Image src="/portrait/lg_square.webp" alt="Portrait von {name}" classNames="rounded-full w-80 object-cover object-top"/>
 	</div>
 </div>
 
