@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   	import Image from "$lib/components/image.svelte";
 	import { name } from "$lib/store";
 	import BlogTiles from "$lib/components/tiles/Blog.svelte";

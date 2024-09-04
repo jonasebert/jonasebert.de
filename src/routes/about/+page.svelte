@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Social from "$lib/components/blocks/Social.svelte";
 	import Image from "$lib/components/image.svelte";
 	import { name, pronouns } from "$lib/store";

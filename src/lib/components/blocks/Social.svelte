@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import RoundedIcon from "$lib/components/button/RoundedIcon.svelte"
     import { faInstagram, faThreads, faBluesky, faYoutube, faTiktok, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"; // For new Icons: https://fontawesome.com/search
 

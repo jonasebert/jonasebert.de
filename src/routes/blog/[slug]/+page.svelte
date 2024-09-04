@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// import Image from '$lib/components/image.svelte';
 	import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
@@ -11,7 +11,6 @@
 	import Lists from '$lib/components/prismic/lists.svelte';
 	import Embed from '$lib/components/prismic/embed.svelte';
 	import Code from '$lib/components/prismic/code.svelte';
-	import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
 	
 	export let data;
     let { posts } = data;

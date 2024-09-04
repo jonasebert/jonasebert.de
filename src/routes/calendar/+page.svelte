@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
     import CalendarTiles from '$lib/components/tiles/Calendar.svelte';
     export let data;

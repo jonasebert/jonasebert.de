@@ -1,6 +1,5 @@
-<script>
+<script lang="ts">
     import BlogTiles from '$lib/components/tiles/Blog.svelte';
-    import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
 
     export let data;
     let { posts } = data;

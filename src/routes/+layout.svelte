@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// Importe
 	import Social from '$lib/components/blocks/Social.svelte';
 	import '../app.css';

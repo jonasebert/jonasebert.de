@@ -1,5 +1,4 @@
-<script>
-    import * as ph from '@prismicio/helpers';
+<script lang="ts">
     import { HighlightAuto } from "svelte-highlight";
     import { githubDarkDimmed } from "svelte-highlight/styles";
     
