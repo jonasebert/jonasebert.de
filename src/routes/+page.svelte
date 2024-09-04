@@ -24,7 +24,7 @@
 			<div class="flex-1 relative flex items-end justify-center">
 				<div class="absolute inset-0 bg-je-green-900 transform -skew-y-12 rounded-3xl"></div>
 				<a href="/about">
-					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] w-auto rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
 			</div>
 		</div>
