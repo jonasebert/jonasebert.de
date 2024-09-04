@@ -1,8 +1,6 @@
-<script>
+<script lang="ts">
     import { name } from "$lib/store";
     import Image from '$lib/components/image.svelte';
-	import { Input } from "postcss";
-	import { isRedirect } from "@sveltejs/kit";
 	import Social from "$lib/components/blocks/Social.svelte";
 
     let response;

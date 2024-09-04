@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// Importe
 	import Social from '$lib/components/blocks/Social.svelte';
 	import '../app.css';
@@ -77,7 +77,7 @@
 		<div class="flex flex-row">
 			<div>
 				<a href="/" class={isResponsive ? 'flex items-center justify-start w-1/2 flex-shrink-0' : 'flex items-center justify-start w-1/2'}>
-					<Image src={logo_clear} alt="Logo von {name}" classNames="h-auto w-auto"/>
+					<Image src={logo_clear} alt="Logo von {name}" classNames="h-auto w-auto duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
 			</div>
 			<div class="flex items-center">
@@ -110,7 +110,7 @@
 		<div class="bg-je-gray-700 flex flex-wrap justify-center items-center text-center py-6 px-5">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
-					<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto"/>
+					<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
 			</div>
 			<div class="flex-1 p-2">

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { name, address, contact, uri } from "$lib/store";
 </script>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Image from '$lib/components/image.svelte';
     import { FormatDate } from '$lib/util/date';
     export let items;

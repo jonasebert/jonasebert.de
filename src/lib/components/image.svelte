@@ -1,9 +1,8 @@
-<!-- src/lib/components/Image.svelte -->
-<script>
+<script lang="ts">
     import { contextMenuAction } from '$lib/store';
-    export let src;
-    export let alt = '';
-    export let classNames = '';
+    export let src: string;
+    export let alt: string = '';
+    export let classNames: string = '';
 </script>
   
-<img {src} {alt} class="{classNames}" use:contextMenuAction />  
+<img {src} {alt} class={classNames} use:contextMenuAction />  

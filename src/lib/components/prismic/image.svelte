@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import * as ph from '@prismicio/helpers';
     import Image from '../image.svelte';
 

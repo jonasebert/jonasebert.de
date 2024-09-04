@@ -1,6 +1,4 @@
-<script>
-    import * as ph from '@prismicio/helpers';
-    
+<script lang="ts">    
     export let slice;
 </script>
 

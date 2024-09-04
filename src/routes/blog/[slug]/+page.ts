@@ -1,5 +1,5 @@
 import * as ph from '@prismicio/helpers';
-import { getDesc } from "$lib/util/TextHelpers.js";
+// import { getDesc } from "$lib/util/TextHelpers.js";
 
 export async function load({ params, fetch }) {
   const apiUrl = 'https://api.jonasebert.de/api';
