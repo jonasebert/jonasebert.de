@@ -35,10 +35,10 @@
 <div class="flex flex-col items-center justify-center pt-5 pb-20">
 	<div class="container mx-auto">
 		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
-			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-center lg:text-left relative z-10">
+			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
 				<div class="italic font-montserrat">Geboren 337 ppm</div>
-				<div class="mb-4 md:mr-4 flex-1">
+				<div class="mb-4 md:mr-4 flex-1 flex flex-col justify-evenly text-balance">
 					<h2 class="text-3xl font-semibold mb-4">Vordenker im Einklang von Technik und Natur</h2>
 					<div class="mb-4 font-montserrat">
 						In einer Ära, in der digitale Innovationen das Zeitalter prägen, sehe ich mich als Verfechter einer Zukunft, in der technologischer Fortschritt und ökologische Nachhaltigkeit eine Symbiose eingehen. Mein Engagement für den Klimaschutz ist geprägt von der Überzeugung, dass wir alle eine Rolle in der Bewahrung unseres Planeten spielen.
@@ -57,9 +57,9 @@
 					<Social hoverBGColor="je-green-700" />
 				</div>
 			</div>
-			<div class="flex-1 relative flex items-end">
+			<div class="flex-1 relative flex items-end justify-center">
 				<div class="absolute inset-0 bg-je-green-900 transform -skew-y-12 rounded-3xl"></div>
-				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-full h-auto rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] w-auto rounded-lg"/>
 			</div>
 		</div>
 	</div>
