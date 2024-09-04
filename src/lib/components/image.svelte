@@ -5,4 +5,4 @@
     export let classNames: string = '';
 </script>
   
-<img {src} {alt} class={classNames} use:contextMenuAction />  
+<img {src} {alt} class={classNames} use:contextMenuAction decoding="async"/>  
