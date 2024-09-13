@@ -51,20 +51,17 @@
 </div>
 
 <div class="container mx-auto px-4 py-12">
-    <div class="text-center font-poppins">
-		  <h2 class="text-5xl font-semibold text-je-sand my-2 pb-7">Aktuelles</h2>
+	<div class="text-center font-poppins">
+    	<h2 class="text-5xl font-semibold text-je-sand my-2">Termine</h2>
+    	<h3 class="text-4xl font-semibold text-je-sand my-2 pb-10">Hier kannst du mich treffen!</h3>
 	</div>
-	{#if posts[0]}
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-			{#each posts as post}
-				<BlogTiles item={post} />
-			{/each}
-		</div>
-	{:else}
-		<div class="text-center py-8 font-montserrat">
-            <InfoMessage message="Es konnten aktuell keine Beiträge gefunden werden!"></InfoMessage>
+    {#if events[0]}
+        <CalendarTiles items={events}></CalendarTiles>
+    {:else}
+        <div class="text-center py-8 font-montserrat">
+            <InfoMessage message="Es konnten aktuell keine Veranstaltungen gefunden werden!"></InfoMessage>
         </div>
-	{/if}
+    {/if}
 </div>
 
 <div class="container relative bg-[url('/home/brunswiek.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
@@ -84,15 +81,18 @@
 </div>
 
 <div class="container mx-auto px-4 py-12">
-	<div class="text-center font-poppins">
-    	<h2 class="text-5xl font-semibold text-je-sand my-2">Termine</h2>
-    	<h3 class="text-4xl font-semibold text-je-sand my-2 pb-10">Hier kannst du mich treffen!</h3>
+    <div class="text-center font-poppins">
+		  <h2 class="text-5xl font-semibold text-je-sand my-2 pb-7">Aktuelles</h2>
 	</div>
-    {#if events[0]}
-        <CalendarTiles items={events}></CalendarTiles>
-    {:else}
-        <div class="text-center py-8 font-montserrat">
-            <InfoMessage message="Es konnten aktuell keine Veranstaltungen gefunden werden!"></InfoMessage>
+	{#if posts[0]}
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+			{#each posts as post}
+				<BlogTiles item={post} />
+			{/each}
+		</div>
+	{:else}
+		<div class="text-center py-8 font-montserrat">
+            <InfoMessage message="Es konnten aktuell keine Beiträge gefunden werden!"></InfoMessage>
         </div>
-    {/if}
+	{/if}
 </div>
