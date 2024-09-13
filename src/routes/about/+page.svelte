@@ -37,7 +37,7 @@
 		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
-				<div class="italic font-montserrat">Geboren 337 ppm</div>
+				<div class="italic font-montserrat">Geboren 374 ppm</div>
 				<div class="mb-4 md:mr-4 flex-1 flex flex-col justify-evenly text-balance">
 					<h2 class="text-3xl font-semibold mb-4">Vordenker im Einklang von Technik und Natur</h2>
 					<div class="mb-4 font-montserrat">
