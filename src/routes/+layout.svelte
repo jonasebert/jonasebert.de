@@ -21,8 +21,8 @@
 	// Links
 	let menuLinks = [
 		{ title: 'Home', href: '/'},
-		{ title: 'Aktuelles', href: '/blog'},
 		{ title: 'Termine', href: '/calendar'},
+		{ title: 'Aktuelles', href: '/blog'},
 		{ title: 'Über mich', href: '/about'},
 		{ title: 'Kontakt', href: '/contact'}
 	];
