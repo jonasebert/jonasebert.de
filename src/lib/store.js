@@ -21,6 +21,9 @@ export const contact = {
 // URI
 export const uri = page;
 
+// API
+export const apiURI = 'https://api.jonasebert.de/api';
+
 // Pictures
 // Logo
 export const logo = '/logo/logo_500x100.svg';
