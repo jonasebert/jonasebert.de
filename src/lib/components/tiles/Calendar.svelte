@@ -26,40 +26,23 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {#each events as event}
         <div class={event.now == true ? 'bg-gray-700 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-gray-700 rounded-lg overflow-hidden shadow-lg'}>
-            {#if event.url}
-                <div class="relative z-20 transition-transform duration-500 hover:scale-105">
-                    <a href={event.url} target="_blank">
-                        {#if event.teaserImage}
-                            <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
-                        {:else}
-                            <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
-                        {/if}
-                    </a>
-                </div>
-            {:else}
-                <div>
+            <div class="relative z-20 transition-transform duration-500 hover:scale-105">
+                <a href="/calendar/{event.id}">
                     {#if event.teaserImage}
                         <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {:else}
                         <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {/if}
-                </div>
-            {/if}   
+                </a>
+            </div>
             <div class="p-4 relative z-30 bg-gray-700">
                 <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand">
-                    {#if event.url}
-                        <a href={event.url} target="_blank">
-                            {#if event.state === 'CANCELLED'}
-                                [ABGESAGT]
-                            {/if}
-                            {event.summary}
-                        </a>
-                    {:else}
+                    <a href="/calendar/{event.id}">
                         {#if event.state === 'CANCELLED'}
                             [ABGESAGT]
                         {/if}
                         {event.summary}
-                    {/if}
+                    </a>
                 </h2>
                 <div class="flex flex-row items-end gap-6 mb-2">
                     {#if event.datetype === 'date'}
