@@ -66,3 +66,11 @@
         </div>
     </div>
 </div>
+
+<div class="container mx-auto p-5 text-pretty font-montserrat">
+    <div class="mt-8">
+        <div>
+            {event.description}
+        </div>
+    </div>
+</div>
