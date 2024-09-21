@@ -29,7 +29,7 @@
             <div class="relative z-20 transition-transform duration-500 hover:scale-105">
                 <a href="/calendar/{event.id}">
                     {#if event.teaserImage}
-                        <Image src={event.teaserImage} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
+                        <Image src={event.teaserImage.uri} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {:else}
                         <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {/if}
