@@ -1,8 +1,15 @@
+import { apiDomain, apiSecret } from '$lib/store.js';
+
 export async function load({ params, fetch }) {
-  const apiUrl = 'https://api.jonasebert.de/api';
 
   // Abrufen der Blog-Posts
-  const postsRes = await fetch(`${apiUrl}?type=blog&itemtype=all&maxitems=5`);
+  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'x-vercel-protection-bypass': `${apiSecret}`
+    }
+});
   let posts = [];
   if (postsRes.ok) {
     const postsData = await postsRes.json();
@@ -12,7 +19,13 @@ export async function load({ params, fetch }) {
   }
 
   // Abrufen der Veranstaltungen
-  const eventsRes = await fetch(`${apiUrl}?type=calendar&maxitems=5`);
+  const eventsRes = await fetch(`https://${apiDomain}?type=calendar&maxitems=5`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'x-vercel-protection-bypass': `${apiSecret}`
+    }
+});
   let events = [];
   if (eventsRes.ok) {
     const eventsData = await eventsRes.json();

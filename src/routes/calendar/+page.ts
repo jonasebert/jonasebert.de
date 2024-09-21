@@ -1,8 +1,15 @@
+import { apiDomain, apiSecret } from '$lib/store.js';
+
 export async function load({ params, fetch }) {
-    const apiUrl = 'https://api.jonasebert.de/api';
 
     // Abrufen der Veranstaltungen
-    const eventsRes = await fetch(`${apiUrl}?type=calendar`);
+    const eventsRes = await fetch(`https://${apiDomain}?type=calendar`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'x-vercel-protection-bypass': `${apiSecret}`
+        }
+    });
     let events = [];
     if (eventsRes.ok) {
         const eventsData = await eventsRes.json();

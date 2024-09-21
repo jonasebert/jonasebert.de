@@ -1,8 +1,15 @@
+import { apiDomain, apiSecret } from '$lib/store.js';
+
 export async function load({ params, fetch }) {
-  const apiUrl = 'https://api.jonasebert.de/api';
 
   // Abrufen der Blog-Posts
-  const postsRes = await fetch(`${apiUrl}?type=blog&itemtype=category&category=${params.slug}`);
+  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=category&category=${params.slug}`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'x-vercel-protection-bypass': `${apiSecret}`
+    }
+  });
   let posts = [];
   let category = '';
   if (postsRes.ok) {

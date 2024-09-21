@@ -1,11 +1,17 @@
+import { apiDomain, apiSecret } from '$lib/store.js';
 import * as ph from '@prismicio/helpers';
 // import { getDesc } from "$lib/util/TextHelpers.js";
 
 export async function load({ params, fetch }) {
-  const apiUrl = 'https://api.jonasebert.de/api';
 
   // Abrufen der Blog-Posts
-  const postsRes = await fetch(`${apiUrl}?type=blog&itemtype=post&postid=${params.slug}`);
+  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=post&postid=${params.slug}`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'x-vercel-protection-bypass': `${apiSecret}`
+    }
+  });
   let posts = [];
   let heading = '';
   let description = '';
