@@ -22,7 +22,7 @@ export const contact = {
 export const uri = page;
 
 // API
-export const apiURI = 'https://api.jonasebert.de/api';
+export const apiUrl = 'https://api.jonasebert.de/api';
 
 // Pictures
 // Logo

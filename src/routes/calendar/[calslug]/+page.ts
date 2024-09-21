@@ -1,8 +1,8 @@
-import { apiURI } from '$lib/store.js';
+import { apiUrl } from '$lib/store.js';
 
 export async function load({ params, fetch}) {
     // Fetch events
-    const eventRes = await fetch(`${apiURI}?type=calendar&itemtype=single&id=${params.calslug}`);
+    const eventRes = await fetch(`${apiUrl}?type=calendar&itemtype=single&id=${params.calslug}`);
     let event = [];
 
     if (eventRes.ok) {
