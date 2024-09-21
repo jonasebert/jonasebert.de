@@ -7,7 +7,7 @@
 
     function teaserImage() {
         if (event.teaserImage) {
-            return event.teaserImage
+            return event.teaserImage;
         } else {
             return '/home/teaser.webp';
         }
@@ -17,10 +17,10 @@
 <svelte:head>
     <title>{event.summary} - {FormatDate(event.start, 'date')} - {name}</title>
     <meta property="og:title" content="{event.summary} - {FormatDate(event.start, 'date')}" />
-    <meta property="og:image" content={teaserImage()} />
+    <meta property="og:image" content={teaserImage().url} />
 </svelte:head>
 
-<div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage()});">
+<div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage().url});">
     <div class="bg-black bg-opacity-50 p-5">
         <div class="container mx-auto text-justify py-10">
             <div class="text-white text-center font-poppins">
@@ -32,14 +32,14 @@
 
 <div class="container mx-auto p-5 text-pretty text-justify bg-je-gray-800">
     <div class="flex flex-wrap justify-center items-center gap-2 font-montserrat">
-        {#if teaserImage()}
+        {#if teaserImage().copyright.url && teaserImage().copyright.text}
             <p class="text-lg md:mr-40">
-                {#if teaserImage()}
-                    📸 <a href={teaserImage()} target="_blank">
-                        {teaserImage()}
+                {#if teaserImage().copyright.text && teaserImage().copyright.url}
+                    📸 <a href={teaserImage().copyright.url} target="_blank">
+                        {teaserImage().copyright.text}
                     </a>
                 {:else}
-                    📸 {teaserImage()}
+                    📸 {teaserImage().copyright.text}
                 {/if}
             </p>
         {/if}
