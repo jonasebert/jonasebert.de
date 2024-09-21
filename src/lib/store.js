@@ -22,7 +22,9 @@ export const contact = {
 export const uri = page;
 
 // API
-export const apiUrl = 'https://api.jonasebert.de/api';
+export const apiDomain = process.env.JONAS_EBERT_API_DOMAIN;
+const processApiSecret = process.env.JONAS_EBERT_API_SECRET;
+export const apiSecret = processApiSecret ? processApiSecret : null;
 
 // Pictures
 // Logo

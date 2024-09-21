@@ -1,8 +1,14 @@
-import { apiUrl } from '$lib/store.js';
+import { apiDomain, apiSecret } from '$lib/store.js';
 
 export async function load({ params, fetch}) {
     // Fetch events
-    const eventRes = await fetch(`${apiUrl}?type=calendar&itemtype=single&id=${params.calslug}`);
+    const eventRes = await fetch(`https://${apiDomain}?type=calendar&itemtype=single&id=${params.calslug}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'x-vercel-protection-bypass': `${apiSecret}`
+        }
+    });
     let event = [];
 
     if (eventRes.ok) {
