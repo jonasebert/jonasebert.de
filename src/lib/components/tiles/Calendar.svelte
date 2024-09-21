@@ -28,8 +28,8 @@
         <div class={event.now == true ? 'bg-gray-700 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-gray-700 rounded-lg overflow-hidden shadow-lg'}>
             <div class="relative z-20 transition-transform duration-500 hover:scale-105">
                 <a href="/calendar/{event.id}">
-                    {#if event.teaserImage}
-                        <Image src={event.teaserImage.uri} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
+                    {#if event.teaserImage.url && event.teaserImage.url != null}
+                        <Image src={event.teaserImage.url} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {:else}
                         <Image src="/home/teaser.webp" alt={`Teaser Bild ${event.summary}`} className="w-full"/>
                     {/if}
