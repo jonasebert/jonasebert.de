@@ -89,7 +89,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto p-5 text-pretty md:text-pretty" style="font-family: Montserrat">
+<div class="container mx-auto p-5 pb-12 text-pretty md:text-pretty" style="font-family: Montserrat">
 	<div class="mt-8">
 		<article>
 			<SliceZone slices={posts.data.body} {components}/>
