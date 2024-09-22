@@ -1,18 +1,22 @@
 <script lang="ts">
-    import { name } from '$lib/store';
+    import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
+import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
 
     export let data;
     const event = data.event[0];
 
     function teaserImage() {
-        if (event?.teaserImage?.url) {
+        if (event.teaserImage.url) {
+            console.log(event.teaserImage);
             return event.teaserImage;
         } else {
-            return '/home/teaser.webp';
+            return {
+                ...event.teaserImage,
+                url: '/home/teaser.webp'
+            };
         }
     };
-    console.log(event);
 </script>
 
 <svelte:head>
@@ -41,9 +45,12 @@
                         {/if}
                     </div>
                 </div>
-                <div class="container p-5 text-justify rounded-lg bg-gray-800 w-fit">
+                <div class={event.now == true ? 'container p-5 text-justify rounded-lg bg-gray-800 w-fit animate-pulse' : 'container p-5 text-justify rounded-lg bg-gray-800 w-fit'}>
                     <div class="flex flex-col justify-center items-start gap-2 font-montserrat">
-                        {#if teaserImage()?.copyright?.url && teaserImage()?.copyright?.text}
+                        {#if event.state == 'CANCELLED'}
+                            <InfoMessage message='Veranstaltung wurde abgesagt!' />
+                        {/if}
+                        {#if teaserImage().copyright.url && teaserImage().copyright.text}
                             <p class="text-lg">
                                 {#if teaserImage().copyright.text && teaserImage().copyright.url}
                                     📸 <a href={teaserImage().copyright.url} target="_blank">
@@ -54,27 +61,32 @@
                                 {/if}
                             </p>
                         {/if}
-                        <div class="text-lg">
-                            {#if event.datetype === 'date'}
-                                <p class="text-lg">
-                                    {FormatDate(event.start, 'date')} - {FormatDate(event.end, 'date')}
-                                </p>
-                                <p class="text-lg">
-                                    Ganztägig
-                                </p>
-                            {:else if FormatDate(event.start, 'date') === FormatDate(event.end, 'date') && event.datetype === 'date-time'}
-                                <p class="text-lg">
-                                    {FormatDate(event.start, 'datelong')}
-                                </p>
-                                <p class="text-lg">
-                                    {FormatDate(event.start, 'time')} - {FormatDate(event.end, 'time')}
-                                </p>
-                            {:else}
-                                <p class="text-lg">
-                                    {FormatDate(event.start, 'date')} {FormatDate(event.start, 'time')} - {FormatDate(event.end, 'date')} {FormatDate(event.end, 'time')}
-                                </p>
-                            {/if}
+                        <div class="text-lg text-nowrap">
+                            <div class="flex flex-row justify-start items-center">
+                                <div>🗓️</div>
+                                <div>
+                                    {#if event.datetype === 'date'}
+                                        <p>{FormatDate(event.start, 'date')} - {FormatDate(event.end, 'date')}</p>
+                                        <p>Ganztägig</p>
+                                    {:else if FormatDate(event.start, 'date') === FormatDate(event.end, 'date') && event.datetype === 'date-time'}
+                                        <p>{FormatDate(event.start, 'datelong')}</p>
+                                        <p>{FormatDate(event.start, 'time')} - {FormatDate(event.end, 'time')}</p>
+                                    {:else}
+                                        <p>{FormatDate(event.start, 'date')} {FormatDate(event.start, 'time')} - {FormatDate(event.end, 'date')} {FormatDate(event.end, 'time')}</p>
+                                    {/if}    
+                                </div>
+                            </div>
                         </div>
+                        {#if event.url}
+                            <div class="text-lg text-nowrap">
+                                📍{event.location}
+                            </div>
+                        {/if}
+                        {#if event.url}
+                            <div class="text-lg text-nowrap">
+                                🔗<a href={event.url} target="_blank">Zur Veranstaltungsseite</a>
+                            </div>
+                        {/if}
                     </div>
                 </div>
             </div>
