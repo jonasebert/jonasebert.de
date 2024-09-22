@@ -1,17 +1,18 @@
 <script lang="ts">
-	import { name } from '$lib/store';
+    import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
 
     export let data;
     const event = data.event[0];
 
     function teaserImage() {
-        if (event.teaserImage) {
+        if (event?.teaserImage?.url) {
             return event.teaserImage;
         } else {
             return '/home/teaser.webp';
         }
-    }
+    };
+    console.log(event);
 </script>
 
 <svelte:head>
@@ -30,18 +31,20 @@
                     {/if}
                     {event.summary}</h1>
             </div>
-            <div class="flex gap-5">
-                <div class="container mx-auto p-5 text-pretty font-montserrat">
-                    <div class="mt-8">
-                        <div>
+            <div class="flex gap-5 bg-gray-700 rounded-lg shadow-lg">
+                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-start items-center">
+                    <div>
+                        {#if event.description}
                             {event.description}
-                        </div>
+                        {:else}
+                            Es konnte keine Beschreibung gefunden werden🫠
+                        {/if}
                     </div>
                 </div>
-                <div class="container mx-auto p-5 text-pretty text-justify rounded-lg  bg-je-green-500 bg-opacity-80">
+                <div class="container p-5 text-justify rounded-lg bg-gray-800 w-fit">
                     <div class="flex flex-col justify-center items-start gap-2 font-montserrat">
-                        {#if teaserImage().copyright.url && teaserImage().copyright.text}
-                            <p class="text-lg md:mr-40">
+                        {#if teaserImage()?.copyright?.url && teaserImage()?.copyright?.text}
+                            <p class="text-lg">
                                 {#if teaserImage().copyright.text && teaserImage().copyright.url}
                                     📸 <a href={teaserImage().copyright.url} target="_blank">
                                         {teaserImage().copyright.text}
@@ -51,7 +54,7 @@
                                 {/if}
                             </p>
                         {/if}
-                        <div class="text-lg md:mr-40 flex flex-col">
+                        <div class="text-lg">
                             {#if event.datetype === 'date'}
                                 <p class="text-lg">
                                     {FormatDate(event.start, 'date')} - {FormatDate(event.end, 'date')}
