@@ -7,10 +7,8 @@
 	import InfoMessage from "$lib/components/blocks/InfoMessage.svelte";
 	
 	// Blog data
-	// export let data;
-    // const { posts, events } = data;
-	const posts = [null];
-	const events = [null];
+	export let data;
+    const { posts, events } = data;
 </script>
 
 <div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
@@ -58,7 +56,7 @@
     	<h3 class="text-4xl font-semibold text-je-sand my-2 pb-10">Hier kannst du mich treffen!</h3>
 	</div>
     {#if events[0]}
-        <!-- <CalendarTiles items={events}></CalendarTiles> -->
+        <CalendarTiles items={events}></CalendarTiles>
     {:else}
         <div class="text-center py-8 font-montserrat">
             <InfoMessage message="Es konnten aktuell keine Veranstaltungen gefunden werden!"></InfoMessage>
@@ -89,7 +87,7 @@
 	{#if posts[0]}
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 			{#each posts as post}
-				<!-- <BlogTiles item={post} /> -->
+				<BlogTiles item={post} />
 			{/each}
 		</div>
 	{:else}
