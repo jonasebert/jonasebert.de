@@ -7,7 +7,8 @@ export async function load({ params, fetch }) {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
-        'x-vercel-protection-bypass': `${apiSecret}`
+        'x-vercel-protection-bypass': `${apiSecret}`,
+        'Access-Control-Allow-Origin': '*'
     }
   });
   let posts = [];
@@ -24,7 +25,8 @@ export async function load({ params, fetch }) {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
-        'x-vercel-protection-bypass': `${apiSecret}`
+        'x-vercel-protection-bypass': `${apiSecret}`,
+        'Access-Control-Allow-Origin': '*'
     }
   });
   let events = [];
