@@ -7,8 +7,10 @@
 	import InfoMessage from "$lib/components/blocks/InfoMessage.svelte";
 	
 	// Blog data
-	export let data;
-    const { posts, events } = data;
+	// export let data;
+    // const { posts, events } = data;
+	const posts = [null];
+	const events = [null];
 </script>
 
 <div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
