@@ -1,7 +1,9 @@
-import { allEnv, apiDomain, apiSecret } from '$lib/store.js';
+// import { apiDomain, apiSecret } from '$lib/store.js';
+
+const apiDomain = process.env.JONAS_EBERT_API_DOMAIN;
+const apiSecret = process.env.JONAS_EBERT_API_SECRET;
 
 export async function load({ params, fetch }) {
-  console.log(allEnv);
 
   if ((apiDomain !== undefined && apiSecret !== undefined) && (apiDomain !== null && apiSecret !== null)) {
     // Abrufen der Blog-Posts

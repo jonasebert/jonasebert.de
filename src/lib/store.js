@@ -24,7 +24,6 @@ export const uri = page;
 // API
 export const apiDomain = process.env.JONAS_EBERT_API_DOMAIN;
 export const apiSecret = process.env.JONAS_EBERT_API_SECRET;
-export const allEnv = process.env;
 
 // Pictures
 // Logo
