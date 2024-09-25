@@ -11,10 +11,10 @@ export async function load({ params, fetch }) {
     }
   });
   let posts = [];
+  console.log(postsRes.ok);
   if (postsRes.ok) {
     const postsData = await postsRes.json();
     posts = postsData.data;
-    console.log(posts);
   } else {
     console.error('Fehler beim Abrufen der Posts:', postsRes.status, postsRes.statusText);
   }
@@ -28,10 +28,10 @@ export async function load({ params, fetch }) {
     }
   });
   let events = [];
+  console.log(eventsRes.ok);
   if (eventsRes.ok) {
     const eventsData = await eventsRes.json();
     events = eventsData.data;
-    console.log(events);
   } else {
     console.error('Fehler beim Abrufen der Veranstaltungen:', eventsRes.status, eventsRes.statusText);
   }
