@@ -1,5 +1,9 @@
 // store.js
 import { page } from "$app/stores"; // Values: https://developer.mozilla.org/en-US/docs/Web/API/URL
+// import process from "process";
+
+// Environment
+let jonasEnv = process.env;
 
 // Personal
 export const name       = 'Jonas Ebert';
