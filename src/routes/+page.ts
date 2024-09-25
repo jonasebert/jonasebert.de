@@ -5,10 +5,10 @@ export async function load({ params, fetch }) {
   // Abrufen der Blog-Posts
   const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`, {
     method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-        'x-vercel-protection-bypass': `${apiSecret}`
-    }
+    // headers: {
+    //     'Content-Type': 'application/json',
+    //     'x-vercel-protection-bypass': `${apiSecret}`
+    // }
 });
   let posts = [];
   if (postsRes.ok) {
