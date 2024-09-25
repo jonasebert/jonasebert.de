@@ -1,6 +1,7 @@
-import { apiDomain, apiSecret } from '$lib/store.js';
+import { allEnv, apiDomain, apiSecret } from '$lib/store.js';
 
 export async function load({ params, fetch }) {
+  console.log(allEnv);
 
   if ((apiDomain !== undefined && apiSecret !== undefined) && (apiDomain !== null && apiSecret !== null)) {
     // Abrufen der Blog-Posts

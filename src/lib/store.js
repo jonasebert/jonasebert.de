@@ -1,9 +1,5 @@
 // store.js
 import { page } from "$app/stores"; // Values: https://developer.mozilla.org/en-US/docs/Web/API/URL
-// import process from "process";
-
-// Environment
-let jonasEnv = process.env;
 
 // Personal
 export const name       = 'Jonas Ebert';
@@ -28,7 +24,7 @@ export const uri = page;
 // API
 export const apiDomain = process.env.JONAS_EBERT_API_DOMAIN;
 export const apiSecret = process.env.JONAS_EBERT_API_SECRET;
-console.log({Domain: apiDomain, Secret: apiSecret});
+export const allEnv = process.env;
 
 // Pictures
 // Logo
