@@ -11,7 +11,7 @@ export async function load({ params, fetch }) {
     }
   });
   let posts = [];
-  console.log(postsRes.ok);
+  console.log(postsRes.status);
   if (postsRes.ok) {
     const postsData = await postsRes.json();
     posts = postsData.data;
@@ -28,7 +28,7 @@ export async function load({ params, fetch }) {
     }
   });
   let events = [];
-  console.log(eventsRes.ok);
+  console.log(eventsRes.status);
   if (eventsRes.ok) {
     const eventsData = await eventsRes.json();
     events = eventsData.data;
