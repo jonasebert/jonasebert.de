@@ -3,8 +3,8 @@ import { apiDomain, apiSecret } from '$lib/store.js';
 export async function load({ params, fetch }) {
 
   // Abrufen der Blog-Posts
-  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`, {
-    method: 'GET',
+  const postsRes = await fetch(`https://api.jonasebert.de?type=blog&itemtype=all&maxitems=5`, {
+  //   method: 'GET',
     // headers: {
     //     'Content-Type': 'application/json',
     //     'x-vercel-protection-bypass': `${apiSecret}`
@@ -19,12 +19,12 @@ export async function load({ params, fetch }) {
   }
 
   // Abrufen der Veranstaltungen
-  const eventsRes = await fetch(`https://${apiDomain}?type=calendar&maxitems=5`, {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-        'x-vercel-protection-bypass': `${apiSecret}`
-    }
+  const eventsRes = await fetch(`https://api.jonasebert.de?type=calendar&maxitems=5`, {
+    // method: 'GET',
+    // headers: {
+    //     'Content-Type': 'application/json',
+    //     'x-vercel-protection-bypass': `${apiSecret}`
+    // }
 });
   let events = [];
   if (eventsRes.ok) {
