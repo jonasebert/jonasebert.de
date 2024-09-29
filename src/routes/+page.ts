@@ -1,20 +1,10 @@
-// import { apiDomain, apiSecret } from '$lib/store.js';
-
-const apiDomain = process.env.JONAS_EBERT_API_DOMAIN;
-const apiSecret = process.env.JONAS_EBERT_API_SECRET;
+import { apiDomain } from '$lib/store.js';
 
 export async function load({ params, fetch }) {
 
-  if ((apiDomain !== undefined && apiSecret !== undefined) && (apiDomain !== null && apiSecret !== null)) {
+  if ((apiDomain !== undefined) && (apiDomain !== null)) {
     // Abrufen der Blog-Posts
-    const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`, {
-      method: 'GET',
-      headers: {
-          'Content-Type': 'application/json',
-          'Host': 'jonasebert.de',
-          'x-vercel-protection-bypass': `${apiSecret}`
-      }
-    });
+    const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`);
     let posts = [];
     if (postsRes.ok) {
       const postsData = await postsRes.json();
@@ -24,14 +14,7 @@ export async function load({ params, fetch }) {
     }
 
     // Abrufen der Veranstaltungen
-    const eventsRes = await fetch(`https://${apiDomain}?type=calendar&maxitems=5`, {
-      method: 'GET',
-      headers: {
-          'Content-Type': 'application/json',
-          'Host': 'jonasebert.de',
-          'x-vercel-protection-bypass': `${apiSecret}`
-      }
-    });
+    const eventsRes = await fetch(`https://${apiDomain}?type=calendar&maxitems=5`);
     let events = [];
     if (eventsRes.ok) {
       const eventsData = await eventsRes.json();
@@ -45,7 +28,7 @@ export async function load({ params, fetch }) {
       events
     };
   } else {
-    console.error('Fehler beim Abrufen der Umgebungsvariabeln:', {domain: apiDomain, secret: apiSecret})
+    console.error('Fehler beim Abrufen der Umgebungsvariabeln:', {domain: apiDomain})
     return {
       posts: [],
       events: []
