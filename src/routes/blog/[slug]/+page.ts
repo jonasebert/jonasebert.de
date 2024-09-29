@@ -1,17 +1,11 @@
-import { apiDomain, apiSecret } from '$lib/store.js';
+import { apiDomain } from '$lib/store.js';
 import * as ph from '@prismicio/helpers';
 // import { getDesc } from "$lib/util/TextHelpers.js";
 
 export async function load({ params, fetch }) {
 
   // Abrufen der Blog-Posts
-  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=post&postid=${params.slug}`, {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-        'x-vercel-protection-bypass': `${apiSecret}`
-    }
-  });
+  const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=post&postid=${params.slug}`);
   let posts = [];
   let heading = '';
   let description = '';
