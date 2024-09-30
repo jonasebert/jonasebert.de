@@ -1,6 +1,6 @@
 <script lang="ts">
     import InfoMessage from '$lib/components/blocks/InfoMessage.svelte';
-import { name } from '$lib/store';
+    import { name } from '$lib/store';
 	import { FormatDate } from '$lib/util/date';
 
     export let data;
@@ -8,7 +8,6 @@ import { name } from '$lib/store';
 
     function teaserImage() {
         if (event.teaserImage.url) {
-            console.log(event.teaserImage);
             return event.teaserImage;
         } else {
             return {
@@ -39,7 +38,7 @@ import { name } from '$lib/store';
                 <div class="container mx-auto p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center">
                     <div>
                         {#if event.description}
-                            {event.description}
+                            {@html event.description}
                         {:else}
                             Es konnte keine Beschreibung gefunden werden🫠
                         {/if}
