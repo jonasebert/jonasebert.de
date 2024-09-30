@@ -5,7 +5,7 @@ export async function load({ params, fetch }) {
   let posts = [];
 
   try {
-    const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all&maxitems=5`);
+    const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=category&category=${params.blogcategoryslug}`);
 
     if (postsRes.ok) {
       const postsData = await postsRes.json();
@@ -18,6 +18,7 @@ export async function load({ params, fetch }) {
   }
 
   return {
-    posts: posts
+    posts: posts,
+    category: params.blogcategoryslug
   };
 }

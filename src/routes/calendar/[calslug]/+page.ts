@@ -1,18 +1,23 @@
-import { apiDomain } from '$lib/store.js';
+import { apiDomain } from '$lib/store';
 
-export async function load({ params, fetch}) {
-    // Fetch events
-    const eventRes = await fetch(`https://${apiDomain}?type=calendar&itemtype=single&id=${params.calslug}`);
-    let event = [];
+export async function load({ params, fetch }) {
+  // Fetch events
+  let events = [];
 
-    if (eventRes.ok) {
-        const eventData = await eventRes.json();
-        event = eventData.data;
+  try {
+    const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=single&id=${params.calslug}`);
+
+    if (eventsRes.ok) {
+      const eventsData = await eventsRes.json();
+      events = eventsData.data;
     } else {
-        console.error('Fehler beim Abrufen der Veranstaltung:', eventRes.status, eventRes.statusText);
+      console.error('Error fetching events:', eventsRes.statusText);
     }
+  } catch (error) {
+    console.error('Error fetching events:', error);
+  }
 
-    return {
-        event
-    };
+  return {
+    event: events
+  };
 }
