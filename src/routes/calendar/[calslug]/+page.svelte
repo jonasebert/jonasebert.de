@@ -35,7 +35,7 @@
                     {event.summary}</h1>
             </div>
             <div class="flex flex-col sm:flex-row bg-gray-700 rounded-lg shadow-lg">
-                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center">
+                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center text-lg">
                     <div>
                         {#if event.description}
                             {@html event.description}
