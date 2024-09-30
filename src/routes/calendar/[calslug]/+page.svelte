@@ -26,7 +26,7 @@ import { name } from '$lib/store';
 </svelte:head>
 
 <div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage().url});">
-    <div class="bg-black bg-opacity-50 p-5">
+    <div class="bg-black bg-opacity-50 p-5 h-screen flex justify-center items-center">
         <div class="container mx-auto text-justify py-10">
             <div class="text-white text-center font-poppins mb-10">
                 <h1 class="text-4xl font-bold my-2">
@@ -35,8 +35,8 @@ import { name } from '$lib/store';
                     {/if}
                     {event.summary}</h1>
             </div>
-            <div class="flex gap-5 bg-gray-700 rounded-lg shadow-lg">
-                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-start items-center">
+            <div class="flex flex-col sm:flex-row bg-gray-700 rounded-lg shadow-lg">
+                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center">
                     <div>
                         {#if event.description}
                             {event.description}
@@ -51,19 +51,22 @@ import { name } from '$lib/store';
                             <InfoMessage message='Veranstaltung wurde abgesagt!' />
                         {/if}
                         {#if teaserImage().copyright.url && teaserImage().copyright.text}
-                            <p class="text-lg">
-                                {#if teaserImage().copyright.text && teaserImage().copyright.url}
-                                    📸 <a href={teaserImage().copyright.url} target="_blank">
+                            <div class="flex flex-row items-center">
+                                <div class="text-lg pr-5">📸</div>
+                                <p class="text-lg">
+                                    {#if teaserImage().copyright.text && teaserImage().copyright.url}
+                                        <a href={teaserImage().copyright.url} target="_blank">
+                                            {teaserImage().copyright.text}
+                                        </a>
+                                    {:else}
                                         {teaserImage().copyright.text}
-                                    </a>
-                                {:else}
-                                    📸 {teaserImage().copyright.text}
-                                {/if}
-                            </p>
+                                    {/if}
+                                </p>
+                            </div>
                         {/if}
                         <div class="text-lg text-nowrap">
                             <div class="flex flex-row justify-start items-center">
-                                <div>🗓️</div>
+                                <div class="pr-5">🗓️</div>
                                 <div>
                                     {#if event.datetype === 'date'}
                                         <p>{FormatDate(event.start, 'date')} - {FormatDate(event.end, 'date')}</p>
@@ -78,13 +81,23 @@ import { name } from '$lib/store';
                             </div>
                         </div>
                         {#if event.url}
-                            <div class="text-lg text-nowrap">
-                                📍{event.location}
+                            <div class="flex flex-row items-center">
+                                <div class="text-lg text-nowrap pr-5">
+                                    📍
+                                </div>
+                                <div class="text-lg text-balance">
+                                    {event.location}
+                                </div>
                             </div>
                         {/if}
                         {#if event.url}
-                            <div class="text-lg text-nowrap">
-                                🔗<a href={event.url} target="_blank">Zur Veranstaltungsseite</a>
+                            <div class="flex flex-row items-center">
+                                <div class="text-lg text-nowrap pr-5">
+                                    🔗
+                                </div>
+                                <div class="text-lg text-nowrap">
+                                    <a href={event.url} target="_blank">Zur Veranstaltungsseite</a>
+                                </div>
                             </div>
                         {/if}
                     </div>
