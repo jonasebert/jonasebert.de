@@ -6,7 +6,7 @@
     const { events } = data;
 </script>
     
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4 pb-12">
     <h1 class="text-5xl font-bold text-je-sand mt-2 pt-10 font-poppins">Termine</h1>
     <h2 class="text-4xl font-semibold text-je-sand mb-2 pb-10">Hier kannst du mich treffen!</h2>
     {#if data.events[0]}

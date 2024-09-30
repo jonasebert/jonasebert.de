@@ -15,6 +15,7 @@ export function FormatDate(isoString: string, type: string) {
         case `year`: return `${year}`;
         case `time`: return `${hours}:${minutes}`;
         case `date`: return `${day}. ${monthsshort[monthIndex]} ${year}`;
+        case `datelong`: return `${day}. ${monthslong[monthIndex]} ${year}`;
 
         default: return `${day}. ${monthsshort[monthIndex]} ${year} - ${hours}:${minutes}`;
     }

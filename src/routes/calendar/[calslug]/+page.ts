@@ -5,7 +5,7 @@ export async function load({ params, fetch }) {
   let events = [];
 
   try {
-    const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all&maxitems=5`);
+    const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=single&id=${params.calslug}`);
 
     if (eventsRes.ok) {
       const eventsData = await eventsRes.json();
@@ -18,6 +18,6 @@ export async function load({ params, fetch }) {
   }
 
   return {
-    events: events
+    event: events
   };
 }

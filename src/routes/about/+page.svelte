@@ -65,7 +65,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container pb-12">
 	<div>
 		<h2 class="text-4xl font-bold text-je-sand font-poppins">Lebenslauf</h2>
 		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>

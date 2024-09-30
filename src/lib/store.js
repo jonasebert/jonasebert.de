@@ -21,6 +21,10 @@ export const contact = {
 // URI
 export const uri = page;
 
+// API
+export const apiDomain = 'api.jonasebert.de';
+// export const apiSecret = process.env.JONAS_EBERT_API_SECRET === '' ? '1234' : '';
+
 // Pictures
 // Logo
 export const logo = '/logo/logo_500x100.svg';

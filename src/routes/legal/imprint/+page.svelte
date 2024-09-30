@@ -17,7 +17,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container pb-12">
     <div class="font-montserrat">
         <h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">Impressum</h1>
         <h2 class="font-poppins">Angaben gemäß §5 Telemediengesetz</h2>

@@ -36,7 +36,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container pb-12">
     <h1 class="text-5xl font-bold text-je-sand my-2 py-10 font-poppins">{name} - Kontakt</h1>
     <div class="flex flex-row justify-between gap-3">
         <div class="flex flex-1 flex-col gap-5">

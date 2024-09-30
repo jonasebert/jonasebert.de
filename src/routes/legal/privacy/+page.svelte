@@ -2,7 +2,7 @@
 	import { name, address, contact, uri } from "$lib/store";
 </script>
 
-<div class="container">
+<div class="container pb-12">
 	<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">Datenschutz</h1>
 	<div class="text-justify font-montserrat">
 		<p>
