@@ -1,37 +1,40 @@
-import { apiDomain } from '$lib/store.js';
+import { apiDomain } from '$lib/store';
 
 export async function load({ params, fetch }) {
+  // Fetch posts
+  let posts = [];
 
-  if ((apiDomain !== undefined) && (apiDomain !== null)) {
-    // Abrufen der Blog-Posts
-    const postsRes = await fetch(`https://${apiDomain}?type=blog&itemtype=all&maxitems=5`);
-    let posts = [];
+  try {
+    const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all&maxitems=5`);
+
     if (postsRes.ok) {
       const postsData = await postsRes.json();
       posts = postsData.data;
     } else {
-      console.log('Fehler beim Abrufen der Posts:', postsRes.status, postsRes.statusText);
+      console.error('Error fetching posts:', postsRes.statusText);
     }
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+  }
 
-    // Abrufen der Veranstaltungen
-    const eventsRes = await fetch(`https://${apiDomain}?type=calendar&maxitems=5`);
-    let events = [];
+  // Fetch events
+  let events = [];
+
+  try {
+    const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all&maxitems=5`);
+
     if (eventsRes.ok) {
       const eventsData = await eventsRes.json();
       events = eventsData.data;
     } else {
-      console.log('Fehler beim Abrufen der Veranstaltungen:', eventsRes.status, eventsRes.statusText);
+      console.error('Error fetching events:', eventsRes.statusText);
     }
-
-    return {
-      posts,
-      events
-    };
-  } else {
-    console.error('Fehler beim Abrufen der Umgebungsvariabeln:', {domain: apiDomain})
-    return {
-      posts: [],
-      events: []
-    }
+  } catch (error) {
+    console.error('Error fetching events:', error);
   }
+
+  return {
+    posts: posts,
+    events: events
+  };
 }
