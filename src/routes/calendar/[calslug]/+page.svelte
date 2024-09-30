@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        {#if event.url}
+                        {#if event.location}
                             <div class="flex flex-row items-center">
                                 <div class="text-lg text-nowrap pr-5">
                                     📍
@@ -88,6 +88,15 @@
                                     {event.location}
                                 </div>
                             </div>
+                        {:else}
+                        <div class="flex flex-row items-center">
+                            <div class="text-lg text-nowrap pr-5">
+                                📍
+                            </div>
+                            <div class="text-lg text-balance">
+                                Kein Ort gefunden🙃
+                            </div>
+                        </div>
                         {/if}
                         {#if event.url}
                             <div class="flex flex-row items-center">
