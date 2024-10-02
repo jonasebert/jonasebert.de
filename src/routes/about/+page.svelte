@@ -171,7 +171,7 @@
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikation</div>
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikationssysteme</div>
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PostgreSQL</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">MS SQL</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">MSSQL</div>
 					</div>
 				</div>
 				<div>
@@ -192,6 +192,7 @@
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PowerPoint</div>
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Outlook</div>
 						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">VS Code</div>
+						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">SQL Server Management Studio</div>
 					</div>
 				</div>
 			</div>
