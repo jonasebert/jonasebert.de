@@ -3,6 +3,7 @@
 	import Image from "$lib/components/image.svelte";
 	import { name, pronouns } from "$lib/store";
 	import { FormatDate } from "$lib/util/date";
+	import Chevron from "$lib/components/blocks/Chevron.svelte";
 	export let data;
 
 	// Get current month + year
@@ -32,9 +33,9 @@
 	}
 </script>
 
-<div class="flex flex-col items-center justify-center pt-5 pb-20">
+<div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
 	<div class="container mx-auto">
-		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col shadow-lg relative">
+		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
 				<div class="italic font-montserrat">Geboren 374 ppm</div>
@@ -62,6 +63,9 @@
 				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg"/>
 			</div>
 		</div>
+	</div>
+	<div class="hidden lg:block">
+		<Chevron count={3} />
 	</div>
 </div>
 
