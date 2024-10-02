@@ -1,6 +1,7 @@
 <script lang="ts">
     import Image from '$lib/components/image.svelte';
     import { FormatDate } from '$lib/util/date';
+	import Tags from '../blocks/Tags.svelte';
     export let items;
 
     const events = items.map(event => {
@@ -67,9 +68,7 @@
                 </div>
                 <div class="flex flex-row flex-wrap gap-2 font-montserrat">
                     {#if event.location}
-                        <div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">
-                            {event.location}
-                        </div>
+                        <Tags text={event.location} />
                     {/if}
                 </div>
             </div>

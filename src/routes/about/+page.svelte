@@ -3,17 +3,21 @@
 	import Image from "$lib/components/image.svelte";
 	import { name, pronouns } from "$lib/store";
 	import { FormatDate } from "$lib/util/date";
+	import Chevron from "$lib/components/blocks/Chevron.svelte";
+	import Tags from "$lib/components/blocks/Tags.svelte";
 	export let data;
+	const { headings, items } = data.props;
+
 
 	// Get current month + year
 	const now = new Date();
-    const nowFormatted = now.getFullYear() + "-" + (now.getMonth()).toString().padStart(2, '0');
+    const nowFormatted = now.getFullYear() + "-" + (now.getMonth()+1).toString().padStart(2, '0');
 
 	// Generate date
-	/**
-	 * @param {string} start
-	 * @param {string} end
-	 */
+	//
+	// @param {string} start
+	// @param {string} end
+	//
 	function genDate(start, end) {
 		let date = 'date not found';
 
@@ -32,9 +36,9 @@
 	}
 </script>
 
-<div class="flex flex-col items-center justify-center pt-5 pb-20">
+<div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
 	<div class="container mx-auto">
-		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col shadow-lg relative">
+		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
 				<div class="italic font-montserrat">Geboren 374 ppm</div>
@@ -63,148 +67,72 @@
 			</div>
 		</div>
 	</div>
+	<div class="hidden lg:block">
+		<Chevron count={3} />
+	</div>
 </div>
 
 <div class="container pb-12">
 	<div>
-		<h2 class="text-4xl font-bold text-je-sand font-poppins">Lebenslauf</h2>
-		<h3 class="text-3xl font-bold text-je-sand font-poppins">Berufserfahrung</h3>
-		{#each data.jobs as job}
-			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {job.bgcolor} transition-transform duration-500 hover:scale-110">
-					<a href={job.link} target="_blank">
-						<Image src="/about_logos/{job.image}" alt="Logo {job.company}" classNames="size-12" />
-					</a>
-				</div>
-				<div class="ml-10 flex flex-col justify-between">
-					<h4 class="text-2xl text-je-sand font-poppins">{job.titel}</h4>
-					<p class="text-2xl font-montserrat">{job.company}</p>
-					<p class="text-md font-montserrat">{genDate(job.start, job.end)}</p>
-					<div class="font-montserrat">
-						<ul class="list-disc text-md">
-							{#each job.description as item }
-								<li>{item}</li>
+		<h2 class="text-4xl font-bold text-je-sand font-poppins">{headings.main}</h2>
+		{#each headings.sections as section}
+			<h3 class="text-3xl font-bold text-je-sand font-poppins">{section.title}</h3>
+			{#if section.key === 'skills'}
+				{#each items[section.key] as item}
+					<div class="pt-3">
+						<h4 class="text-2xl font-bold text-je-sand font-poppins">{item.category}</h4>
+						{#if item.subcategories}
+							{#each item.subcategories as subcategory}
+								<div>
+									<h5 class="text-2xl font-bold font-poppins">{subcategory.title}</h5>
+									<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
+										{#each subcategory.skills as skill}
+											<Tags text={skill} />
+										{/each}
+									</div>
+								</div>
 							{/each}
-						</ul>
+						{:else}
+							<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
+								{#each item.skills as skill}
+									<Tags text={skill} />
+								{/each}
+							</div>
+						{/if}
 					</div>
-					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-						{#each job.skills as skill }
-							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
-						{/each}
+				{/each}
+			{:else}
+				{#each items[section.key] as item}
+					<div class="my-6 flex items-start">
+						<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {item.bgcolor} transition-transform duration-500 hover:scale-110">
+							<a href={item.link} target="_blank">
+								<Image src="/about_logos/{item.image}" alt="Logo von {item.company}" classNames="size-12" />
+							</a>
+						</div>
+						<div class="ml-10 flex flex-col justify-between">
+							<h4 class="text-2xl text-je-sand font-poppins">{item.title}</h4>
+							<p class="text-xl font-montserrat">{item.company}</p>
+							<p class="text-md font-montserrat">{genDate(item?.start, item?.end)}</p>
+							{#if item.description[0]}
+								<div class="font-montserrat">
+									<ul class="list-disc text-md">
+										{#each item.description as desc}
+											<li>{desc}</li>
+										{/each}
+									</ul>
+								</div>
+							{/if}
+							{#if item.skills[0]}
+								<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+									{#each item.skills as skill}
+										<Tags text={skill} />
+									{/each}
+								</div>
+							{/if}
+						</div>
 					</div>
-				</div>
-			</div>
+				{/each}
+			{/if}
 		{/each}
-
-		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ausbildung</h3>
-		{#each data.education as edu}
-			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {edu.bgcolor} transition-transform duration-500 hover:scale-110">
-					<a href={edu.link} target="_blank">
-						<Image src="/about_logos/{edu.image}" alt="Logo {edu.company}" classNames="size-12" />
-					</a>
-				</div>
-				<div class="ml-10 flex flex-col justify-between">
-					<h4 class="text-2xl text-je-sand font-poppins">{edu.titel}</h4>
-					<p class="text-2xl font-montserrat">{edu.company}</p>
-					<p class="text-md font-montserrat">{genDate(edu.start, edu.end)}</p>
-					<div class="font-montserrat">
-						<ul class="list-disc text-md">
-							{#each edu.description as item }
-								<li>{item}</li>
-							{/each}
-						</ul>
-					</div>
-					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-						{#each edu.skills as skill }
-							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
-						{/each}
-					</div>
-				</div>
-			</div>
-		{/each}
-
-		<h3 class="text-3xl font-bold text-je-sand font-poppins">Ehrenamt</h3>
-		{#each data.volunteer as vol}
-			<div class="my-6 flex items-start">
-				<div class="flex justify-center items-center rounded-xl min-w-16 min-h-16 {vol.bgcolor} transition-transform duration-500 hover:scale-110">
-					<a href={vol.link} target="_blank">
-						<Image src="/about_logos/{vol.image}" alt="Logo {vol.company}" classNames="size-12" />
-					</a>
-				</div>
-				<div class="ml-10 flex flex-col justify-between">
-					<h4 class="text-2xl text-je-sand font-poppins">{vol.titel}</h4>
-					<p class="text-2xl font-montserrat">{vol.company}</p>
-					<p class="text-md font-montserrat">{genDate(vol.start, vol.end)}</p>
-					<div class="font-montserrat">
-						<ul class="list-disc text-md">
-							{#each vol.description as item }
-								<li>{item}</li>
-							{/each}
-						</ul>
-					</div>
-					<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
-						{#each vol.skills as skill }
-							<div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2">{skill}</div>
-						{/each}
-					</div>
-				</div>
-			</div>
-		{/each}
-
-		<h3 class="text-3xl font-bold text-je-sand font-poppins">Kompetenzen</h3>
-		<div>
-			<div class="pt-3">
-				<h4 class="text-2xl font-bold text-je-sand font-poppins">Informationstechnik</h4>
-				<div>
-					<h5 class="text-2xl font-bold font-poppins">Infrastruktur</h5>
-					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Windowsclient</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Windowsserver</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Linuxserver</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Microsoft Intune</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Docker</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikation</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Telekommunikationssysteme</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PostgreSQL</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">MS SQL</div>
-					</div>
-				</div>
-				<div>
-					<h5 class="text-2xl font-bold font-poppins">Programmierung/Frameworks</h5>
-					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PHP</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">CSS</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">HTML</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">TypeScript/JavaScript</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">SvelteKit</div>
-					</div>
-				</div>
-				<div>
-					<h5 class="text-2xl font-bold font-poppins">Software</h5>
-					<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Word</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Excel</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">PowerPoint</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Outlook</div>
-						<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">VS Code</div>
-					</div>
-				</div>
-			</div>
-			<div class="pt-3">
-				<h4 class="text-2xl font-bold text-je-sand font-poppins">Sprachen</h4>
-				<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Deutsch (Muttersprache)</div>
-					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Englisch (B1)</div>
-				</div>
-			</div>
-			<div class="pt-3">
-				<h4 class="text-2xl font-bold text-je-sand font-poppins">Mitgliedschaften</h4>
-				<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
-					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">BÜNDNIS 90/DIE GRÜNEN - seit 2022</div>
-					<div class="rounded-lg bg-green-500 py-1 px-2 mr-2">Grüne Jugend - seit 2022</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
