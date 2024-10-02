@@ -7,7 +7,7 @@
 
 	// Get current month + year
 	const now = new Date();
-    const nowFormatted = now.getFullYear() + "-" + (now.getMonth()).toString().padStart(2, '0');
+    const nowFormatted = now.getFullYear() + "-" + (now.getMonth()+1).toString().padStart(2, '0');
 
 	// Generate date
 	/**
