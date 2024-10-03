@@ -32,16 +32,16 @@ try {
   console.error('Error fetching posts:', error);
 }
 
-function blog_publish_date (post) {
-    if (post.data.overwrite_publish_date) {
-        return post.data.overwrite_publish_date + 'T01:00:00+0000';
+function blog_publish_date (blog_item: any) {
+    if (blog_item.data.overwrite_publish_date) {
+        return blog_item.data.overwrite_publish_date + 'T01:00:00+0000';
     } else {
-        return post.first_publication_date;
+        return blog_item.first_publication_date;
     }
 }
 
 // Fetch events
-let events = [];
+let events: string[] = [];
 
 try {
 const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all`);
@@ -98,6 +98,13 @@ const sitemap = (pages_10: string[], pages_08: string[], posts: string[], events
         )
         .join('')
     }
+    ${events
+        .map(
+            (event) => `
+                <url>
+                    <loc>${site}/calendar/${event.id}</loc>
+                    <changefreq>daily</changefreq>
+                    <priority>0.80</priority>
                 </url>
             `
         )
@@ -110,7 +117,7 @@ const sitemap = (pages_10: string[], pages_08: string[], posts: string[], events
                     <loc>${site}${post.url}</loc>
                     <changefreq>weekly</changefreq>
                     <lastmod>${blog_publish_date(post)}</lastmod>
-                    <priority>0.5</priority>
+                    <priority>0.50</priority>
                 </url>
             `
         )
