@@ -20,19 +20,19 @@ const pages_08 = [
 let posts: string[] = [];
 
 try {
-  const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all`);
+    const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all`);
 
-  if (postsRes.ok) {
-    const postsData = await postsRes.json();
-    posts = postsData.data;
-  } else {
-    console.error('Error fetching posts:', postsRes.statusText);
-  }
+    if (postsRes.ok) {
+        const postsData = await postsRes.json();
+        posts = postsData.data;
+    } else {
+        console.error('Error fetching posts:', postsRes.statusText);
+    }
 } catch (error) {
-  console.error('Error fetching posts:', error);
+    console.error('Error fetching posts:', error);
 }
 
-function blog_publish_date (blog_item: any) {
+function blog_publish_date(blog_item: any) {
     if (blog_item.data.overwrite_publish_date) {
         return blog_item.data.overwrite_publish_date + 'T01:00:00+0000';
     } else {
@@ -44,16 +44,16 @@ function blog_publish_date (blog_item: any) {
 let events: string[] = [];
 
 try {
-const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all`);
+    const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all`);
 
-if (eventsRes.ok) {
-    const eventsData = await eventsRes.json();
-    events = eventsData.data;
-} else {
-    console.error('Error fetching events:', eventsRes.statusText);
-}
+    if (eventsRes.ok) {
+        const eventsData = await eventsRes.json();
+        events = eventsData.data;
+    } else {
+        console.error('Error fetching events:', eventsRes.statusText);
+    }
 } catch (error) {
-console.error('Error fetching events:', error);
+    console.error('Error fetching events:', error);
 }
 
 // Building sitemap
