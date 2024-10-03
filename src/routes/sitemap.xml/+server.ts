@@ -1,28 +1,45 @@
 // Imports
+import { apiDomain } from '$lib/store.js';
+
 const site = 'https://jonasebert.de';
 
+// 
 const pages = [
-    'about',
-    'blog',
     'calendar',
+    'blog',
+    'about',
     'contact',
     'legal/imprint',
     'legal/privacy'
 ];
-const posts = import.meta.glob('/src/routes/blog/*.md', {
-    eager: true
-});
-const postArray: { slug: string; published: string }[] = [];
-for (const post in posts) {
-    const postMeta = posts[post].metadata;
-    const slug = post.split('/').at(-1)?.replace('.md', '');
-    const published = postMeta.date;
-    postArray.push({ slug, published })
+
+// Fetch posts
+let posts: string[] = [];
+
+try {
+  const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all&maxitems=5`);
+
+  if (postsRes.ok) {
+    const postsData = await postsRes.json();
+    posts = postsData.data;
+  } else {
+    console.error('Error fetching posts:', postsRes.statusText);
+  }
+} catch (error) {
+  console.error('Error fetching posts:', error);
 }
 
-// @type {import('./$types').RequestHandler}
+function blog_publish_date (post) {
+    if (post.data.overwrite_publish_date) {
+        return post.data.overwrite_publish_date + 'T01:00:00+0000';
+    } else {
+        return post.first_publication_date;
+    }
+}
+
+// Building sitemap
 export async function GET({ url }) {
-    const body = sitemap(pages, postArray);
+    const body = sitemap(pages, posts);
     const response = new Response(body);
     response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
     response.headers.set('Content-Type', 'application/xml');
@@ -54,9 +71,9 @@ const sitemap = (pages: string[], posts: string[]) => `<?xml version="1.0" encod
         .map(
             (post) => `
                 <url>
-                    <loc>${site}/blog/${post.slug}</loc>
+                    <loc>${site}${post.url}</loc>
                     <changefreq>weekly</changefreq>
-                    <lastmod>${post.published}</lastmod>
+                    <lastmod>${blog_publish_date(post)}</lastmod>
                     <priority>0.5</priority>
                 </url>
             `
