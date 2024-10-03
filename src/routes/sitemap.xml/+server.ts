@@ -17,7 +17,7 @@ const pages = [
 let posts: string[] = [];
 
 try {
-  const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all&maxitems=5`);
+  const postsRes = await fetch(`https://${apiDomain}/api?type=blog&itemtype=all`);
 
   if (postsRes.ok) {
     const postsData = await postsRes.json();
@@ -35,6 +35,22 @@ function blog_publish_date (post) {
     } else {
         return post.first_publication_date;
     }
+}
+
+// Fetch events
+let events = [];
+
+try {
+const eventsRes = await fetch(`https://${apiDomain}/api?type=calendar&itemtype=all`);
+
+if (eventsRes.ok) {
+    const eventsData = await eventsRes.json();
+    events = eventsData.data;
+} else {
+    console.error('Error fetching events:', eventsRes.statusText);
+}
+} catch (error) {
+console.error('Error fetching events:', error);
 }
 
 // Building sitemap
