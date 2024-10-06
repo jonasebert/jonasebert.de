@@ -1,7 +1,7 @@
 <script lang="ts">
     import Image from '$lib/components/image.svelte';
     import { FormatDate } from '$lib/util/date';
-	import Tags from '../blocks/Tags.svelte';
+	import Tags from '$lib/components/blocks/Tags.svelte';
     export let items;
 
     const events = items.map(event => {
