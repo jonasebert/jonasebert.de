@@ -2,6 +2,8 @@
     import Image from '$lib/components/image.svelte';
     import { FormatDate } from '$lib/util/date';
     import * as ph from "@prismicio/helpers";
+	import Tags from '$lib/components/blocks/Tags.svelte';
+	import { text } from '@sveltejs/kit';
     export let item;
 </script>
 
@@ -31,11 +33,7 @@
         <div class="flex flex-row flex-wrap gap-2 font-montserrat">
             {#if item.tags[0]}
             {#each item.tags as category}
-                <div class="text-sm rounded-lg bg-green-500 text-je-gray-500 py-1 px-2 mr-2 transition-transform duration-500 hover:scale-110 break-words hyphens-auto">
-                    <a href="/blog/category/{category}" target="_self" class="hover:text-je-gray-500">
-                        {category}
-                    </a>
-                </div>
+                <Tags text={category} clickable={true} link="/blog/category/{category}" />
             {/each}
             {/if}
         </div>
