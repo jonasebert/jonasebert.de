@@ -32,9 +32,9 @@
         </p>
         <div class="flex flex-row flex-wrap gap-2 font-montserrat">
             {#if item.tags[0]}
-            {#each item.tags as category}
-                <Tags text={category} clickable={true} link="/blog/category/{category}" />
-            {/each}
+                {#each item.tags as category}
+                    <Tags text={category} clickable={true} link="/blog/category/{category}" resize={110} />
+                {/each}
             {/if}
         </div>
     </div>
