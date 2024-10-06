@@ -84,9 +84,9 @@
                                 <div class="text-lg text-nowrap pr-5">
                                     📍
                                 </div>
-                                <div class="text-lg text-balance">
+                                <a class="text-lg text-balance" href="https://www.google.de/maps/place/{event.location}" target="_blank">
                                     {event.location}
-                                </div>
+                                </a>
                             </div>
                         {:else}
                         <div class="flex flex-row items-center">

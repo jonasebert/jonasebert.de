@@ -68,7 +68,7 @@
                 </div>
                 <div class="flex flex-row flex-wrap gap-2 font-montserrat">
                     {#if event.location}
-                        <Tags text={event.location} />
+                        <Tags text={event.location} clickable={true} link="https://www.google.de/maps/place/{event.location}" />
                     {/if}
                 </div>
             </div>
