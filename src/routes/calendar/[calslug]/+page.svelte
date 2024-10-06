@@ -44,7 +44,7 @@
                         {/if}
                     </div>
                 </div>
-                <div class='container p-5 text-justify rounded-lg bg-gray-800 w-fit'>
+                <div class='container p-5 text-justify rounded-lg bg-gray-800 w-fit content-center'>
                     <div class="flex flex-col justify-center items-start gap-2 font-montserrat">
                         {#if event.state == 'CANCELLED'}
                             <InfoMessage message='Veranstaltung wurde abgesagt!' />
