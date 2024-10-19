@@ -5,7 +5,6 @@
 	import CalendarTiles from "$lib/components/tiles/Calendar.svelte";
 	import Social from "$lib/components/blocks/Social.svelte";
 	import InfoMessage from "$lib/components/blocks/InfoMessage.svelte";
-	import Chevron from "$lib/components/blocks/Chevron.svelte";
 	
 	// Blog data
 	export let data;
@@ -29,9 +28,6 @@
 				</a>
 			</div>
 		</div>
-	</div>
-	<div class="hidden lg:block">
-		<Chevron count={3} />
 	</div>
 </div>
 
