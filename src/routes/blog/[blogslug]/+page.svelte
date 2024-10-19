@@ -4,6 +4,7 @@
 	import { FormatDate } from '$lib/util/date';
     import * as ph from '@prismicio/helpers';
 	import { SliceZone } from '@prismicio/svelte';
+	import Tags from '$lib/components/blocks/Tags.svelte';
 
 	import Paragraph from '$lib/components/prismic/paragraph.svelte';
 	import Image from '$lib/components/prismic/image.svelte';
@@ -11,6 +12,7 @@
 	import Lists from '$lib/components/prismic/lists.svelte';
 	import Embed from '$lib/components/prismic/embed.svelte';
 	import Code from '$lib/components/prismic/code.svelte';
+	import { text } from '@sveltejs/kit';
 	
 	export let data;
     let { post } = data;
@@ -78,11 +80,7 @@
 		<div class="flex flex-wrap gap-2">
 			{#if post.tags[0]}
 				{#each post.tags as category}
-					<div class="text-sm rounded-lg bg-green-400 text-je-gray-500 py-1 px-2 transition-transform duration-500 hover:scale-110">
-						<a href="/blog/category/{category}" target="_self" class="hover:text-je-gray-500">
-							{category}
-						</a>
-					</div>
+					<Tags text={category} clickable={true} link="/blog/category/{category}" resize={110} target="_self" />
 				{/each}
 			{/if}
 		</div>

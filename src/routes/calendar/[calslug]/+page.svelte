@@ -44,7 +44,7 @@
                         {/if}
                     </div>
                 </div>
-                <div class='container p-5 text-justify rounded-lg bg-gray-800 w-fit'>
+                <div class='container p-5 text-justify rounded-lg bg-gray-800 w-fit content-center'>
                     <div class="flex flex-col justify-center items-start gap-2 font-montserrat">
                         {#if event.state == 'CANCELLED'}
                             <InfoMessage message='Veranstaltung wurde abgesagt!' />
@@ -84,9 +84,9 @@
                                 <div class="text-lg text-nowrap pr-5">
                                     📍
                                 </div>
-                                <div class="text-lg text-balance">
+                                <a class="text-lg text-balance" href="https://www.google.de/maps/place/{event.location}" target="_blank">
                                     {event.location}
-                                </div>
+                                </a>
                             </div>
                         {:else}
                         <div class="flex flex-row items-center">

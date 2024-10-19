@@ -3,7 +3,6 @@
 	import Image from "$lib/components/image.svelte";
 	import { name, pronouns } from "$lib/store";
 	import { FormatDate } from "$lib/util/date";
-	import Chevron from "$lib/components/blocks/Chevron.svelte";
 	import Tags from "$lib/components/blocks/Tags.svelte";
 	export let data;
 	const { headings, items } = data.props;
@@ -66,9 +65,6 @@
 				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg"/>
 			</div>
 		</div>
-	</div>
-	<div class="hidden lg:block">
-		<Chevron count={3} />
 	</div>
 </div>
 

@@ -6,13 +6,32 @@
 	} else if (count > 3) {
 		count = 3;
 	}
+
+	function scrollDown() {
+		const chevron = document.querySelector('.chevron');
+		if (!chevron) return;
+
+		function isChevronVisible() {
+			const rect = chevron.getBoundingClientRect();
+			return rect.bottom > 0 && rect.top < window.innerHeight;
+		}
+
+		function stepScroll() {
+			if (isChevronVisible()) {
+				window.scrollBy(0, 20);
+				requestAnimationFrame(stepScroll);
+			}
+		}
+
+		stepScroll();
+	}
 </script>
 
-<div class="align-center justify-center">
+<button class="align-center justify-center" on:click={scrollDown} on:keydown={(e) => e.key === 'Enter' && scrollDown()} aria-label="Scroll down">
 	{#each Array(count) as _, i}
 		<div class="chevron before:bg-je-sand after:bg-je-sand"></div>
 	{/each}
-</div>
+</button>
 
 <style>
 	.chevron {
@@ -24,6 +43,7 @@
 		transform: scale(0.3);
 		z-index: 0;
 		animation: move-chevron 3s ease-out infinite;
+		cursor: pointer; /* Add cursor pointer to indicate it's clickable */
 	}
 	.chevron:first-child {
 		animation: move-chevron 3s ease-out 1s infinite;
