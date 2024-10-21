@@ -21,8 +21,6 @@
 	// Links
 	let menuLinks = [
 		{ title: 'Home', href: '/'},
-		{ title: 'Termine', href: '/calendar'},
-		{ title: 'Aktuelles', href: '/blog'},
 		{ title: 'Über mich', href: '/about'},
 		{ title: 'Kontakt', href: '/contact'}
 	];
@@ -39,9 +37,7 @@
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
 		activeRoute === '/' ? name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/blog' ? 'Aktuelles - ' + name + ' (' + pronouns +') - ' + job
 		: activeRoute === '/about' ? 'Über mich - ' + name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/calendar' ? 'Termine - ' + name + ' (' + pronouns +') - ' + job
 		: activeRoute === '/contact' ? 'Kontakt - ' + name + ' (' + pronouns +') - ' + job
 		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name + ' (' + pronouns +') - ' + job
 		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name + ' (' + pronouns +') - ' + job
