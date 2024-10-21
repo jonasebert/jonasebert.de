@@ -108,6 +108,40 @@
                                 </div>
                             </div>
                         {/if}
+                        {#if event.id}
+                            <div class="flex flex-row items-center flex-wrap"></div>
+                                <div class="text-lg text-nowrap pr-5">
+                                    📅
+                                </div>
+                                <button
+                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+                                    on:click={async () => {
+                                        try {
+                                            const response = await fetch(`https://api.jonasebert.de/api?type=calendar&itemtype=single&id=${event.id}&download=true`);
+
+                                            if (response.ok) {
+                                                const blob = await response.blob();
+                                                const url = window.URL.createObjectURL(blob);
+                                                const a = document.createElement('a');
+                                                a.style.display = 'none';
+                                                a.href = url;
+                                                a.download = `${event.summary}.ics`;
+                                                document.body.appendChild(a);
+                                                a.click();
+                                                window.URL.revokeObjectURL(url);
+                                            } else {
+                                                console.error('Failed to download ICS file');
+                                            }
+                                        } catch (error) {
+                                            console.error('Error:', error);
+                                        }
+                                    }}
+                                >
+                                <div class="text-lg text-nowrap">
+                                    Zum Kalender hinzufügen
+                                </div>
+                            </button>
+                        {/if}
                     </div>
                 </div>
             </div>
