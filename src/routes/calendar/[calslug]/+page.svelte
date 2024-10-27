@@ -99,13 +99,18 @@
                         </div>
                         {/if}
                         {#if event.url}
-                            <div class="flex flex-row items-center">
+                            <div class="flex flex-row items-center flex-nowrap">
                                 <div class="text-lg text-nowrap pr-5">
                                     🔗
                                 </div>
-                                <div class="text-lg text-nowrap">
-                                    <a href={event.url} target="_blank">Zur Veranstaltungsseite</a>
-                                </div>
+                                <button
+                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
+                                    on:click={() => window.open(event.url, '_blank')}
+                                >
+                                    <div class="text-lg text-nowrap">
+                                        Zur Veranstaltungsseite
+                                    </div>
+                                </button>
                             </div>
                         {/if}
                         {#if event.id}
