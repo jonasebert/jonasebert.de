@@ -96,8 +96,10 @@
 		<slot />
 		{#if isVisible}
 			<div class="z-40 fixed bottom-4 right-4">
-				<button class="bg-je-green-500 hover:bg-je-green-700 text-white font-bold py-3 px-3 rounded-full transition-transform duration-400 hover:scale-110 shadow-xl" on:click={scrollToTop}>
-					<Image src="/icons/arrow_up.svg" alt="Icon Pfeil nach oben" classNames="w-auto h-7"/>
+				<button on:click={scrollToTop} class="bg-je-green-500 p-3 rounded-full shadow-xl hover:bg-je-green-700 transition duration-300 hover:scale-110">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white hover:text-je-sand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+					</svg>
 				</button>
 			</div>
 		{/if}
