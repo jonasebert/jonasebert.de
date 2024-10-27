@@ -109,7 +109,7 @@
                             </div>
                         {/if}
                         {#if event.id}
-                            <div class="flex flex-row items-center flex-wrap"></div>
+                            <div class="flex flex-row items-center flex-nowrap">
                                 <div class="text-lg text-nowrap pr-5">
                                     📅
                                 </div>
@@ -137,10 +137,11 @@
                                         }
                                     }}
                                 >
-                                <div class="text-lg text-nowrap">
-                                    Zum Kalender hinzufügen
-                                </div>
-                            </button>
+                                    <div class="text-lg text-nowrap">
+                                        Zum Kalender hinzufügen
+                                    </div>
+                                </button>
+                            </div>
                         {/if}
                     </div>
                 </div>
