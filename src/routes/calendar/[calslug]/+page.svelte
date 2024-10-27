@@ -27,7 +27,7 @@
 <div class="relative bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url({teaserImage().url});">
     <div class="bg-black bg-opacity-50 p-5 h-screen flex justify-center items-center">
         <div class="container mx-auto text-justify py-10">
-            <div class="text-white text-center font-poppins mb-10">
+            <div class="text-white text-center font-poppins mb-10 break-words hyphens-auto text-balance">
                 <h1 class="text-4xl font-bold my-2">
                     {#if event.state === 'CANCELLED'}
                         [ABGESAGT]
