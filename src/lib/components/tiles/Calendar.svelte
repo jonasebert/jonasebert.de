@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="p-4 relative z-30 bg-gray-700">
-                <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand">
+                <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand hyphens-auto break-words">
                     <a href="/calendar/{event.id}">
                         {#if event.state === 'CANCELLED'}
                             [ABGESAGT]
