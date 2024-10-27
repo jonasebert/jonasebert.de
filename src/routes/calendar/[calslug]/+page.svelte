@@ -119,7 +119,7 @@
                                     📅
                                 </div>
                                 <button
-                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
                                     on:click={async () => {
                                         try {
                                             const response = await fetch(`https://api.jonasebert.de/api?type=calendar&itemtype=single&id=${event.id}&download=true`);
