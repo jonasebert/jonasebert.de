@@ -35,12 +35,16 @@
                     {event.summary}</h1>
             </div>
             <div class="flex flex-col sm:flex-row bg-gray-700 rounded-lg shadow-lg">
-                <div class="container mx-auto p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center text-lg">
-                    <div>
+                <div class="container p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center text-lg max-h-96 overflow-auto">
+                    <div class="h-full">
                         {#if event.description}
-                            {@html event.description}
+                            <div class="py-4">
+                                {@html event.description}
+                            </div>
                         {:else}
-                            Es konnte keine Beschreibung gefunden werden🫠
+                            <div class="py-4">
+                                Es konnte keine Beschreibung gefunden werden🫠
+                            </div>
                         {/if}
                     </div>
                 </div>
