@@ -69,7 +69,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="bg-je-green-500 font-poppins text-je-sand p-5 sticky top-0 w-full shadow-lg z-50">
+<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe text-je-magical-fata_morgana">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
@@ -96,8 +96,8 @@
 		<slot />
 		{#if isVisible}
 			<div class="z-40 fixed bottom-4 right-4">
-				<button on:click={scrollToTop} class="bg-je-green-500 p-3 rounded-full shadow-xl hover:bg-je-green-700 transition duration-300 hover:scale-110">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white hover:text-je-sand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<button on:click={scrollToTop} class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-waldtiefe text-je-magical-fata_morgana hover:bg-je-mystical-kohleglimmer hover:text-je-magical-sonnenglanz" aria-label="Scroll to top">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
 					</svg>
 				</button>
@@ -105,7 +105,7 @@
 		{/if}
 	</main>
 
-	<footer class="bg-je-gray-700">
+	<footer class="bg-je-mystical-kohleglimmer">
 		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
@@ -131,7 +131,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="bg-je-gray-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
+		<div class="bg-je-mystical-waldtiefe flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
 			<div>
 				<Social hoverBGColor="je-green-700" />
 			</div>
