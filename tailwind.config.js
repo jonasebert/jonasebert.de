@@ -10,6 +10,26 @@ module.exports = {
                 montserrat: "Montserrat",
             },
             colors: {
+                'je': {
+                    'magical': {
+                        'fata_morgana':         '#efe9ce',
+                        'sonnenglanz':          '#bda55d',
+                        'korallenriff':         '#ff6b6b'
+                    },
+                    'mystical': {
+                        'waldtiefe':            '#293731',
+                        'kohleglimmer':         '#2e2e2e',
+                        'mitternachtsschwarz':  '#1c1c1c'
+                    },
+                    'misty': {
+                        'sturmwolke':           '#b5b5b5',
+                        'nebelmeer':            '#5f6c7b'
+                    },
+                    'luminous': {
+                        'mondlicht':            '#ffffff',
+                        'nebellicht':           '#d4d4d4'
+                    }
+                },
                 'je-gray': {
                     100: '#abb2bf',
                     200: '#949ca9',
