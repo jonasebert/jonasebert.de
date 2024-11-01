@@ -27,7 +27,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 ">
         {#each events as event}
         <div class={event.now == true ? 'bg-je-mystical-schwarzgruen-800 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-je-mystical-schwarzgruen-800 rounded-lg overflow-hidden shadow-lg'}>
-            <div class="relative z-20 transition-transform duration-500 hover:scale-105 shadow-2xl">
+            <div class="relative z-20 transition-transform duration-500 hover:scale-105">
                 <a href="/calendar/{event.id}">
                     {#if event.teaserImage.url && event.teaserImage.url != null}
                         <Image src={event.teaserImage.url} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
