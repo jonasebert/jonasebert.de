@@ -3,8 +3,8 @@
     import Image from '$lib/components/image.svelte';
 	import Social from "$lib/components/blocks/Social.svelte";
 
-    let response;
-    let status;
+    let response: any;
+    let status: number = 999;
     let submitting = false;
 
     async function submitForm(data) {
