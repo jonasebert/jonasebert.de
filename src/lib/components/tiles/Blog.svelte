@@ -23,7 +23,7 @@
                 {ph.asText(item.data.title)}
             </a>
         </h2>
-        <p class="text-gray-300 text-sm mb-4 font-montserrat">
+        <p class="text-sm mb-4 font-montserrat text-je-misty-sturmwolke">
             {#if item.data.overwrite_publish_date}
                 Veröffentlicht am {FormatDate(ph.asDate(item.data.overwrite_publish_date),'day')}. {FormatDate(ph.asDate(item.data.overwrite_publish_date),'monthshort')} {FormatDate(ph.asDate(item.data.overwrite_publish_date),'year')}
             {:else}
