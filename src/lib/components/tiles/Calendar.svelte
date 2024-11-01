@@ -24,10 +24,10 @@
 </script>
 
 {#if events}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 ">
         {#each events as event}
-        <div class={event.now == true ? 'bg-gray-700 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-gray-700 rounded-lg overflow-hidden shadow-lg'}>
-            <div class="relative z-20 transition-transform duration-500 hover:scale-105">
+        <div class={event.now == true ? 'bg-je-mystical-schwarzgruen-800 rounded-lg overflow-hidden shadow-lg animate-pulse' : 'bg-je-mystical-schwarzgruen-800 rounded-lg overflow-hidden shadow-lg'}>
+            <div class="relative z-20 transition-transform duration-500 hover:scale-105 shadow-2xl">
                 <a href="/calendar/{event.id}">
                     {#if event.teaserImage.url && event.teaserImage.url != null}
                         <Image src={event.teaserImage.url} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
@@ -36,7 +36,7 @@
                     {/if}
                 </a>
             </div>
-            <div class="p-4 relative z-30 bg-gray-700">
+            <div class="p-4 relative z-30 bg-je-mystical-schwarzgruen-800">
                 <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand hyphens-auto break-words">
                     <a href="/calendar/{event.id}">
                         {#if event.state === 'CANCELLED'}
@@ -62,7 +62,16 @@
                         </p>
                     {:else}
                         <p class="text-lg">
-                            {event.startdate} {event.starttime} - {event.enddate} {event.endtime}
+                            vom<br>
+                            bis
+                        </p>
+                        <p class="text-lg">
+                            {event.startdate}<br>
+                            {event.enddate}
+                        </p>
+                        <p class="text-lg">
+                            {event.starttime}<br>
+                            {event.endtime}
                         </p>
                     {/if}
                 </div>
