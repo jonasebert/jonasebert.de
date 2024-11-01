@@ -69,7 +69,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe-500 text-je-magical-fata_morgana">
+<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe-700 text-je-magical-fata_morgana">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
