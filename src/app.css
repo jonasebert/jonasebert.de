@@ -8,8 +8,7 @@
 
 /* Grundlegende Stile */
 body {
-	@apply bg-je-mystical-mitternachtsschwarz;
-	@apply text-je-luminous-nebellicht;
+	@apply text-je-luminous-mondlicht;
 }
 
 /* Container für den Inhalt mit Abstand */
@@ -22,8 +21,7 @@ body {
 
 /* Link-Stile */
 a:hover {
-	text-decoration: underline;
-	@apply text-je-magical-fata_morgana;
+	@apply text-je-magical-sonnenglanz;
 }
 
 /* Styles for Privacy */
