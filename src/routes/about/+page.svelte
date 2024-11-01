@@ -37,7 +37,7 @@
 
 <div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
 	<div class="container mx-auto">
-		<div class="bg-je-gray-700 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
+		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
 				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
 				<div class="italic font-montserrat">Geboren 374 ppm</div>
@@ -57,11 +57,11 @@
 					</div>
 				</div>
 				<div class="pb-8">
-					<Social hoverBGColor="je-green-700" />
+					<Social hoverBGColor="je-mystical-waldtiefe-700" />
 				</div>
 			</div>
 			<div class="flex-1 relative flex items-end justify-center">
-				<div class="absolute inset-0 bg-je-green-900 transform -skew-y-12 rounded-3xl"></div>
+				<div class="absolute inset-0 bg-je-mystical-waldtiefe-700 transform -skew-y-12 rounded-3xl"></div>
 				<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg"/>
 			</div>
 		</div>
@@ -81,7 +81,7 @@
 							{#each item.subcategories as subcategory}
 								<div>
 									<h5 class="text-2xl font-bold font-poppins">{subcategory.title}</h5>
-									<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
+									<div class="flex flex-wrap flex-row gap-1 text-sm font-montserrat">
 										{#each subcategory.skills as skill}
 											<Tags text={skill} />
 										{/each}
@@ -89,7 +89,7 @@
 								</div>
 							{/each}
 						{:else}
-							<div class="flex flex-wrap flex-row gap-1 text-sm text-je-gray-500 font-montserrat">
+							<div class="flex flex-wrap flex-row gap-1 text-sm font-montserrat">
 								{#each item.skills as skill}
 									<Tags text={skill} />
 								{/each}
@@ -119,7 +119,7 @@
 								</div>
 							{/if}
 							{#if item.skills[0]}
-								<div class="flex flex-row flex-wrap gap-1 text-sm text-je-gray-500 font-montserrat">
+								<div class="flex flex-row flex-wrap gap-1 text-sm font-montserrat">
 									{#each item.skills as skill}
 										<Tags text={skill} />
 									{/each}
