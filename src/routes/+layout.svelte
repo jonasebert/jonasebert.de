@@ -69,7 +69,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe text-je-magical-fata_morgana">
+<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe-500 text-je-magical-fata_morgana">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
@@ -85,18 +85,18 @@
 		</div>
 		<div class={isResponsive ? 'flex flex-col items-left w-full pl-4 pt-4' : 'hidden md:flex md:items-center md:justify-end'}>
 			{#each menuLinks as link}
-		  		<a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:font-bold' : 'p-2 rounded-md text-lg hover:font-bold'} href={link.href} on:click={closeMenu}> {link.title} </a>
+		  		<a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz' : 'p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz'} href={link.href} on:click={closeMenu}> {link.title} </a>
 			{/each}
 	  	</div>
 	</div>
 </header>
 
-<div class="flex flex-col flex-grow min-h-screen">
+<div class="flex flex-col flex-grow min-h-screen bg-je-mystical-nachtblau-500">
 	<main class="flex-grow">
 		<slot />
 		{#if isVisible}
 			<div class="z-40 fixed bottom-4 right-4">
-				<button on:click={scrollToTop} class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-waldtiefe text-je-magical-fata_morgana hover:bg-je-mystical-kohleglimmer hover:text-je-magical-sonnenglanz" aria-label="Scroll to top">
+				<button on:click={scrollToTop} class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz" aria-label="Scroll to top">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
 					</svg>
@@ -105,7 +105,7 @@
 		{/if}
 	</main>
 
-	<footer class="bg-je-mystical-kohleglimmer">
+	<footer class="bg-je-mystical-nachtblau-700">
 		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
@@ -113,27 +113,27 @@
 				</a>
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">{name}</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">{name}</h3>
 				{#each menuLinks as link}
 					<a href={link.href} class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Rechtliches</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">Rechtliches</h3>
 				{#each legalLinks as link}
 					<a class="block mt-1 font-montserrat" href={link.href}> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-gray-100 font-poppins text-xl font-semibold">Links</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">Links</h3>
 				{#each footerLinks as link}
 					<a href={link.href} target="_blank" class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}
 			</div>
 		</div>
-		<div class="bg-je-mystical-waldtiefe flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
+		<div class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
 			<div>
-				<Social hoverBGColor="je-green-700" />
+				<Social hoverBGColor="je-mystical-waldtiefe-700" />
 			</div>
 			<div class="font-montserrat">
 				<p>&copy; 2023 - {currentYear} {name}</p>
