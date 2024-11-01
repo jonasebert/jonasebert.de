@@ -34,7 +34,7 @@
                     {/if}
                     {event.summary}</h1>
             </div>
-            <div class="flex flex-col sm:flex-row bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex flex-col sm:flex-row bg-je-mystical-nachtblau-600 rounded-lg shadow-lg">
                 <div class="container p-5 text-balance font-montserrat flex justify-center lg:justify-start items-center text-lg max-h-96 overflow-auto">
                     <div class="h-full">
                         {#if event.description}
@@ -48,7 +48,7 @@
                         {/if}
                     </div>
                 </div>
-                <div class='container p-5 text-justify rounded-lg bg-gray-800 w-fit content-center'>
+                <div class='container p-5 text-justify rounded-lg bg-je-mystical-nachtblau-900 w-fit content-center'>
                     <div class="flex flex-col justify-center items-start gap-2 font-montserrat">
                         {#if event.state == 'CANCELLED'}
                             <InfoMessage message='Veranstaltung wurde abgesagt!' />
@@ -108,7 +108,7 @@
                                     🔗
                                 </div>
                                 <button
-                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
+                                    class="flex flex-row items-center bg-je-mystical-schwarzgruen-500 hover:bg-je-mystical-schwarzgruen-700 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
                                     on:click={() => window.open(event.url, '_blank')}
                                 >
                                     <div class="text-lg text-nowrap">
@@ -123,7 +123,7 @@
                                     📅
                                 </div>
                                 <button
-                                    class="flex flex-row items-center bg-green-700 hover:bg-green-900 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
+                                    class="flex flex-row items-center bg-je-mystical-schwarzgruen-500 hover:bg-je-mystical-schwarzgruen-700 text-white hover:text-je-sand font-bold py-2 px-4 rounded-lg w-full sm:w-auto"
                                     on:click={async () => {
                                         try {
                                             const response = await fetch(`https://api.jonasebert.de/api?type=calendar&itemtype=single&id=${event.id}&download=true`);
