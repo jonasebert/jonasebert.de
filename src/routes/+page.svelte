@@ -85,7 +85,7 @@
 		  <h2 class="text-5xl font-semibold text-je-sand my-2 pb-7">Aktuelles</h2>
 	</div>
 	{#if posts[0]}
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 place-items-baseline">
 			{#each posts as post}
 				<BlogTiles item={post} />
 			{/each}
