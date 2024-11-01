@@ -27,7 +27,7 @@
 <style lang="postcss">
     .custom-checkbox:checked::after {
         content: '⨉';
-        @apply text-je-gray-100 font-bold text-base;
+        @apply text-je-mystical-schwarzgruen-400 font-bold text-base;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -40,38 +40,38 @@
     <h1 class="text-5xl font-bold text-je-sand my-2 py-10 font-poppins">{name} - Kontakt</h1>
     <div class="flex flex-row justify-between gap-3">
         <div class="flex flex-1 flex-col gap-5">
-            <div class="flex flex-col gap-3 bg-je-gray-700 p-5 rounded-lg">
+            <div class="flex flex-col gap-3 bg-je-mystical-nachtblau-900 p-5 rounded-lg">
                 {#if status != 200}
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Kontaktformular</h2>
                     <form class="flex flex-col gap-3 font-montserrat" on:submit|preventDefault={submitForm}>
-                        <input class="border-2 border-je-gray-300 bg-transparent p-2 rounded-lg" type="text" name="name" placeholder="Name" required disabled={submitting}>
-                        <input class="border-2 border-je-gray-300 bg-transparent p-2 rounded-lg" type="email" name="email" placeholder="E-Mail" required disabled={submitting}>
-                        <textarea class="border-2 border-je-gray-300 bg-transparent p-2 rounded-lg" name="message" id="message" placeholder="Deine Nachricht" rows="4" maxlength="300" required disabled={submitting}></textarea>
+                        <input class="border-2 border-je-mystical-schwarzgruen-500 bg-transparent p-2 rounded-lg" type="text" name="name" placeholder="Name" required disabled={submitting}>
+                        <input class="border-2 border-je-mystical-schwarzgruen-500 bg-transparent p-2 rounded-lg" type="email" name="email" placeholder="E-Mail" required disabled={submitting}>
+                        <textarea class="border-2 border-je-mystical-schwarzgruen-500 bg-transparent p-2 rounded-lg" name="message" id="message" placeholder="Deine Nachricht" rows="4" maxlength="300" required disabled={submitting}></textarea>
                         <label for="message" class="text-xs">Maximal 300 Zeichen</label>
                         <div class="flex flex-row gap-4 items-center relative">
-                            <input class="h-5 w-5 border-2 border-je-gray-300 rounded-lg appearance-none custom-checkbox relative" type="checkbox" name="privacy" id="privacy" value="true" title="privacy" placeholder="false" required disabled={submitting}>
+                            <input class="h-5 w-5 border-2 border-je-mystical-schwarzgruen-500 rounded-lg appearance-none custom-checkbox relative" type="checkbox" name="privacy" id="privacy" value="true" title="privacy" placeholder="false" required disabled={submitting}>
                             <label for="privacy" class="ml-2">
                                 <a href="/legal/privacy" target="_blank">Datenschutzerklärung zustimmen</a>
                             </label>
                         </div>
                         {#if !submitting}
-                            <button class="bg-je-green-500 text-white p-2 mt-3 hover:text-je-sand rounded-lg" type="submit">Senden</button>
+                            <button class="bg-je-mystical-schwarzgruen-500 hover:bg-je-mystical-schwarzgruen-700 text-white p-2 mt-3 hover:text-je-sand rounded-lg" type="submit">Senden</button>
                         {:else}
-                            <button class="bg-je-green-500 text-white p-2 mt-3 rounded-lg" type="submit" disabled>Nachricht gesendet</button>
+                            <button class="bg-je-mystical-schwarzgruen-900 text-je-magical-sonnenglanz p-2 mt-3 rounded-lg" type="submit" disabled>Nachricht gesendet</button>
                         {/if}
                     </form>
                 {/if}
             </div>
             <div>
-                <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
+                <div class="bg-je-mystical-nachtblau-900 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Soziale Medien</h2>
                     <Social hoverBGColor="je-green-700" />
                 </div>
-                <div class="bg-je-gray-700 p-5 rounded-lg mb-4">
+                <div class="bg-je-mystical-nachtblau-900 p-5 rounded-lg mb-4">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">E-Mail</h2>
-                    <a href="mailto:contact@jonasebert.de" class="hover:underline font-montserrat">contact@jonasebert.de</a>
+                    <a href="mailto:contact@jonasebert.de" class="font-montserrat">contact@jonasebert.de</a>
                 </div>
-                <div class="bg-je-gray-700 p-5 rounded-lg">
+                <div class="bg-je-mystical-nachtblau-900 p-5 rounded-lg">
                     <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Post</h2>
                     <p class="font-montserrat">Jonas Ebert<br>Postfach 5835<br>38049 Braunschweig<br>Deutschland</p>
                 </div>
