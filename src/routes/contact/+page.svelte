@@ -63,7 +63,7 @@
         <div class="grid grid-flow-col grid-rows-2 gap-4 pt-20 pb-10">
             <div class="bg-je-mystical-nachtblau-900 p-5 rounded-lg col-start-1 row-start-1 transform scale-110 -rotate-6">
                 <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">Soziale Medien</h2>
-                <Social hoverBGColor="je-green-700" />
+                <Social />
             </div>
             <div class="bg-je-mystical-nachtblau-900 p-5 rounded-lg col-start-2 row-start-1 transform translate-x-20 translate-y-4">
                 <h2 class="text-4xl font-semibold text-je-sand my-2 font-poppins">E-Mail</h2>

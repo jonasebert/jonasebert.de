@@ -133,7 +133,7 @@
 		</div>
 		<div class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
 			<div>
-				<Social hoverBGColor="je-mystical-waldtiefe-700" />
+				<Social />
 			</div>
 			<div class="font-montserrat">
 				<p>&copy; 2023 - {currentYear} {name}</p>

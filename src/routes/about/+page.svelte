@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				<div class="pb-8">
-					<Social hoverBGColor="je-mystical-waldtiefe-700" />
+					<Social />
 				</div>
 			</div>
 			<div class="flex-1 relative flex items-end justify-center">
