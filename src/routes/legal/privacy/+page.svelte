@@ -3,346 +3,272 @@
 </script>
 
 <div class="container pb-12">
-	<h1 class="text-5xl font-bold text-je-sand my-2 pt-10 font-poppins">Datenschutz</h1>
-	<div class="text-justify font-montserrat">
-		<p>
-			Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung
-			von personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären.
-			Personenbezogene Daten sind alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z.
-			B. Name, Adresse, E-Mail-Adresse oder Ihr Nutzerverhalten. Die Datenschutzerklärung gilt für
-			alle von uns vorgenommene Daten-Verarbeitungsvorgänge sowohl im Rahmen unserer Kerntätigkeit
-			als auch für die von uns vorgehaltenen Online-Medien.
-		</p>
+	<h1 class="text-5xl font-bold text-je-sand my-2 py-10">Datenschutz</h1>
+	<div class="text-balance font-montserrat mb-4">
+		Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung von personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären. Personenbezogene Daten sind alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z.B. Name, Adresse, E-Mail-Adresse oder Ihr Nutzerverhalten. Die Datenschutzerklärung gilt für alle von uns vorgenommene Daten-Verarbeitungsvorgänge sowohl im Rahmen unserer Kerntätigkeit als auch für die von uns vorgehaltenen Online-Medien.
 	</div>
 	<div>
-		<h2 class="font-poppins">Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
-		<div class="font-montserrat">
-			<p>Verantwortlich für die Datenverarbeitung ist:</p>
-			<p>
-				{name} <br /> {address.street} <br /> {address.zipcode} {address.city} <br /> {address.country} <br /> <a href="tel:{contact.tel}"> {contact.tel} </a> 
-				<br /> <a href="mailto:{contact.mail}"> {contact.mail} </a> <br /> <a href="/legal/imprint"> {$uri.url.protocol}//{$uri.url.host}/legal/imprint </a>
-			</p>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
+		<div class="font-montserrat text-balance mb-4">
+			Verantwortlich für die Datenverarbeitung ist:
+		</div>
+		<div class="font-montserrat text-balance mb-4">
+			{name} <br /> {address.street} <br /> {address.zipcode} {address.city} <br /> {address.country} <br /> <a href="mailto:{contact.mail}"> {contact.mail} </a> <br /> <a href="/legal/imprint"> {$uri.url.protocol}//{$uri.url.host}/legal/imprint </a>
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Ihre Rechte nach der DSGVO</h2>		
-		<div class="text-justify font-montserrat">
-			<p>
-				Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu, die Sie jederzeit bei
-				dem in Ziffer 1. dieser Datenschutzerklärung genannten Verantwortlichen geltend machen
-				können:
-			</p>
-			<ul>
-				<li>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Ihre Rechte nach der DSGVO</h2>		
+		<div class="text-balance font-montserrat mb-4">
+			Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu, die Sie jederzeit bei
+			dem in Ziffer 1. dieser Datenschutzerklärung genannten Verantwortlichen geltend machen
+			können:
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<ul class="list-disc">
+				<li class="mb-2">
 					<strong>Recht auf Auskunft:</strong> Sie haben das Recht, von uns Auskunft darüber zu verlangen,
 					ob und welche Daten wir von Ihnen verarbeiten.
 				</li>
-				<li>
+				<li class="mb-2">
 					<strong>Recht auf Berichtigung:</strong> Sie haben das Recht, die Berichtigung unrichtiger
 					oder Vervollständigung unvollständiger Daten zu verlangen.
 				</li>
-				<li>
+				<li class="mb-2">
 					<strong>Recht auf Löschung:</strong> Sie haben das Recht, die Löschung Ihrer Daten zu verlangen.
 				</li>
-				<li>
+				<li class="mb-2">
 					<strong>Recht auf Einschränkung:</strong> Sie haben in bestimmten Fällen das Recht zu verlangen,
 					dass wir Ihre Daten nur noch eingeschränkt bearbeiten.
 				</li>
-				<li>
+				<li class="mb-2">
 					<strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht zu verlangen, dass wir
 					Ihnen oder einem anderen Verantwortlichen Ihre Daten in einem strukturierten, gängigen und
 					maschinenlesebaren Format übermitteln.
 				</li>
-				<li>
+				<li class="mb-2">
 					<strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei einer Aufsichtsbehörde zu
 					beschweren. Zuständig ist die Aufsichtsbehörde Ihres üblichen Aufenthaltsortes, Ihres
 					Arbeitsplatzes oder unseres Firmensitzes.
 				</li>
 			</ul>
 		</div>
-		<h3 class="font-poppins">Widerrufsrecht</h3>
-		<div class="text-justify font-montserrat">
-			<p>
-				Sie haben das Recht, die von Ihnen erteilte Einwilligung zur Datenverarbeitung jederzeit zu
-				widerrufen.
-			</p>
+		<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Widerrufsrecht</h3>
+		<div class="text-balance font-montserrat mb-4">
+			Sie haben das Recht, die von Ihnen erteilte Einwilligung zur Datenverarbeitung jederzeit zu widerrufen.
 		</div>
-		<h3 class="font-poppins">Widerspruchsrecht</h3>
-		<div class="text-justify font-montserrat">
-			<p>
-				Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die wir auf unser
-				berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO stützen, Widerspruch einzulegen.
-				Sofern Sie von Ihrem Widerspruchsrecht Gebrauch machen, bitten wir Sie um die Darlegung der
-				Gründe. Wir werden Ihre personenbezogenen Daten dann nicht mehr verarbeiten, es sei denn,
-				wir können Ihnen gegenüber nachweisen, dass zwingende schutzwürdige Gründe an der
-				Datenverarbeitung Ihre Interessen und Rechte überwiegen.
-			</p>
-			<p>
-				<span style="text-decoration: underline;">
-					<strong>
-						Unabhängig vom vorstehend Gesagten, haben Sie das jederzeitige Recht, der Verarbeitung
-						Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse zu widersprechen.
-					</strong>
-				</span>
-			</p>
-			<p>
-				Ihren Widerspruch richten Sie bitte an die oben angegebene Kontaktadresse des
-				Verantwortlichen.
-			</p>
+		<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Widerspruchsrecht</h3>
+		<div class="text-balance font-montserrat mb-4">
+			Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die wir auf unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO stützen, Widerspruch einzulegen. Sofern Sie von Ihrem Widerspruchsrecht Gebrauch machen, bitten wir Sie um die Darlegung der Gründe. Wir werden Ihre personenbezogenen Daten dann nicht mehr verarbeiten, es sei denn, wir können Ihnen gegenüber nachweisen, dass zwingende schutzwürdige Gründe an der Datenverarbeitung Ihre Interessen und Rechte überwiegen.
+		</div>
+		<div class="text-balance font-montserrat mb-4 font-bold underline">
+			Unabhängig vom vorstehend Gesagten, haben Sie das jederzeitige Recht, der Verarbeitung Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse zu widersprechen.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			Ihren Widerspruch richten Sie bitte an die oben angegebene Kontaktadresse des Verantwortlichen.
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Wann löschen wir Ihre Daten?</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder Sie uns dies vorgeben.
-				Das bedeutet, dass - sofern sich aus den einzelnen Datenschutzhinweisen dieser
-				Datenschutzerklärung nichts anderes ergibt - wir Ihre Daten löschen,
-			</p>
-			<ul>
-				<li>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Wann löschen wir Ihre Daten?</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder Sie uns dies vorgeben. Das bedeutet, dass - sofern sich aus den einzelnen Datenschutzhinweisen dieser Datenschutzerklärung nichts anderes ergibt - wir Ihre Daten löschen,
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<ul class="list-disc">
+				<li class="mb-2">
 					wenn der Zweck der Datenverarbeitung weggefallen ist und damit die jeweilige in den
 					einzelnen Datenschutzhinweisen genannte Rechtsgrundlage nicht mehr besteht, also bspw.
-					<ul>
-						<li>
+					<ul class="list-disc">
+						<li class="mb-2">
 							nach Beendigung der zwischen uns bestehenden vertraglichen oder mitgliedschaftlichen
 							Beziehungen (Art. 6 Abs. 1 lit. a DSGVO) oder
 						</li>
-						<li>
+						<li class="mb-2">
 							nach Wegfall unseres berechtigten Interesses an der weiteren Verarbeitung oder
 							Speicherung Ihrer Daten (Art. 6 Abs. 1 lit. f DSGVO),
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li class="mb-2">
 					wenn Sie von Ihrem Widerrufsrecht Gebrauch machen und keine anderweitige gesetzliche
 					Rechtsgrundlage für die Verarbeitung im Sinne von Art. 6 Abs. 1 lit. b-f DSGVO eingreift,
 				</li>
-				<li>
+				<li class="mb-2">
 					wenn Sie vom Ihrem Widerspruchsrecht Gebrauch machen und der Löschung keine zwingenden
 					schutzwürdigen Gründe entgegenstehen.
 				</li>
 			</ul>
-			<p>
-				Sofern wir (bestimmte Teile) Ihre(r) Daten jedoch noch für andere Zwecke vorhalten müssen,
-				weil dies etwa steuerliche Aufbewahrungsfristen (in der Regel 6 Jahre für
-				Geschäftskorrespondenz bzw. 10 Jahre für Buchungsbelege) oder die Geltendmachung, Ausübung
-				oder Verteidigung von Rechtsansprüchen aus vertraglichen Beziehungen (bis zu vier Jahren)
-				erforderlich machen oder die Daten zum Schutz der Rechte einer anderen natürlichen oder
-				juristischen Person gebraucht werden, löschen wir (den Teil) Ihre(r) Daten erst nach Ablauf
-				dieser Fristen. Bis zum Ablauf dieser Fristen beschränken wir die Verarbeitung dieser Daten
-				jedoch auf diese Zwecke (Erfüllung der Aufbewahrungspflichten).
-			</p>
 		</div>
-	</div>
-	<div >
-		<h2 class="font-poppins">Webhosting</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters, auf dessen Server
-				unsere Internetseiten gespeichert und für den Abruf im Internet verfügbar gemacht werden
-				(Hosting). Hierbei können von dem Anbieter all diejenigen über den von Ihnen genutzten
-				Browser übertragenen Daten verarbeitet werden, die bei der Nutzung unserer Internetseiten
-				anfallen. Hierzu gehören insbesondere Ihre IP-Adresse, die der Anbieter benötigt, um unser
-				Online-Angebot an den von Ihnen genutzten Browser ausliefern zu können sowie sämtliche von
-				Ihnen über unsere Internetseite getätigten Eingaben. Daneben kann der von uns genutzte
-				Anbieter&nbsp;&nbsp;
-			</p>
-			<ul>
-				<li>das Datum und die Uhrzeit des Zugriffs auf unsere Internetseite</li>
-				<li>Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
-				<li>Zugriffsstatus (HTTP-Status)</li>
-				<li>die übertragene Datenmenge</li>
-				<li>der Internet-Service-Provider des zugreifenden Systems</li>
-				<li>der von Ihnen verwendete Browsertyp und dessen Version</li>
-				<li>das von Ihnen verwendete Betriebssystem</li>
-				<li>
-					die Internetseite, von welcher Sie gegebenenfalls auf unsere Internetseite gelangt sind
-				</li>
-				<li>die Seiten bzw. Unterseiten, welche Sie auf unserer Internetseite besuchen.</li>
-			</ul>
-			<p>
-				erheben. Die vorgenannten Daten werden als Logfiles auf den Servern unseres Anbieters
-				gespeichert. Dies ist erforderlich, um die Stabilität und Sicherheit des Betriebs unserer
-				Internetseite zu gewährleisten.
-			</p>
-			<br />
-			<p><strong>Betroffene Daten:</strong></p>
-			<ul>
-				<li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
-				<li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-				<li>Kommunikationsdaten (bspw. Informationen über das genutzte Gerät, IP-Adresse)</li>
-			</ul>
-			<p><strong>Betroffene Personen: </strong>Nutzer unserer Internetpräsenz</p>
-			<p>
-				<strong>Verarbeitungszweck: </strong>Ausspielen unserer Internetseiten, Gewährleistung des
-				Betriebs unserer Internetseiten
-			</p>
-			<p><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</p>
-			<p><strong>Von uns beauftragte(r) Webhoster:</strong></p>
-			<p><strong>Vercel Inc.</strong></p>
-			<p>
-				Dienstanbieter: Vercel Inc., 340 S Lemon Ave 4133 Walnut, CA 91789, USA<br />
-				<a href="https://vercel.com/" target="_blank" class="externalLink">Internetseite</a>
-				<a href="https://vercel.com/legal/privacy-policy" target="_blank" class="externalLink">Datenschutzerklärung</a>
-			</p>
+		<div class="text-balance font-montserrat mb-4">
+			Sofern wir (bestimmte Teile) Ihre(r) Daten jedoch noch für andere Zwecke vorhalten müssen, weil dies etwa steuerliche Aufbewahrungsfristen (in der Regel 6 Jahre für Geschäftskorrespondenz bzw. 10 Jahre für Buchungsbelege) oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen aus vertraglichen Beziehungen (bis zu vier Jahren) erforderlich machen oder die Daten zum Schutz der Rechte einer anderen natürlichen oder juristischen Person gebraucht werden, löschen wir (den Teil) Ihre(r) Daten erst nach Ablauf dieser Fristen. Bis zum Ablauf dieser Fristen beschränken wir die Verarbeitung dieser Daten jedoch auf diese Zwecke (Erfüllung der Aufbewahrungspflichten).
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Content-Delivery-Network</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Wir benutzen zum Ausspielen unserer Internetseiten ein Content-Delivery-Network (CDN). Ein
-				CDN ist ein Netz regional verteilter und über das Internet verbundener Server. Über das CDN
-				werden skalierende Speicher- und Auslieferungskapazitäten zur Verfügung gestellt. Hierdurch
-				werden die Ladezeiten unserer Internetseiten optimiert und auch bei großen Lastspitzen ein
-				optimaler Datendurchsatz gewährleistet. Nutzeranfragen auf unseren Internetseiten werden
-				über Server des CDN geleitet. Aus diesen Datenströmen werden Statistiken erstellt. Dies
-				dient zum einen dazu, potentielle Bedrohungen für unsere Internetseiten durch Schadsoftware
-				frühzeitig zu erkennen und zum anderen unser Angebot stetig zu verbessern und unsere
-				Internetseiten für Sie als Nutzer nutzerfreundlicher auszugestalten.
-			</p>
-			<p>
-				Wir möchten Sie darauf hinweisen, dass je nach Sitzland des unten genannten Diensteanbieters
-				die über den Dienst erfassten Daten außerhalb des Raumes der Europäischen Union übertragen
-				und verarbeitet werden können. Es besteht in diesem Fall das Risiko, dass das von der DSGVO
-				vorgeschriebene Datenschutzniveau nicht eingehalten und die Durchsetzung Ihrer Rechte nicht
-				oder nur erschwert erfolgen kann.
-			</p>
-			<br />
-			<p><strong>Betroffene Daten:</strong></p>
-			<ul>
-				<li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
-				<li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-				<li>Kommunikationsdaten (bspw. Informationen über das genutzte Gerät, IP-Adresse)</li>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Webhosting</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters, auf dessen Server unsere Internetseiten gespeichert und für den Abruf im Internet verfügbar gemacht werden (Hosting). Hierbei können von dem Anbieter all diejenigen über den von Ihnen genutzten Browser übertragenen Daten verarbeitet werden, die bei der Nutzung unserer Internetseiten anfallen. Hierzu gehören insbesondere Ihre IP-Adresse, die der Anbieter benötigt, um unser Online-Angebot an den von Ihnen genutzten Browser ausliefern zu können sowie sämtliche von Ihnen über unsere Internetseite getätigten Eingaben. Daneben kann der von uns genutzte Anbieter
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<ul class="list-disc">
+				<li class="mb-2">das Datum und die Uhrzeit des Zugriffs auf unsere Internetseite</li>
+				<li class="mb-2">Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
+				<li class="mb-2">Zugriffsstatus (HTTP-Status)</li>
+				<li class="mb-2">die übertragene Datenmenge</li>
+				<li class="mb-2">der Internet-Service-Provider des zugreifenden Systems</li>
+				<li class="mb-2">der von Ihnen verwendete Browsertyp und dessen Version</li>
+				<li class="mb-2">das von Ihnen verwendete Betriebssystem</li>
+				<li class="mb-2">die Internetseite, von welcher Sie gegebenenfalls auf unsere Internetseite gelangt sind</li>
+				<li class="mb-2">die Seiten bzw. Unterseiten, welche Sie auf unserer Internetseite besuchen.</li>
 			</ul>
-			<p>
-				<strong>Verarbeitungszweck: </strong>Technische Optimierung der Internetpräsenz, Analyse von
-				Fehlern und Nutzerverhalten
-			</p>
-			<p><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</p>
-			<p><strong>Eingesetze CDN-Dienstleister:</strong></p>
-			<p><strong>Cloudflare</strong></p>
-			<p>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			erheben. Die vorgenannten Daten werden als Logfiles auf den Servern unseres Anbieters gespeichert. Dies ist erforderlich, um die Stabilität und Sicherheit des Betriebs unserer Internetseite zu gewährleisten.
+		</div>
+		<div class="text-balance font-montserrat mb-4 font-bold">
+			Betroffene Daten:
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<ul class="list-disc">
+				<li class="mb-2">Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
+				<li class="mb-2">Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
+				<li class="mb-2">Kommunikationsdaten (bspw. Informationen über das genutzte Gerät, IP-Adresse)</li>
+			</ul>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Betroffene Personen: </strong>Nutzer unserer Internetpräsenz
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Verarbeitungszweck: </strong>Ausspielen unserer Internetseiten, Gewährleistung des
+				Betriebs unserer Internetseiten
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Von uns beauftragte(r) Webhoster:</strong>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Vercel Inc.</strong>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			Dienstanbieter: Vercel Inc., 340 S Lemon Ave 4133 Walnut, CA 91789, USA<br />
+			<a href="https://vercel.com/" target="_blank" class="externalLink">Internetseite</a>
+			<a href="https://vercel.com/legal/privacy-policy" target="_blank" class="externalLink">Datenschutzerklärung</a>
+		</div>
+	</div>
+	<div>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Content-Delivery-Network</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Wir benutzen zum Ausspielen unserer Internetseiten ein Content-Delivery-Network (CDN). Ein CDN ist ein Netz regional verteilter und über das Internet verbundener Server. Über das CDN werden skalierende Speicher- und Auslieferungskapazitäten zur Verfügung gestellt. Hierdurch werden die Ladezeiten unserer Internetseiten optimiert und auch bei großen Lastspitzen ein optimaler Datendurchsatz gewährleistet. Nutzeranfragen auf unseren Internetseiten werden über Server des CDN geleitet. Aus diesen Datenströmen werden Statistiken erstellt. Dies dient zum einen dazu, potentielle Bedrohungen für unsere Internetseiten durch Schadsoftware frühzeitig zu erkennen und zum anderen unser Angebot stetig zu verbessern und unsere Internetseiten für Sie als Nutzer nutzerfreundlicher auszugestalten.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			Wir möchten Sie darauf hinweisen, dass je nach Sitzland des unten genannten Diensteanbieters die über den Dienst erfassten Daten außerhalb des Raumes der Europäischen Union übertragen und verarbeitet werden können. Es besteht in diesem Fall das Risiko, dass das von der DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die Durchsetzung Ihrer Rechte nicht oder nur erschwert erfolgen kann.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Betroffene Daten:</strong>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<ul class="list-disc">
+				<li class="mb-2">Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
+				<li class="mb-2">Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
+				<li class="mb-2">Kommunikationsdaten (bspw. Informationen über das genutzte Gerät, IP-Adresse)</li>
+			</ul>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Verarbeitungszweck: </strong>Technische Optimierung der Internetpräsenz, Analyse von Fehlern und Nutzerverhalten
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Eingesetze CDN-Dienstleister:</strong>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Cloudflare</strong>
+			<div>
 				Diensteanbieter: Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA<br />
 				<a href="https://www.cloudflare.com/" class="externalLink">Internetseite</a><br />
 				<a href="https://www.cloudflare.com/privacypolicy/" class="externalLink">Datenschutzerklärung</a><br />
 				<a href="https://blog.cloudflare.com/what-cloudflare-logs/" class="externalLink">Umfang der Datenerfassung</a>
-			</p>
+			</div>
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Kontaktaufnahme</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser Kontaktformular oder
-				sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren Namen, Ihre
-				Telefonnummer oder Ihre E-Mail-Adresse zur Verfügung stellen oder weitere Angaben zur Ihrer
-				Person oder Ihrem Anliegen machen, verarbeiten wir diese Daten zur Beantwortung Ihrer
-				Anfrage im Rahmen des zwischen uns bestehenden vorvertraglichen oder vertraglichen
-				Beziehungen.
-			</p>
-			<br />
-			<p><strong>Betroffene Daten:</strong></p>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Kontaktaufnahme</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser Kontaktformular oder sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren Namen, Ihre Telefonnummer oder Ihre E-Mail-Adresse zur Verfügung stellen oder weitere Angaben zur Ihrer Person oder Ihrem Anliegen machen, verarbeiten wir diese Daten zur Beantwortung Ihrer Anfrage im Rahmen des zwischen uns bestehenden vorvertraglichen oder vertraglichen Beziehungen.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Betroffene Daten:</strong>
 			<ul>
 				<li>Bestandsdaten (bspw. Namen, Adressen)</li>
 				<li>Kontakdaten (bspw. E-Mail-Adresse, Telefonnummer, Postanschrift)</li>
 				<li>Inhaltsdaten (Texte, Fotos, Videos)</li>
 				<li>Vertragsdaten (bspw. Vertragsgegenstand, Vertragsdauer)</li>
 			</ul>
-			<p>
+			<div class="text-balance font-montserrat mb-4">
 				<strong>Betroffene Personen: </strong>Interessenten, Kunden, Geschäfts- und Vertragspartner
-			</p>
-			<p>
+			</div>
+			<div class="text-balance font-montserrat mb-4">
 				<strong>Verarbeitungszweck: </strong>Kommunikation sowie Beantwortung von Kontaktanfragen,
 				Büro und Organisationsverfahren
-			</p>
-			<p>
+			</div>
+			<div class="text-balance font-montserrat mb-4">
 				<strong>Rechtsgrundlage:</strong> Vertragserfüllung und vorvertragliche Anfragen, Art. 6 Abs.
 				1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
-			</p>
+			</div>
 			<div>
-				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10 font-poppins">Angaben zu dem von uns genutzten Drittanbieter:</h3>
-				<p>Das Kontaktformular übermittelt Daten an Google Formulare (Google Forms). Die erhaltenen Nachrichten und Daten werden von unserer Seite umgehend nach der Bearbeitung gelöscht.</p>
+				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Angaben zu dem von uns genutzten Drittanbieter:</h3>
+				<div class="text-balance font-montserrat mb-4">
+					Das Kontaktformular übermittelt Daten an Google Formulare (Google Forms). Die erhaltenen Nachrichten und Daten werden von unserer Seite umgehend nach der Bearbeitung gelöscht.
+				</div>
 				<a href="https://policies.google.com/privacy" class="externalLink">Zur Datenschutzerklärung von Google</a>
 			</div>
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Zahlungsdienstleister</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Gemäß unserer gesetzlichen Pflichten beziehungsweise wegen unserer berechtigten Interessen
-				an einer effizienten, sicheren und Kunden orientierten Zahlungsabwicklung können Personen,
-				die mit uns einen Vertrag oder eine anderweitige Rechtsbeziehung geschlossen haben, zur
-				Zahlung sowohl Banken und Kreditinstitute, als auch weitere Zahlungsdienstleister in
-				Anspruch nehmen. Die von uns angebotenen Zahlungsdienstleister, verarbeiten in diesem Rahmen
-				Bestandsdaten, dazu zählen Name, Adresse oder auch Bankdaten wie Konto-/Kreditkartennummer,
-				Passwörter, TANs, Prüfnummern sowie Angaben zum abgeschlossenen Vertrag und Angaben zum
-				Empfänger der Zahlung.
-			</p>
-			<p>
-				Die in diesem Zusammenhang erhobenen Daten sind erforderlich, um die Zahlungsabwicklung
-				durch den Zahlungsdienstleister vornehmen zu können. Ausschließlich der von uns beauftragte
-				Zahlungsdienstleister erhebt und verarbeitet diese persönlichen Angaben. Wir erhalten zu
-				keinem Zeitpunkt Informationen über Ihre Konto- oder Kreditkartenverbindung. Wir werden von
-				unserem Zahlungsdienstleister darüber in Kenntnis gesetzt, ob die Zahlung unserer Kunden
-				eingetroffen ist oder nicht. Es besteht die Möglichkeit, dass unsere Zahlungsdienstleister
-				die Daten unserer Kunden an Wirtschaftsauskunftsdateien weiterleiten, um die Identität sowie
-				Bonität des Zahlenden prüfen zu können. Insoweit verweisen wir auf die Datenschutzerklärung
-				und Allgemeinen Geschäftsbedingungen (AGB) unserer Zahlungsdienstleister.
-			</p>
-			<p>
-				Es gelten die AGB und Datenschutzbestimmung des jeweiligen Zahlungsdienstleister. Sie finden
-				diese Hinweise auf der Webseite des betroffenen Dienstleister oder in der
-				Transaktionsanwendung. Für weitergehende Informationen und für die Geltendmachung Ihrer
-				Rechte bezüglich Widerruf und Auskunft verweisen wir insoweit auf die Bestimmungen des
-				jeweiligen Dienstleisters.
-			</p>
-			<br />
-			<p><strong>Betroffene Daten:</strong></p>
-			<ul>
-				<li>Bestandsdaten (bspw. Name, Adresse),</li>
-				<li>
-					Benutzungsdaten (bspw. besuchte Internetseiten, Interesse an bestimmten Themen, Zeiten der
-					Zugriffe),
-				</li>
-				<li>Zahlungsdaten (bspw. Bankverbindung, Rechnungen. Zahlungshistorie),</li>
-				<li>Geschäftsabschlussdaten (bspw. Laufzeit, Kundenkategorie, Vertragsgegenstand),</li>
-				<li>
-					Kommunikations- und Metadaten (bspw. IP-Adresse, Informationen zum Gerät oder
-					Computersystem)
-				</li>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Zahlungsdienstleister</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Gemäß unserer gesetzlichen Pflichten beziehungsweise wegen unserer berechtigten Interessen an einer effizienten, sicheren und Kunden orientierten Zahlungsabwicklung können Personen, die mit uns einen Vertrag oder eine anderweitige Rechtsbeziehung geschlossen haben, zur Zahlung sowohl Banken und Kreditinstitute, als auch weitere Zahlungsdienstleister in Anspruch nehmen. Die von uns angebotenen Zahlungsdienstleister, verarbeiten in diesem Rahmen Bestandsdaten, dazu zählen Name, Adresse oder auch Bankdaten wie Konto-/Kreditkartennummer, Passwörter, TANs, Prüfnummern sowie Angaben zum abgeschlossenen Vertrag und Angaben zum Empfänger der Zahlung.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			Die in diesem Zusammenhang erhobenen Daten sind erforderlich, um die Zahlungsabwicklung durch den Zahlungsdienstleister vornehmen zu können. Ausschließlich der von uns beauftragte Zahlungsdienstleister erhebt und verarbeitet diese persönlichen Angaben. Wir erhalten zu keinem Zeitpunkt Informationen über Ihre Konto- oder Kreditkartenverbindung. Wir werden von unserem Zahlungsdienstleister darüber in Kenntnis gesetzt, ob die Zahlung unserer Kunden eingetroffen ist oder nicht. Es besteht die Möglichkeit, dass unsere Zahlungsdienstleister die Daten unserer Kunden an Wirtschaftsauskunftsdateien weiterleiten, um die Identität sowie Bonität des Zahlenden prüfen zu können. Insoweit verweisen wir auf die Datenschutzerklärung und Allgemeinen Geschäftsbedingungen (AGB) unserer Zahlungsdienstleister.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			Es gelten die AGB und Datenschutzbestimmung des jeweiligen Zahlungsdienstleister. Sie finden diese Hinweise auf der Webseite des betroffenen Dienstleister oder in der Transaktionsanwendung. Für weitergehende Informationen und für die Geltendmachung Ihrer Rechte bezüglich Widerruf und Auskunft verweisen wir insoweit auf die Bestimmungen des jeweiligen Dienstleisters.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Betroffene Daten:</strong>
+			<ul class="list-disc">
+				<li class="mb-2">Bestandsdaten (bspw. Name, Adresse),</li>
+				<li class="mb-2">Benutzungsdaten (bspw. besuchte Internetseiten, Interesse an bestimmten Themen, Zeiten der Zugriffe),</li>
+				<li class="mb-2">Zahlungsdaten (bspw. Bankverbindung, Rechnungen. Zahlungshistorie),</li>
+				<li class="mb-2">Geschäftsabschlussdaten (bspw. Laufzeit, Kundenkategorie, Vertragsgegenstand),</li>
+				<li class="mb-2">Kommunikations- und Metadaten (bspw. IP-Adresse, Informationen zum Gerät oder Computersystem)</li>
 			</ul>
-			<p>
-				<strong>Verarbeitungszweck: </strong>Effektive, sichere sowie Kunden orientierte
-				Zahlungsangebote (Service) sowie Abwicklung von Zahlungen gemäß vertraglicher Vereinbarung
-			</p>
-			<p>
-				<strong>Rechtsgrundlage: </strong>Vertragserfüllung und Erfüllung vorvertraglichen Anfragen,
-				Art. 6 Abs. 1 lit. b DSGVO, berechtigte Interessen, Art. 6 Abs. 1 lit. f DSGVO
-			</p>
-			<p>
-				<strong>Widerrufsmöglichkeiten: </strong>Sie können Ihre Einwilligung zur Verwendung der
-				personenbezogenen Daten jederzeit gegenüber dem jeweiligen Zahlungsdienstleister widerrufen.
-				Trotz Widerruf bleibt der Zahlungsdienstleister gegebenenfalls weiterhin dazu berechtigt,
-				die personenbezogenen Daten zu verarbeiten, zu nutzen und zu übermitteln, die zur
-				vertragsmäßigen Zahlungsabwicklung zwingend notwendig sind. Bezüglich der Speicherung und
-				fristgemäßen Löschung der personenbezogenen Daten verweisen wir auf die jeweiligen
-				Datenschutzbestimmungen des Zahlungsdienstleisters.
-			</p>
-			<p><strong>Wir nutzen folgende Zahlungsdienstleister:</strong></p>
-			<p><strong>Stripe</strong></p>
-			<p>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Verarbeitungszweck:</strong> Effektive, sichere sowie Kunden orientierte Zahlungsangebote (Service) sowie Abwicklung von Zahlungen gemäß vertraglicher Vereinbarung
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Rechtsgrundlage:</strong> Vertragserfüllung und Erfüllung vorvertraglichen Anfragen, Art. 6 Abs. 1 lit. b DSGVO, berechtigte Interessen, Art. 6 Abs. 1 lit. f DSGVO
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Widerrufsmöglichkeiten:</strong> Sie können Ihre Einwilligung zur Verwendung der personenbezogenen Daten jederzeit gegenüber dem jeweiligen Zahlungsdienstleister widerrufen. Trotz Widerruf bleibt der Zahlungsdienstleister gegebenenfalls weiterhin dazu berechtigt, die personenbezogenen Daten zu verarbeiten, zu nutzen und zu übermitteln, die zur vertragsmäßigen Zahlungsabwicklung zwingend notwendig sind. Bezüglich der Speicherung und fristgemäßen Löschung der personenbezogenen Daten verweisen wir auf die jeweiligen Datenschutzbestimmungen des Zahlungsdienstleisters.
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Wir nutzen folgende Zahlungsdienstleister:</strong>
+		</div>
+		<div class="text-balance font-montserrat mb-4">
+			<strong>Stripe</strong>
+			<div>
 				Dienstanbieter: Stripe Inc., 510 Townsend Street, San Francisco, CA 94103, USA <br />
 				<a href="https://stripe.com/de" class="externalLink">Internetseite</a><br />
 				<a href="https://stripe.com/de/privacy" class="externalLink">Datenschutzerklärung</a>
-			</p>
+			</div>
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
-		<div class="text-justify font-montserrat">
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
+		<div class="text-balance font-montserrat">
 			<p>
 				Wir betreiben Onlinepräsenzen innerhalb der nachfolgend aufgelisteten sozialen Netzwerke.
 				Besuchen Sie eine dieser Präsenzen, werden durch den jeweiligen Anbieter die unten näher
@@ -441,8 +367,8 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Content-Dienste</h2>
-		<div class="text-justify font-montserrat">
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Content-Dienste</h2>
+		<div class="text-balance font-montserrat">
 			<p>
 				Wir nutzen bestimmte Dienste, um über unsere Internetpräsenz bestimmte Inhalte oder Grafiken
 				(Videos, Bilder, Musik, Schriftarten, Kartenmaterial) ausspielen zu können. Dabei
@@ -519,8 +445,8 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Sicherheits Maßnahmen</h2>
-		<div class="text-justify font-montserrat">
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Sicherheits Maßnahmen</h2>
+		<div class="text-balance font-montserrat">
 			<p>
 				Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand
 				der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen
