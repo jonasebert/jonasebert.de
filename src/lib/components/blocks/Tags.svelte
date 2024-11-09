@@ -7,9 +7,9 @@
 </script>
 
 {#if (clickable && link)}
-    <a class="text-sm rounded-lg bg-green-500 text-je-luminous-mondlicht py-1 px-2 mr-2 hover:text-je-luminous-mondlicht hover:no-underline transition-transform duration-500 hover:scale-{resize}" href={link} target={target}>
+    <a class="text-sm rounded-lg bg-je-mystical-waldtiefe-300 text-je-luminous-mondlicht py-1 px-2 mr-2 hover:text-je-luminous-mondlicht hover:no-underline transition-transform duration-500 hover:scale-{resize}" href={link} target={target}>
         <div>{text}</div>
     </a>
 {:else}
-    <div class="text-sm rounded-lg bg-green-500 text-je-luminous-mondlicht py-1 px-2 mr-2">{text}</div>
+    <div class="text-sm rounded-lg bg-je-mystical-waldtiefe-300 text-je-luminous-mondlicht py-1 px-2 mr-2">{text}</div>
 {/if}
