@@ -594,28 +594,17 @@
 	</div>
 	<div>
 		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Sicherheits Maßnahmen</h2>
-		<div class="text-balance font-montserrat">
-			<p>
-				Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand
-				der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen
-				zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust,
-				Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.
-			</p>
+		<div class="text-balance font-montserrat mb-4">
+			Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.
 		</div>
 	</div>
 	<div>
-		<h2 class="font-poppins">Aktualität und Änderung dieser Datenschutzerklärung</h2>
-		<div class="text-justify font-montserrat">
-			<p>
-				Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024. Aufgrund
-				geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese
-				Datenschutzerklärung anzupassen.
-			</p>
-			<p class="font-bold">
-				Diese Datenschutzerklärung wurde mit Hilfe des Datenschutz-Generators von SOS Recht
-				erstellt. SOS Recht ist ein Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz
-				in Berlin.
-			</p>
+		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Aktualität und Änderung dieser Datenschutzerklärung</h2>
+		<div class="text-balance font-montserrat mb-4">
+			Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024. Aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung anzupassen.
+		</div>
+		<div class="text-balance font-montserrat mb-4 font-bold">
+			Diese Datenschutzerklärung wurde mit Hilfe des Datenschutz-Generators von SOS Recht erstellt. SOS Recht ist ein Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz in Berlin.
 		</div>
 	</div>
 </div>
