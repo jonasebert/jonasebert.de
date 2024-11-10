@@ -11,24 +11,32 @@
     const { posts, events } = data;
 </script>
 
-<div class="flex flex-col items-center justify-center p-5 min-h-[95vh]">
+<div class="flex flex-col items-center justify-center p-5 min-h-[95vh] relative">
 	<div class="container mx-auto">
 		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
-			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
-				<h2 class="text-2xl font-semibold text-je-luminous-nebellicht">The future is now!</h2>
-				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name }</h1>
-				<div class="pb-8">
-					<Social hoverBGColor="je-mystical-waldtiefe-700" />
+			<div class="p-8 font-poppins flex-1 justify-start md:justify-start lg:justify-center flex flex-col text-left lg:text-left relative z-10 overflow-hidden">
+				<div class="size-80">
+					<h2 class="text-2xl font-semibold text-je-luminous-nebellicht">The future is now!</h2>
+					<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2 break-words">{ name }</h1>
+					<div class="pb-8">
+						<Social hoverBGColor="je-mystical-waldtiefe-700" />
+					</div>
 				</div>
+				<div class="absolute top-0 right-0 size-16 md:size-32 bg-je-magical-korallenriff rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+				<div class="hidden lg:block absolute bottom-0 left-0 size-40 md:size-8/12 bg-je-mystical-waldtiefe-700 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+				<div class="absolute bottom-0 right-0 size-56 md:size-80 lg:size-[140%] bg-je-magical-sonnenglanz rounded-full transform translate-x-1/2 translate-y-1/2"></div>
 			</div>
 			<div class="flex-1 relative flex items-end justify-center">
 				<div class="absolute inset-0 bg-je-mystical-waldtiefe-700 transform -skew-y-12 rounded-3xl"></div>
 				<a href="/about">
 					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
+				<div class="hidden lg:block absolute top-0 left-0 size-16 md:size-32 bg-je-magical-korallenriff rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+				<div class="absolute lg:hidden top-0 lg:bottom-0 right-0 size-56 md:size-80 lg:size-[140%] bg-je-magical-sonnenglanz rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
 			</div>
 		</div>
 	</div>
+
 </div>
 
 <div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
