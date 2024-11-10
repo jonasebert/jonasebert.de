@@ -141,25 +141,25 @@
 				</a>
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+				<h2 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
 					{name}
-				</h3>
+				</h2>
 				{#each menuLinks as link}
 					<a href={link.href} class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+				<h2 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
 					Rechtliches
-				</h3>
+				</h2>
 				{#each legalLinks as link}
 					<a class="block mt-1 font-montserrat" href={link.href}> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+				<h2 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
 					Links
-				</h3>
+				</h2>
 				{#each footerLinks as link}
 					<a href={link.href} target="_blank" class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}

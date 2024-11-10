@@ -35,7 +35,6 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 
 <div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
