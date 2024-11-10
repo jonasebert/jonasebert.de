@@ -27,7 +27,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 place-items-baseline">
         {#each events as event}
         <div class={event.now == true ? 'rounded-lg overflow-hidden shadow-lg animate-pulse' : 'rounded-lg overflow-hidden shadow-lg'}>
-            <div class="relative z-20 transition-transform duration-500 hover:scale-105">
+            <div class="relative z-10 transition-transform duration-500 hover:scale-105">
                 <a href="/calendar/{event.id}">
                     {#if event.teaserImage.url && event.teaserImage.url != null}
                         <Image src={event.teaserImage.url} alt={`Teaser Bild ${event.summary}`} className="w-full"/>
@@ -36,7 +36,7 @@
                     {/if}
                 </a>
             </div>
-            <div class="p-4 relative z-30 bg-je-mystical-schwarzgruen-800">
+            <div class="p-4 relative z-20 bg-je-mystical-schwarzgruen-800">
                 <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand hyphens-auto break-words">
                     <a href="/calendar/{event.id}">
                         {#if event.state === 'CANCELLED'}

@@ -69,7 +69,7 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-50 bg-je-mystical-waldtiefe-700 text-je-magical-fata_morgana">
+<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-40 bg-je-mystical-waldtiefe-700 text-je-magical-fata_morgana">
 	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
 		<div class="flex flex-row">
 			<div>
@@ -95,7 +95,7 @@
 	<main class="flex-grow">
 		<slot />
 		{#if isVisible}
-			<div class="z-40 fixed bottom-4 right-4">
+			<div class="z-50 fixed bottom-4 right-4">
 				<button on:click={scrollToTop} class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz" aria-label="Scroll to top">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
@@ -105,7 +105,7 @@
 		{/if}
 	</main>
 
-	<footer class="bg-je-mystical-nachtblau-700">
+	<footer class="bg-je-mystical-nachtblau-700 z-40">
 		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
