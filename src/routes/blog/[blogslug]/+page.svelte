@@ -57,7 +57,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto p-5 text-pretty text-justify bg-je-gray-800">
+<div class="container mx-auto p-5 text-pretty text-justify bg-je-mystical-schwarzgruen-700">
 	<div class="flex flex-wrap justify-center items-center gap-2 font-montserrat">
 		{#if post.data.teaser_image[0].image.copyright}
 			<p class="text-lg md:mr-40">

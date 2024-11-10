@@ -6,7 +6,7 @@
 </script>
 
 <div>
-    <Image src={ph.asImageSrc(slice)} alt={slice.alt} classNames="h-auto w-80 rounded-lg" />
+    <Image src={ph.asImageSrc(slice) ?? ''} alt={slice.alt ?? ''} classNames="h-auto w-80 rounded-lg" />
     {#if slice.copyright}
         {#if slice.linkTo}
             <div>
