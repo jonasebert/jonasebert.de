@@ -8,8 +8,7 @@
 
 /* Grundlegende Stile */
 body {
-	@apply bg-je-gray-500;
-	@apply text-je-gray-100;
+	@apply text-je-luminous-mondlicht;
 }
 
 /* Container für den Inhalt mit Abstand */
@@ -20,51 +19,9 @@ body {
 	margin: 0 auto;
 }
 
-/* Überschriften-Stile mit Abstand */
-/* h2 {
-	font-size: 2em;
-	font-weight: bold;
-	@apply text-je-sand;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
-}
-
-h3 {
-	font-size: 1.75em;
-	font-weight: bold;
-	@apply text-je-sand;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-}
-
-h4 {
-	font-size: 1.5em;
-	font-weight: bold;
-	@apply text-je-gray-100;
-	margin-top: 0.2em;
-	margin-bottom: 0.2em;
-}
-
-h5 {
-	font-size: 1.25em;
-	font-weight: bold;
-	@apply text-je-gray-100;
-	margin-top: 0.15em;
-	margin-bottom: 0.15em;
-}
-
-h6 {
-	font-size: 1em;
-	font-weight: bold;
-	@apply text-je-gray-100;
-	margin-top: 0.1em;
-	margin-bottom: 0.1em;
-} */
-
 /* Link-Stile */
 a:hover {
-	text-decoration: underline;
-	@apply text-je-sand;
+	@apply text-je-magical-sonnenglanz;
 }
 
 /* Styles for Privacy */
