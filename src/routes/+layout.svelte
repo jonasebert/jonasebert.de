@@ -13,35 +13,43 @@
 	inject({ mode: dev ? 'development' : 'production' });
 
 	// Initialisierung Variabeln
-	import { name, logo_clear, uri, pronouns, job} from '$lib/store';
+	import { name, logo_clear, uri, pronouns, job } from '$lib/store';
 	import Image from '$lib/components/image.svelte';
 	let isResponsive = false;
 	let currentYear = new Date().getFullYear();
 
 	// Links
 	let menuLinks = [
-		{ title: 'Home', href: '/'},
-		{ title: 'Über mich', href: '/about'},
-		{ title: 'Kontakt', href: '/contact'}
+		{ title: 'Home', href: '/' },
+		{ title: 'Über mich', href: '/about' },
+		{ title: 'Kontakt', href: '/contact' }
 	];
 	let legalLinks = [
-		{ title: 'Impressum', href: '/legal/imprint'},
-		{ title: 'Datenschutzerklärung', href: '/legal/privacy'}
+		{ title: 'Impressum', href: '/legal/imprint' },
+		{ title: 'Datenschutzerklärung', href: '/legal/privacy' }
 	];
 	let footerLinks = [
-		{ title: 'B\'90/DIE GRÜNEN Braunschweig', href: 'https://gruene-braunschweig.de/'},
-		{ title: 'Grüne Ratsfraktion Braunschweig', href: 'https://gruene-braunschweig-ratsfraktion.de/'}
+		{ title: "B'90/DIE GRÜNEN Braunschweig", href: 'https://gruene-braunschweig.de/' },
+		{
+			title: 'Grüne Ratsfraktion Braunschweig',
+			href: 'https://gruene-braunschweig-ratsfraktion.de/'
+		}
 	];
 
 	// Reactive statement, das auf Änderungen der aktuellen Route reagiert
 	$: activeRoute = $uri.url.pathname;
 	$: pageTitle =
-		activeRoute === '/' ? name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/about' ? 'Über mich - ' + name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/contact' ? 'Kontakt - ' + name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/legal/privacy' ? 'Datenschutzerklärung - ' + name + ' (' + pronouns +') - ' + job
-		: activeRoute === '/legal/imprint' ? 'Impressum - ' + name + ' (' + pronouns +') - ' + job
-			: name + ' (' + pronouns +') - ' + job;
+		activeRoute === '/'
+			? name + ' (' + pronouns + ') - ' + job
+			: activeRoute === '/about'
+				? 'Über mich - ' + name + ' (' + pronouns + ') - ' + job
+				: activeRoute === '/contact'
+					? 'Kontakt - ' + name + ' (' + pronouns + ') - ' + job
+					: activeRoute === '/legal/privacy'
+						? 'Datenschutzerklärung - ' + name + ' (' + pronouns + ') - ' + job
+						: activeRoute === '/legal/imprint'
+							? 'Impressum - ' + name + ' (' + pronouns + ') - ' + job
+							: name + ' (' + pronouns + ') - ' + job;
 
 	// Funktion zum Umschalten des responsiven Headers
 	function toggleMenu() {
@@ -54,7 +62,7 @@
 
 	// Funktion, um zum Seitenanfang zu scrollen
 	function scrollToTop() {
-    	window.scrollTo({ top: 0, behavior: 'smooth' });
+		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 	import { onMount } from 'svelte';
 	let isVisible = false;
@@ -96,9 +104,24 @@
 		<slot />
 		{#if isVisible}
 			<div class="z-50 fixed bottom-4 right-4">
-				<button on:click={scrollToTop} class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz" aria-label="Scroll to top">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+				<button
+					on:click={scrollToTop}
+					class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz"
+					aria-label="Scroll to top"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-7 w-7"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="3"
+							d="M5 15l7-7 7 7"
+						/>
 					</svg>
 				</button>
 			</div>
@@ -109,29 +132,41 @@
 		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
-					<Image src={logo_clear} alt="Logo von {name}" classNames="max-w-xs h-auto duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+					<Image
+						src={logo_clear}
+						alt="Logo von {name}"
+						classNames="max-w-xs h-auto duration-500 ease-in-out transition-transform transform hover:scale-105"
+					/>
 				</a>
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">{name}</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+					{name}
+				</h3>
 				{#each menuLinks as link}
 					<a href={link.href} class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">Rechtliches</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+					Rechtliches
+				</h3>
 				{#each legalLinks as link}
 					<a class="block mt-1 font-montserrat" href={link.href}> {link.title} </a>
 				{/each}
 			</div>
 			<div class="flex-1 p-2">
-				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">Links</h3>
+				<h3 class="uppercase text-je-luminous-nebellicht font-poppins text-xl font-semibold">
+					Links
+				</h3>
 				{#each footerLinks as link}
 					<a href={link.href} target="_blank" class="block mt-1 font-montserrat"> {link.title} </a>
 				{/each}
 			</div>
 		</div>
-		<div class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5">
+		<div
+			class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5"
+		>
 			<div>
 				<Social />
 			</div>
