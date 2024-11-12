@@ -29,18 +29,20 @@
     <div class="font-montserrat">
         <h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Kontakt</h2>
         <table>
-            <tr>
-              <td>Telefax</td>
-              <td>{contact.fax}</td>
-            </tr>
-            <tr>
-              <td>Web</td>
-              <td><a href={contact.web}> {$uri.url.protocol}//{$uri.url.host}{contact.web} </a></td>
-            </tr>
-            <tr>
-              <td>Mail</td>
-              <td><a href="mailto:{contact.mail}"> {contact.mail} </a></td>
-            </tr>
+            <tbody>
+                <tr>
+                  <td>Telefax</td>
+                  <td>{contact.fax}</td>
+                </tr>
+                <tr>
+                  <td>Web</td>
+                  <td><a href={contact.web}> {$uri.url.protocol}//{$uri.url.host}{contact.web} </a></td>
+                </tr>
+                <tr>
+                  <td>Mail</td>
+                  <td><a href="mailto:{contact.mail}"> {contact.mail} </a></td>
+                </tr>
+            </tbody>
           </table>
     </div>
     <div class="font-montserrat">
@@ -67,26 +69,28 @@
         <h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Social Media</h2>
         <p>Dieses Impressum gilt ebenfalls für folgende Social Media Präsenzen:</p>
         <table>
-            <tr>
-                <td>BlueSky</td>
-                <td>@jonasebert.bsky.social</td>
-            </tr>
-            <tr>
-                <td>Instagram</td>
-                <td>@jonas_ebert</td>
-            </tr>
-            <tr>
-                <td>Threads</td>
-                <td>@jonas_ebert</td>
-            </tr>
-            <tr>
-                <td>X (Twitter)</td>
-                <td>@jonas_ebert</td>
-            </tr>
-            <tr>
-                <td>YouTube</td>
-                <td>@jonas_ebert</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>BlueSky</td>
+                    <td>@jonasebert.bsky.social</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>@jonas_ebert</td>
+                </tr>
+                <tr>
+                    <td>Threads</td>
+                    <td>@jonas_ebert</td>
+                </tr>
+                <tr>
+                    <td>X (Twitter)</td>
+                    <td>@jonas_ebert</td>
+                </tr>
+                <tr>
+                    <td>YouTube</td>
+                    <td>@jonas_ebert</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
