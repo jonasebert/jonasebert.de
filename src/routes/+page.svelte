@@ -12,13 +12,13 @@
 </script>
 
 <div class="flex flex-col items-center justify-center p-5 min-h-[95vh] relative z-10">
-	<div class="container mx-auto">
+	<div class="container mx-auto w-[100%] md:w-[70%]">
 		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-start md:justify-start lg:justify-center flex flex-col text-left lg:text-left relative overflow-hidden">
 				<div class="size-fit md:size-80">
 					<h2 class="text-2xl font-semibold text-je-luminous-nebellicht">The future is now!</h2>
 					<h1 class="text-5xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{ name }</h1>
-					<div class="pb-8">
+					<div class="pb-8 w-[95%]">
 						<Social hoverBGColor="je-mystical-waldtiefe-700" />
 					</div>
 				</div>
@@ -31,16 +31,16 @@
 				<div class="absolute lg:hidden top-0 left-0 size-40 md:size-8/12 bg-je-mystical-waldtiefe-700 rounded-full transform -translate-x-1/2 -translate-y-1/4"></div>
 				<div class="absolute inset-0 bg-je-mystical-waldtiefe-700 transform -skew-y-12 rounded-3xl"></div>
 				<a href="/about">
-					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] md:w-[50vh] rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
+<div class="container relative bg-[url('/home/teaser.webp')] bg-fixed bg-no-repeat bg-center bg-cover flex flex-col items-center justify-center">
 	<div class="absolute inset-0 bg-black opacity-55"></div>
-	<div class="relative py-7 text-center text-balance">
+	<div class="relative py-7 text-center text-balance w-[100%] md:w-[70%]">
 		<h2 class="text-4xl font-bold pb-7 uppercase text-je-magical-fata_morgana font-poppins">Politik für eine lebenswerte Welt</h2>
 		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
 			Unser Klima verändert sich rasant und mit jedem Kilogramm CO₂ mehr wird dieser Planet zu einem lebensfeindlichen Ort. Wir steuern bereits auf eine Klimakatastrophe zu, die bald unvermeidlich sein wird. Wir stellen fest, dass unsere Sommer immer wärmer und unsere Winter immer milder werden. Wir feiern jedes Jahr einen neuen Temperaturrekord. Ein Umdenken in der Politik und Wirtschaft geht nur sehr langsam voran.
@@ -57,7 +57,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto px-4 py-12">
+<div class="container mx-auto px-4 py-12 w-[100%] md:w-[70%]">
 	<div class="text-center font-poppins">
     	<h2 class="text-5xl font-semibold text-je-magical-fata_morgana my-2">Termine</h2>
     	<h3 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 pb-10">Hier kannst du mich treffen!</h3>
@@ -71,9 +71,9 @@
     {/if}
 </div>
 
-<div class="container relative bg-[url('/home/brunswiek.webp')] bg-fixed bg-no-repeat bg-center bg-cover">
+<div class="container relative bg-[url('/home/brunswiek.webp')] bg-fixed bg-no-repeat bg-center bg-cover flex flex-col items-center justify-center">
 	<div class="absolute inset-0 bg-black opacity-55"></div>
-	<div class="relative py-7 text-center text-balance">
+	<div class="relative py-7 text-center text-balance w-[100%] md:w-[70%]">
 		<h2 class="text-4xl font-bold pb-7 uppercase text-je-magical-fata_morgana font-poppins">Politik in Braunschweig</h2>
 		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
 			Im Jahr 2021 zog ich in einer schwierigen Zeit nach Braunschweig. Ich war sehr aufgeregt, denn ich hatte gehört, dass diese Stadt eine ganz besondere Atmosphäre hat. Doch das schöne Braunschweig mit seinen historischen Sehenswürdigkeiten wie dem beeindruckenden Braunschweiger Dom und dem malerischen Magniviertel hat mich von den ersten Tagen an mit offenen Armen empfangen und begeistert.
@@ -87,7 +87,7 @@
 	</div>
 </div>
 
-<div class="container mx-auto px-4 py-12">
+<div class="container mx-auto px-4 py-12 w-[100%] md:w-[70%]">
     <div class="text-center font-poppins">
 		  <h2 class="text-5xl font-semibold text-je-magical-fata_morgana my-2 pb-7">Aktuelles</h2>
 	</div>
