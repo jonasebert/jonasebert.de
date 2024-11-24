@@ -27,11 +27,12 @@
 				<div class="absolute bottom-0 right-0 size-56 md:size-80 lg:size-[140%] bg-je-magical-sonnenglanz rounded-full transform translate-x-1/2 translate-y-1/2"></div>
 			</div>
 			<div class="flex-1 relative flex items-end justify-center">
+				<div class="hidden lg:block absolute top-0 left-0 size-16 md:size-32 bg-je-magical-korallenriff rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+				<div class="absolute lg:hidden top-0 left-0 size-40 md:size-8/12 bg-je-mystical-waldtiefe-700 rounded-full transform -translate-x-1/2 -translate-y-1/4"></div>
 				<div class="absolute inset-0 bg-je-mystical-waldtiefe-700 transform -skew-y-12 rounded-3xl"></div>
 				<a href="/about">
 					<Image src="/portrait/portrait_6_clean.webp" alt="Portrait von {name}" classNames="relative w-[70vh] rounded-lg duration-500 ease-in-out transition-transform transform hover:scale-105"/>
 				</a>
-				<div class="hidden lg:block absolute top-0 left-0 size-16 md:size-32 bg-je-magical-korallenriff rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
 			</div>
 		</div>
 	</div>
