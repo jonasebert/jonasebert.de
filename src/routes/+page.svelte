@@ -44,10 +44,10 @@
 		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
 			Unser Klima verändert sich rasant und mit jedem Kilogramm CO₂ mehr wird dieser Planet zu einem lebensfeindlichen Ort. Wir steuern bereits auf eine Klimakatastrophe zu, die bald unvermeidlich sein wird. Wir stellen fest, dass unsere Sommer immer wärmer und unsere Winter immer milder werden. Wir feiern jedes Jahr einen neuen Temperaturrekord. Ein Umdenken in der Politik und Wirtschaft geht nur sehr langsam voran.
 		</div>
-		<div class="mb-4 text-je-sand text-lg font-montserrat">
+		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
 			Das Klima wird von vielen Menschen ignoriert, geleugnet und nicht geglaubt. Eine so große Ignoranz gegenüber der Klimakatastrophe können und dürfen wir uns nicht leisten. Diese Krise wird unsere Lebensgrundlagen zerstören. Wir als Menschheit und wir als Individuen müssen alle gemeinsam gegen diese lebenszerstörende Krise arbeiten und nicht gegeneinander.
 		</div>
-		<div class="mb-4 text-je-sand text-lg font-montserrat">
+		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
 			Es muss schnellstmöglich ein Umdenken in der Politik stattfinden und es müssen wirksame Lösungen in Richtung einer klimagerechten Welt erarbeitet werden, die alle Menschen einbezieht und die Lebensgrundlagen bewahrt. Eine Ausbeutung unseres Planeten darf nicht fortgesetzt werden!
 		</div>
 		<div class="mb-4 text-je-magical-fata_morgana text-lg font-montserrat">
