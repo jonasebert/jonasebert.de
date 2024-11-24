@@ -39,7 +39,7 @@
 	<div class="container mx-auto">
 		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-center flex flex-col text-left lg:text-center relative z-10">
-				<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{ name } ({ pronouns })</h1>
+				<h1 class="text-5xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{ name } ({ pronouns })</h1>
 				<div class="italic font-montserrat">Geboren 374 ppm</div>
 				<div class="mb-4 md:mr-4 flex-1 flex flex-col justify-evenly text-balance">
 					<h2 class="text-3xl font-semibold mb-4">Vordenker im Einklang von Technik und Natur</h2>
@@ -70,13 +70,13 @@
 
 <div class="container pb-12">
 	<div>
-		<h2 class="text-4xl font-bold text-je-sand font-poppins">{headings.main}</h2>
+		<h2 class="text-4xl font-bold text-je-magical-fata_morgana font-poppins">{headings.main}</h2>
 		{#each headings.sections as section}
-			<h3 class="text-3xl font-bold text-je-sand font-poppins">{section.title}</h3>
+			<h3 class="text-3xl font-bold text-je-magical-fata_morgana font-poppins">{section.title}</h3>
 			{#if section.key === 'skills'}
 				{#each items[section.key] as item}
 					<div class="pt-3">
-						<h4 class="text-2xl font-bold text-je-sand font-poppins">{item.category}</h4>
+						<h4 class="text-2xl font-bold text-je-magical-fata_morgana font-poppins">{item.category}</h4>
 						{#if item.subcategories}
 							{#each item.subcategories as subcategory}
 								<div>
@@ -106,7 +106,7 @@
 							</a>
 						</div>
 						<div class="ml-10 flex flex-col justify-between">
-							<h4 class="text-2xl text-je-sand font-poppins">{item.title}</h4>
+							<h4 class="text-2xl text-je-magical-fata_morgana font-poppins">{item.title}</h4>
 							<p class="text-xl font-montserrat">{item.company}</p>
 							<p class="text-md font-montserrat">{genDate(item?.start, item?.end)}</p>
 							{#if item.description[0]}

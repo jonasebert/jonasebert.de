@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="container mx-auto px-4 pb-12">
-    <h1 class="text-5xl font-poppins font-bold text-je-sand my-2 py-10">Blog</h1>
+    <h1 class="text-5xl font-poppins font-bold text-je-magical-fata_morgana my-2 py-10">Blog</h1>
     <h2 class="text-3xl font-poppins pb-10">Kategorie: {data.category}</h2>
         {#if posts[0]}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 place-items-baseline">

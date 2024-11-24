@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="p-4 relative z-20 bg-je-mystical-schwarzgruen-800">
-        <h2 class="text-xl font-semibold mb-2 font-poppins text-je-sand break-words hyphens-auto">
+        <h2 class="text-xl font-semibold mb-2 font-poppins text-je-magical-fata_morgana break-words hyphens-auto">
             <a href={item.url}>
                 {ph.asText(item.data.title)}
             </a>

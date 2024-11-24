@@ -3,7 +3,7 @@
 </script>
 
 <div class="container pb-12">
-	<h1 class="text-5xl font-bold text-je-sand my-2 py-10">Datenschutz</h1>
+	<h1 class="text-5xl font-bold text-je-magical-fata_morgana my-2 py-10">Datenschutz</h1>
 	<div class="text-balance font-montserrat mb-4">
 		Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung von
 		personenbezogenen Daten (im Folgenden auch nur als "Daten" bezeichnet) aufklären.
@@ -13,7 +13,7 @@
 		für die von uns vorgehaltenen Online-Medien.
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">
 			Wer bei uns für die Datenverarbeitung verantwortlich ist
 		</h2>
 		<div class="font-montserrat text-balance mb-4">
@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Ihre Rechte nach der DSGVO</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Ihre Rechte nach der DSGVO</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu, die Sie jederzeit bei dem
 			in Ziffer 1. dieser Datenschutzerklärung genannten Verantwortlichen geltend machen können:
@@ -63,12 +63,12 @@
 				</li>
 			</ul>
 		</div>
-		<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Widerrufsrecht</h3>
+		<h3 class="text-3xl font-semibold text-je-magical-fata_morgana my-2 py-10">Widerrufsrecht</h3>
 		<div class="text-balance font-montserrat mb-4">
 			Sie haben das Recht, die von Ihnen erteilte Einwilligung zur Datenverarbeitung jederzeit zu
 			widerrufen.
 		</div>
-		<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">Widerspruchsrecht</h3>
+		<h3 class="text-3xl font-semibold text-je-magical-fata_morgana my-2 py-10">Widerspruchsrecht</h3>
 		<div class="text-balance font-montserrat mb-4">
 			Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die wir auf unser
 			berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO stützen, Widerspruch einzulegen. Sofern
@@ -87,7 +87,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Wann löschen wir Ihre Daten?</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Wann löschen wir Ihre Daten?</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder Sie uns dies vorgeben.
 			Das bedeutet, dass - sofern sich aus den einzelnen Datenschutzhinweisen dieser
@@ -131,7 +131,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Webhosting</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Webhosting</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters, auf dessen Server
 			unsere Internetseiten gespeichert und für den Abruf im Internet verfügbar gemacht werden
@@ -199,7 +199,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Content-Delivery-Network</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Content-Delivery-Network</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Wir benutzen zum Ausspielen unserer Internetseiten ein Content-Delivery-Network (CDN). Ein CDN
 			ist ein Netz regional verteilter und über das Internet verbundener Server. Über das CDN werden
@@ -255,7 +255,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Kontaktaufnahme</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Kontaktaufnahme</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser Kontaktformular oder
 			sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren Namen, Ihre Telefonnummer
@@ -283,7 +283,7 @@
 				1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO
 			</div>
 			<div>
-				<h3 class="text-3xl font-semibold text-je-sand my-2 py-10">
+				<h3 class="text-3xl font-semibold text-je-magical-fata_morgana my-2 py-10">
 					Angaben zu dem von uns genutzten Drittanbieter:
 				</h3>
 				<div class="text-balance font-montserrat mb-4">
@@ -297,7 +297,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Zahlungsdienstleister</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Zahlungsdienstleister</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Gemäß unserer gesetzlichen Pflichten beziehungsweise wegen unserer berechtigten Interessen an
 			einer effizienten, sicheren und Kunden orientierten Zahlungsabwicklung können Personen, die
@@ -372,7 +372,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">
 			Unsere Onlinepräsenzen bei sozialen Netzwerken
 		</h2>
 		<div class="text-balance font-montserrat mb-4">
@@ -513,7 +513,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Content-Dienste</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Content-Dienste</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Wir nutzen bestimmte Dienste, um über unsere Internetpräsenz bestimmte Inhalte oder Grafiken
 			(Videos, Bilder, Musik, Schriftarten, Kartenmaterial) ausspielen zu können. Dabei verarbeiten
@@ -593,13 +593,13 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Sicherheits Maßnahmen</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Sicherheits Maßnahmen</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Wir treffen im Übrigen technische und organisatorische Sicherheitsmaßnahmen nach dem Stand der Technik, um die Vorschriften der Datenschutzgesetze einzuhalten und Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.
 		</div>
 	</div>
 	<div>
-		<h2 class="text-4xl font-semibold text-je-sand my-2 py-10">Aktualität und Änderung dieser Datenschutzerklärung</h2>
+		<h2 class="text-4xl font-semibold text-je-magical-fata_morgana my-2 py-10">Aktualität und Änderung dieser Datenschutzerklärung</h2>
 		<div class="text-balance font-montserrat mb-4">
 			Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024. Aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung anzupassen.
 		</div>

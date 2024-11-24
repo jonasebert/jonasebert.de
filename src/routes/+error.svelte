@@ -8,7 +8,7 @@
 			<div class="p-8 font-poppins flex-1 justify-start md:justify-start lg:justify-center flex flex-col text-left lg:text-left relative overflow-hidden">
 				<div class="size-fit md:size-80">
 					<h2 class="text-2xl font-semibold text-je-luminous-nebellicht">{$page.error.message}</h2>
-					<h1 class="text-5xl font-bold text-je-sand mt-2 mb-2">{$page.status}</h1>
+					<h1 class="text-5xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{$page.status}</h1>
 				</div>
 				<div class="absolute top-0 right-0 size-16 md:size-32 bg-je-magical-korallenriff rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
 				<div class="absolute bottom-0 left-0 size-24 md:size-8/12 bg-je-mystical-waldtiefe-700 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
