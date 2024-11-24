@@ -20,7 +20,7 @@ export const load = () => {
                         description: [],
                         skills: [ 'Windows', 'Datenbankverwaltung (MSSQL)', 'Kunden-Support', 'VOIS' ],
                         image: 'logo_itebo.webp',
-                        bgcolor: 'bg-white',
+                        bgcolor: 'bg-je-luminous-mondlicht',
                         link: 'https://www.itebo.de',
                     },
                     {
@@ -41,7 +41,7 @@ export const load = () => {
                         ],
                         skills: [ 'PHP', 'Linux', 'Docker', 'ISO 27001', 'Microsoft Intune', 'Datenbankverwaltung (PostgreSQL & MSSQL)', 'Kunden-Support', ],
                         image: 'logo_gingco.webp',
-                        bgcolor: 'bg-je-gingco',
+                        bgcolor: 'bg-gingco-blau',
                         link: 'https://gingco.systems',
                     },
                     {
@@ -55,7 +55,7 @@ export const load = () => {
                         ],
                         skills: [ 'Telekommunikation', 'Telekommunikationssysteme', 'Linux', 'Windows', ],
                         image: 'logo_lba.webp',
-                        bgcolor: 'bg-white',
+                        bgcolor: 'bg-je-luminous-mondlicht',
                         link: 'https://www.lba.de/DE/Home/home_node.html',
                     },
                     {
@@ -74,7 +74,7 @@ export const load = () => {
                         ],
                         skills: [ 'PHP', 'Scripting', 'HTML', 'Datenmanagement', ],
                         image: 'logo_steinel.webp',
-                        bgcolor: 'bg-white',
+                        bgcolor: 'bg-je-luminous-mondlicht',
                         link: 'https://steinel.de'
                     }
                 ],
@@ -94,7 +94,7 @@ export const load = () => {
                         ],
                         skills: [ 'Windows', 'Kunden-Support', 'Drucker', ],
                         image: 'logo_steinel.webp',
-                        bgcolor: 'bg-white',
+                        bgcolor: 'bg-je-luminous-mondlicht',
                         link: 'https://steinel.de',
                     },
                     {
@@ -105,7 +105,7 @@ export const load = () => {
                         description: [],
                         skills: [],
                         image: 'logo_vzg.webp',
-                        bgcolor: 'bg-white',
+                        bgcolor: 'bg-je-luminous-mondlicht',
                         link: 'https://von-zumbusch-gesamtschule.de',
                     }
                 ],
@@ -118,7 +118,7 @@ export const load = () => {
                         description: [],
                         skills: [],
                         image: 'logo_gruene.svg',
-                        bgcolor: 'bg-je-gruene-tanne',
+                        bgcolor: 'bg-gruene-tanne',
                         link: 'https://gruene-braunschweig.de',
                     },
                     {
@@ -129,7 +129,7 @@ export const load = () => {
                         description: [],
                         skills: [],
                         image: 'logo_gruene.svg',
-                        bgcolor: 'bg-je-gruene-tanne',
+                        bgcolor: 'bg-gruene-tanne',
                         link: 'https://gruene-braunschweig.de',
                     }
                 ],
