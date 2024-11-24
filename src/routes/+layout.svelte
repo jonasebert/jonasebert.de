@@ -77,12 +77,28 @@
 	<title>{pageTitle}</title>
 </svelte:head>
 
-<header class="font-poppins p-5 sticky top-0 w-full shadow-lg z-40 bg-je-mystical-waldtiefe-700 text-je-magical-fata_morgana">
-	<div class={isResponsive ? 'flex flex-col items-start w-full' : 'flex justify-between items-center w-full'} id="respHeader">
+<header
+	class="font-poppins p-5 sticky top-0 w-full shadow-lg z-40 bg-je-mystical-waldtiefe-700 text-je-magical-fata_morgana container"
+>
+	<div
+		class={isResponsive
+			? 'flex flex-col items-start w-full'
+			: 'flex justify-between items-center w-full'}
+		id="respHeader"
+	>
 		<div class="flex flex-row">
 			<div>
-				<a href="/" class={isResponsive ? 'flex items-center justify-start w-1/2 flex-shrink-0' : 'flex items-center justify-start w-1/2'}>
-					<Image src={logo_clear} alt="Logo von {name}" classNames="h-auto w-auto duration-500 ease-in-out transition-transform transform hover:scale-105"/>
+				<a
+					href="/"
+					class={isResponsive
+						? 'flex items-center justify-start w-1/2 flex-shrink-0'
+						: 'flex items-center justify-start w-1/2'}
+				>
+					<Image
+						src={logo_clear}
+						alt="Logo von {name}"
+						classNames="h-auto w-auto duration-500 ease-in-out transition-transform transform hover:scale-105"
+					/>
 				</a>
 			</div>
 			<div class="flex items-center">
@@ -91,37 +107,44 @@
 				</a>
 			</div>
 		</div>
-		<div class={isResponsive ? 'flex flex-col items-left w-full pl-4 pt-4' : 'hidden md:flex md:items-center md:justify-end'}>
+		<div
+			class={isResponsive
+				? 'flex flex-col items-left w-full pl-4 pt-4'
+				: 'hidden md:flex md:items-center md:justify-end'}
+		>
 			{#each menuLinks as link}
-		  		<a class={activeRoute === link.href ? 'font-bold p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz' : 'p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz'} href={link.href} on:click={closeMenu}> {link.title} </a>
+				<a
+					class={activeRoute === link.href
+						? 'font-bold p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz'
+						: 'p-2 rounded-md text-lg hover:text-je-magical-sonnenglanz'}
+					href={link.href}
+					on:click={closeMenu}
+				>
+					{link.title}
+				</a>
 			{/each}
-	  	</div>
+		</div>
 	</div>
 </header>
 
 {#if isVisible}
-<div class="z-50 fixed bottom-4 right-4">
-	<button
-		on:click={scrollToTop}
-		class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz"
-		aria-label="Scroll to top"
-	>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			class="h-7 w-7"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke="currentColor"
+	<div class="z-50 fixed bottom-4 right-4">
+		<button
+			on:click={scrollToTop}
+			class="p-3 rounded-full shadow-2xl transition duration-300 hover:scale-110 bg-je-mystical-schwarzgruen-500 text-je-magical-fata_morgana hover:bg-je-mystical-schwarzgruen-800 hover:text-je-magical-sonnenglanz"
+			aria-label="Scroll to top"
 		>
-			<path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-width="3"
-				d="M5 15l7-7 7 7"
-			/>
-		</svg>
-	</button>
-</div>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="h-7 w-7"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+			>
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+			</svg>
+		</button>
+	</div>
 {/if}
 
 <div class="flex flex-col flex-grow min-h-screen bg-je-mystical-nachtblau-500 relative">
@@ -130,7 +153,7 @@
 	</main>
 
 	<footer class="bg-je-mystical-nachtblau-700 z-40">
-		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5">
+		<div class="flex flex-wrap justify-center items-center text-center py-6 px-5 container">
 			<div class="w-full sm:w-auto flex justify-center p-2">
 				<a href="/" class="logo">
 					<Image
@@ -165,9 +188,7 @@
 				{/each}
 			</div>
 		</div>
-		<div
-			class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5"
-		>
+		<div class="bg-je-mystical-nachtblau-900 flex flex-col justify-center items-center text-center gap-5 py-6 px-5 container">
 			<div>
 				<Social />
 			</div>
