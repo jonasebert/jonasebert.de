@@ -25,9 +25,9 @@
         </h2>
         <p class="text-sm mb-4 font-montserrat text-je-misty-sturmwolke">
             {#if item.data.overwrite_publish_date}
-                Veröffentlicht am {FormatDate(ph.asDate(item.data.overwrite_publish_date),'day')}. {FormatDate(ph.asDate(item.data.overwrite_publish_date),'monthshort')} {FormatDate(ph.asDate(item.data.overwrite_publish_date),'year')}
+                {FormatDate(ph.asDate(item.data.overwrite_publish_date),'day')}. {FormatDate(ph.asDate(item.data.overwrite_publish_date),'monthshort')} {FormatDate(ph.asDate(item.data.overwrite_publish_date),'year')}
             {:else}
-                Veröffentlicht am {FormatDate(ph.asDate(item.first_publication_date),'day')}. {FormatDate(ph.asDate(item.first_publication_date),'monthshort')} {FormatDate(ph.asDate(item.first_publication_date),'year')}
+                {FormatDate(ph.asDate(item.first_publication_date),'day')}. {FormatDate(ph.asDate(item.first_publication_date),'monthshort')} {FormatDate(ph.asDate(item.first_publication_date),'year')}
             {/if}
         </p>
         <div class="flex flex-row flex-wrap gap-2 font-montserrat">
