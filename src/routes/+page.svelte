@@ -5,6 +5,7 @@
 	import CalendarTiles from "$lib/components/tiles/Calendar.svelte";
 	import Social from "$lib/components/blocks/Social.svelte";
 	import InfoMessage from "$lib/components/blocks/InfoMessage.svelte";
+	import Slogan from "$lib/components/blocks/Slogan.svelte";
 	
 	// Blog data
 	export let data;
@@ -16,9 +17,10 @@
 		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-start md:justify-start lg:justify-center flex flex-col text-left lg:text-left relative overflow-hidden">
 				<div class="size-fit md:size-80">
-					<h2 class="text-2xl font-semibold text-je-luminous-nebellicht">The future is now!</h2>
-					<h1 class="text-5xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{ name }</h1>
-					<div class="pb-8 w-[95%]">
+					<div>
+						<Slogan></Slogan>
+					</div>
+					<h1 class="text-5xl md:text-4xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{ name }</h1>
 						<Social hoverBGColor="je-mystical-waldtiefe-700" />
 					</div>
 				</div>
