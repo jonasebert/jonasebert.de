@@ -13,7 +13,7 @@
 </script>
 
 <div class="flex flex-col items-center justify-center p-5 min-h-[95vh] relative z-10">
-	<div class="container mx-auto w-[100%] md:w-[70%]">
+	<div class="container mx-auto w-[100%] md:w-[80%]">
 		<div class="bg-je-mystical-nachtblau-900 rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-lg relative">
 			<div class="p-8 font-poppins flex-1 justify-start md:justify-start lg:justify-center flex flex-col text-left lg:text-left relative overflow-hidden">
 				<div class="size-fit md:size-80">
@@ -21,6 +21,7 @@
 						<Slogan></Slogan>
 					</div>
 					<h1 class="text-5xl md:text-4xl font-bold text-je-magical-fata_morgana mt-2 mb-2">{ name }</h1>
+					<div class="pb-8 w-[95%] md:w-[70%]">
 						<Social hoverBGColor="je-mystical-waldtiefe-700" />
 					</div>
 				</div>
